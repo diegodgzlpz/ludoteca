@@ -54,7 +54,10 @@ Añade una entrada a `games.json` y, si tienes portada, su imagen en `portadas/`
   "rating": 7.6,
   "best": 2,
   "tags": ["Patrones", "Colección de sets"],
-  "img": "portadas/azul-pabellon-de-verano.jpg"
+  "img": "portadas/azul-pabellon-de-verano.jpg",
+  "videos": [
+    {"yt": "WOoKrjIkMxU", "t": "Conociendo Azul Pabellón de Verano"}
+  ]
 }
 ```
 
@@ -70,9 +73,35 @@ Añade una entrada a `games.json` y, si tienes portada, su imagen en `portadas/`
 | `tags` | no | Mecánicas; se muestran las tres primeras y sirven para la búsqueda. |
 | `img` | no | Ruta de la portada. Sin ella se genera una portada con el nombre. |
 | `parent` | no | `id` del juego base si es una expansión. Se muestra dentro de su tarjeta. |
-| `notes`, `hue` | no | Notas internas (no se muestran) y tono de la portada generada. |
+| `videos` | no | Vídeos de "Cómo jugar": lista de `{"yt": "<id>", "t": "<título>"}`. Ver abajo. |
+| `notes`, `hue` | no | Notas internas (no se muestran en la página, pero cualquiera puede leerlas en `games.json`) y tono de la portada generada. |
 
 Si el JSON queda mal formado, la página muestra "No se pudo cargar la colección".
 Valídalo antes del push con `python -m json.tool games.json > /dev/null`.
+
+### Vídeos (`videos`)
+
+- `yt`: el id de 11 caracteres del vídeo, el de `youtube.com/watch?v=<id>`.
+- `t`: el título que se muestra bajo la miniatura.
+- Dos o tres como mucho, en orden: primero la serie "Conociendo / Abriendo / Ampliando /
+  Reeditando" de Zacatrus, luego tutoriales de la editorial o en español.
+- Las expansiones llevan sus propios vídeos; se muestran en la ficha del juego base
+  con la etiqueta "Expansión: <nombre>".
+
+## Ficha del juego
+
+Al pulsar cualquier parte de una tarjeta se abre su ficha: datos del juego, carrusel
+"Cómo jugar" con los vídeos, expansiones y enlaces a BoardGameGeek y a YouTube.
+Se cierra con ✕, Esc, clic fuera o el botón "atrás".
+
+- Los vídeos se muestran como miniaturas (`i.ytimg.com`); el reproductor de
+  `youtube-nocookie.com` solo se carga al pulsar play, y solo uno a la vez.
+- Un juego sin vídeos muestra un enlace a la búsqueda "<nombre> cómo se juega" en YouTube.
+
+### Enlaces directos
+
+Cada ficha tiene su dirección: `https://<usuario>.github.io/ludoteca/#<id>`, por ejemplo
+`#catan`. Abrir esa dirección abre la ficha; el enlace de una expansión
+(`#catan-navegantes`) abre la ficha de su juego base.
 
 Datos y portadas de [BoardGameGeek](https://boardgamegeek.com).

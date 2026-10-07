@@ -18,7 +18,17 @@
   "tmin": 30,
   "weight": 2.31,
   "year": 2010,
-  "img": "portadas/7-wonders.jpg"
+  "img": "portadas/7-wonders.jpg",
+  "videos": [
+   {
+    "yt": "t9VfGyVCLzc",
+    "t": "Tutorial 7 Wonders - ¡Aprende a jugar!"
+   },
+   {
+    "yt": "onJ4vsu1GtI",
+    "t": "Cómo se juega a 7 WONDERS - TUTORIAL - Juegos de Mesa - unna"
+   }
+  ]
  },
  {
   "id": "alhambra",
@@ -39,7 +49,17 @@
   "tmin": 45,
   "weight": 2.1,
   "year": 2003,
-  "img": "portadas/alhambra.jpg"
+  "img": "portadas/alhambra.jpg",
+  "videos": [
+   {
+    "yt": "2e-3FzNlFUI",
+    "t": "Conociendo Alhambra"
+   },
+   {
+    "yt": "Hj-ZguE-v4w",
+    "t": "Reeditando Alhambra (Edición Revisada)"
+   }
+  ]
  },
  {
   "id": "azul",
@@ -59,7 +79,13 @@
   "tmin": 30,
   "weight": 1.8,
   "year": 2017,
-  "img": "portadas/azul.jpg"
+  "img": "portadas/azul.jpg",
+  "videos": [
+   {
+    "yt": "j1DlqFPqZMY",
+    "t": "Conociendo Azul"
+   }
+  ]
  },
  {
   "id": "burger-ya",
@@ -79,7 +105,13 @@
   "tmin": 15,
   "weight": 1,
   "year": 2022,
-  "img": "portadas/burger-ya.jpg"
+  "img": "portadas/burger-ya.jpg",
+  "videos": [
+   {
+    "yt": "f5FbkiVlxcs",
+    "t": "Conociendo Burger ¡Ya!"
+   }
+  ]
  },
  {
   "id": "calico",
@@ -99,7 +131,13 @@
   "tmin": 30,
   "weight": 2.2,
   "year": 2020,
-  "img": "portadas/calico.jpg"
+  "img": "portadas/calico.jpg",
+  "videos": [
+   {
+    "yt": "aA_orAIDfuw",
+    "t": "Conociendo Calico"
+   }
+  ]
  },
  {
   "id": "camel-up",
@@ -120,7 +158,17 @@
   "tmin": 20,
   "weight": 1.5,
   "year": 2014,
-  "img": "portadas/camel-up.jpg"
+  "img": "portadas/camel-up.jpg",
+  "videos": [
+   {
+    "yt": "uGxRsR9v2Ds",
+    "t": "Conociendo Camel Up 2.0"
+   },
+   {
+    "yt": "YzHDJzbNGp0",
+    "t": "¿Cómo se juega? - Camel UP 2.0  - Juego de mesa"
+   }
+  ]
  },
  {
   "id": "carcassonne-plus",
@@ -140,7 +188,13 @@
   "tmin": 30,
   "weight": 1.9,
   "year": 2000,
-  "img": "portadas/carcassonne-plus.jpg"
+  "img": "portadas/carcassonne-plus.jpg",
+  "videos": [
+   {
+    "yt": "b0SDEcRwOlc",
+    "t": "Cómo jugar a Carcassonne - Devir"
+   }
+  ]
  },
  {
   "id": "cascadia",
@@ -161,7 +215,13 @@
   "tmin": 30,
   "weight": 1.8,
   "year": 2021,
-  "img": "portadas/cascadia.jpg"
+  "img": "portadas/cascadia.jpg",
+  "videos": [
+   {
+    "yt": "EsmWvHjqr0o",
+    "t": "Conociendo Cascadia"
+   }
+  ]
  },
  {
   "id": "catan",
@@ -182,7 +242,13 @@
   "tmin": 60,
   "weight": 2.28,
   "year": 1995,
-  "img": "portadas/catan.jpg"
+  "img": "portadas/catan.jpg",
+  "videos": [
+   {
+    "yt": "Lh5LcChAzTg",
+    "t": "Conociendo Catan"
+   }
+  ]
  },
  {
   "id": "colt-express-big-box",
@@ -202,13 +268,33 @@
   "tmin": 40,
   "weight": 2.2,
   "year": 2022,
-  "img": "portadas/colt-express-big-box.jpg"
+  "img": "portadas/colt-express-big-box.jpg",
+  "videos": [
+   {
+    "yt": "PiFP1Jw_Mfw",
+    "t": "Abriendo Colt Express"
+   },
+   {
+    "yt": "VB43sV8lEsk",
+    "t": "Ampliando Colt Express: Caballos y Diligencias"
+   }
+  ]
  },
  {
   "id": "cometas",
   "hue": 298,
   "name": "Cometas",
-  "img": "portadas/cometas.jpg"
+  "img": "portadas/cometas.jpg",
+  "videos": [
+   {
+    "yt": "y7bzrtd2omQ",
+    "t": "Conociendo Cometas"
+   },
+   {
+    "yt": "9oha1FNauR4",
+    "t": "COMETAS (Devir) Opinión y ¿Cómo se juega?"
+   }
+  ]
  },
  {
   "id": "concept",
@@ -228,7 +314,17 @@
   "tmin": 40,
   "weight": 1.4,
   "year": 2013,
-  "img": "portadas/concept.jpg"
+  "img": "portadas/concept.jpg",
+  "videos": [
+   {
+    "yt": "WIXswuvn-M4",
+    "t": "Cómo jugar a Concept de Asmodee en un minuto"
+   },
+   {
+    "yt": "9cMuwbKz9_A",
+    "t": "Cómo se juega al concept"
+   }
+  ]
  },
  {
   "id": "codigo-secreto",
@@ -249,7 +345,17 @@
   "tmin": 15,
   "weight": 1.3,
   "year": 2015,
-  "img": "portadas/codigo-secreto.jpg"
+  "img": "portadas/codigo-secreto.jpg",
+  "videos": [
+   {
+    "yt": "0P4NxYetoQc",
+    "t": "Abriendo Código Secreto"
+   },
+   {
+    "yt": "lMf7MnQsSNg",
+    "t": "Cómo jugar a Código Secreto - Devir"
+   }
+  ]
  },
  {
   "id": "codigo-secreto-disney",
@@ -270,7 +376,13 @@
   "tmin": 15,
   "weight": 1.2,
   "year": 2017,
-  "img": "portadas/codigo-secreto-disney.jpg"
+  "img": "portadas/codigo-secreto-disney.jpg",
+  "videos": [
+   {
+    "yt": "W2iEC76X56Q",
+    "t": "✅ Cómo jugar a Código Secreto Disney - Devir"
+   }
+  ]
  },
  {
   "id": "dixit",
@@ -291,7 +403,13 @@
   "tmin": 30,
   "weight": 1.2,
   "year": 2008,
-  "img": "portadas/dixit.jpg"
+  "img": "portadas/dixit.jpg",
+  "videos": [
+   {
+    "yt": "DVPuPusMFpI",
+    "t": "Conociendo Dixit"
+   }
+  ]
  },
  {
   "id": "dont-get-got",
@@ -309,7 +427,13 @@
   ],
   "weight": 1.1,
   "year": 2018,
-  "img": "portadas/dont-get-got.jpg"
+  "img": "portadas/dont-get-got.jpg",
+  "videos": [
+   {
+    "yt": "mFAZ7njCte8",
+    "t": "Don't Get Got, ¡el juego de las misiones secretas!"
+   }
+  ]
  },
  {
   "id": "el-mortal",
@@ -328,7 +452,13 @@
   "tmin": 20,
   "weight": 1.5,
   "year": 2018,
-  "img": "portadas/el-mortal.jpg"
+  "img": "portadas/el-mortal.jpg",
+  "videos": [
+   {
+    "yt": "q9LXlhhxn7E",
+    "t": "Conociendo El Mortal"
+   }
+  ]
  },
  {
   "id": "feelinks-revelations",
@@ -349,7 +479,17 @@
   "tmin": 30,
   "weight": 1,
   "year": 2019,
-  "img": "portadas/feelinks-revelations.jpg"
+  "img": "portadas/feelinks-revelations.jpg",
+  "videos": [
+   {
+    "yt": "Zx1lGFcIrKc",
+    "t": "Conociendo Feelinks Revelations"
+   },
+   {
+    "yt": "pIT-voVuxLI",
+    "t": "Cómo se juega a Feelinks Revelations"
+   }
+  ]
  },
  {
   "id": "hitster",
@@ -370,7 +510,13 @@
   "tmin": 30,
   "weight": 1,
   "year": 2022,
-  "img": "portadas/hitster.jpg"
+  "img": "portadas/hitster.jpg",
+  "videos": [
+   {
+    "yt": "hFnKP2ItzDA",
+    "t": "HITSTER 100% en español. Lo han vuelto a hacer Lo nuevo de HITSTER vuelve a ser maravilloso."
+   }
+  ]
  },
  {
   "id": "hitster-bingo",
@@ -391,7 +537,17 @@
   "tmin": 30,
   "weight": 1,
   "year": 2024,
-  "img": "portadas/hitster-bingo.jpg"
+  "img": "portadas/hitster-bingo.jpg",
+  "videos": [
+   {
+    "yt": "R6MESdnF2Cs",
+    "t": "🎶 🪩 Tutorial – Cómo se juega Hitster Bingo 🪩 🎶"
+   },
+   {
+    "yt": "mwU4JN4pLGo",
+    "t": "HITSTER BINGO. Lo nuevo de HITSER. ¿Tan bueno como los anteriores, o mejor? APRENDE A JUGAR"
+   }
+  ]
  },
  {
   "id": "identidad-secreta",
@@ -412,7 +568,13 @@
   "tmin": 20,
   "weight": 1.2,
   "year": 2022,
-  "img": "portadas/identidad-secreta.jpg"
+  "img": "portadas/identidad-secreta.jpg",
+  "videos": [
+   {
+    "yt": "S7V5wVR_G5U",
+    "t": "Conociendo Identidad Secreta"
+   }
+  ]
  },
  {
   "id": "its-a-wonderful-world",
@@ -432,7 +594,13 @@
   "tmin": 45,
   "weight": 2.3,
   "year": 2019,
-  "img": "portadas/its-a-wonderful-world.jpg"
+  "img": "portadas/its-a-wonderful-world.jpg",
+  "videos": [
+   {
+    "yt": "y0HllnpthHE",
+    "t": "Conociendo It's a Wonderful World"
+   }
+  ]
  },
  {
   "id": "jaipur",
@@ -453,7 +621,13 @@
   "tmin": 30,
   "weight": 1.5,
   "year": 2009,
-  "img": "portadas/jaipur.jpg"
+  "img": "portadas/jaipur.jpg",
+  "videos": [
+   {
+    "yt": "FeYS-mfwJLk",
+    "t": "Tutorial Jaipur juego de mesa"
+   }
+  ]
  },
  {
   "id": "just-one",
@@ -474,7 +648,17 @@
   "tmin": 20,
   "weight": 1,
   "year": 2018,
-  "img": "portadas/just-one.jpg"
+  "img": "portadas/just-one.jpg",
+  "videos": [
+   {
+    "yt": "fOntFQHpZ7I",
+    "t": "¿Cómo se juega a Just One?"
+   },
+   {
+    "yt": "czFDe5G1ev8",
+    "t": "Just One [JcK / Juego de Mesa / Como se Juega / Tutorial]"
+   }
+  ]
  },
  {
   "id": "keyflower",
@@ -495,7 +679,17 @@
   "tmin": 90,
   "weight": 3.3,
   "year": 2012,
-  "img": "portadas/keyflower.jpg"
+  "img": "portadas/keyflower.jpg",
+  "videos": [
+   {
+    "yt": "4o6pMGXHfnM",
+    "t": "Conociendo Keyflower"
+   },
+   {
+    "yt": "37iMMOLwaA8",
+    "t": "Como se juega KeyFlower"
+   }
+  ]
  },
  {
   "id": "kill-the-unicorns",
@@ -516,7 +710,17 @@
   "tmin": 25,
   "weight": 1.8,
   "year": 2019,
-  "img": "portadas/kill-the-unicorns.jpg"
+  "img": "portadas/kill-the-unicorns.jpg",
+  "videos": [
+   {
+    "yt": "ymz411A_y6Q",
+    "t": "Conociendo Kill the Unicorns"
+   },
+   {
+    "yt": "Yd9lA1qlOpI",
+    "t": "🦄Kill the unicorns🦄 ¿Cómo se juega?"
+   }
+  ]
  },
  {
   "id": "la-isla-prohibida",
@@ -536,7 +740,13 @@
   "tmin": 30,
   "weight": 1.7,
   "year": 2010,
-  "img": "portadas/la-isla-prohibida.jpg"
+  "img": "portadas/la-isla-prohibida.jpg",
+  "videos": [
+   {
+    "yt": "fMqce1nc_MQ",
+    "t": "Cómo jugar a La Isla Prohibida - Devir"
+   }
+  ]
  },
  {
   "id": "los-gatos-de-schrodinger",
@@ -556,13 +766,29 @@
   "tmin": 10,
   "weight": 1.3,
   "year": 2015,
-  "img": "portadas/los-gatos-de-schrodinger.jpg"
+  "img": "portadas/los-gatos-de-schrodinger.jpg",
+  "videos": [
+   {
+    "yt": "rz6VkLDH6EY",
+    "t": "Cómo jugar a Los Gatos de Schrödinger"
+   }
+  ]
  },
  {
   "id": "macedonia-de-letras",
   "hue": 321,
   "name": "Macedonia de letras",
-  "img": "portadas/macedonia-de-letras.jpg"
+  "img": "portadas/macedonia-de-letras.jpg",
+  "videos": [
+   {
+    "yt": "vEC69MsDYsI",
+    "t": "Conociendo Macedonia de Letras"
+   },
+   {
+    "yt": "foWjuxbbrdI",
+    "t": "MACEDONIA DE LETRAS VideoReseña (RDJ)"
+   }
+  ]
  },
  {
   "id": "magic-maze",
@@ -583,7 +809,13 @@
   "tmin": 15,
   "weight": 1.7,
   "year": 2017,
-  "img": "portadas/magic-maze.jpg"
+  "img": "portadas/magic-maze.jpg",
+  "videos": [
+   {
+    "yt": "anFk1Y3Lkrk",
+    "t": "Conociendo Magic Maze"
+   }
+  ]
  },
  {
   "id": "maki-stack",
@@ -604,7 +836,13 @@
   "tmin": 10,
   "weight": 1,
   "year": 2018,
-  "img": "portadas/maki-stack.jpg"
+  "img": "portadas/maki-stack.jpg",
+  "videos": [
+   {
+    "yt": "U7SaUPM4hcE",
+    "t": "Conociendo Maki Stack"
+   }
+  ]
  },
  {
   "id": "mente-vacuna",
@@ -624,7 +862,13 @@
   "tmin": 20,
   "weight": 1,
   "year": 2020,
-  "img": "portadas/mente-vacuna.jpg"
+  "img": "portadas/mente-vacuna.jpg",
+  "videos": [
+   {
+    "yt": "uoskaot4yCs",
+    "t": "Conociendo Mente Vacuna"
+   }
+  ]
  },
  {
   "id": "mismamente",
@@ -639,7 +883,17 @@
   ],
   "tmax": 40,
   "tmin": 40,
-  "img": "portadas/mismamente.jpg"
+  "img": "portadas/mismamente.jpg",
+  "videos": [
+   {
+    "yt": "74RCLVyEsMY",
+    "t": "Conociendo Mismamente"
+   },
+   {
+    "yt": "OxU_NuuIUuE",
+    "t": "MISMAMENTE (SD Games) Opinión y ¿Cómo se juega?"
+   }
+  ]
  },
  {
   "id": "monopoly",
@@ -660,7 +914,17 @@
   "tmin": 60,
   "weight": 1.6,
   "year": 1935,
-  "img": "portadas/monopoly.jpg"
+  "img": "portadas/monopoly.jpg",
+  "videos": [
+   {
+    "yt": "lBdZqvVc5GU",
+    "t": "MONOPOLY ¿cómo se juega? (4K)| REGLAS COMPLETAS | Hasbro | Parker Bros | Tutorial | Partida de Locos"
+   },
+   {
+    "yt": "OpQID1oHNqA",
+    "t": "FÁCIL - Tutorial de MONOPOLY - Cómo se juega - Juegos de Mesa - Monopolio"
+   }
+  ]
  },
  {
   "id": "monopoly-deal",
@@ -680,13 +944,33 @@
   "tmin": 15,
   "weight": 1.3,
   "year": 2008,
-  "img": "portadas/monopoly-deal.jpg"
+  "img": "portadas/monopoly-deal.jpg",
+  "videos": [
+   {
+    "yt": "AWNa_ukzwJk",
+    "t": "COMO JUGAR MONOPOLY DEAL"
+   },
+   {
+    "yt": "5J8AhIziTQM",
+    "t": "Cómo jugar Monopoly Deal"
+   }
+  ]
  },
  {
   "id": "morada-maldita",
   "hue": 115,
   "name": "Morada Maldita",
-  "img": "portadas/morada-maldita.jpg"
+  "img": "portadas/morada-maldita.jpg",
+  "videos": [
+   {
+    "yt": "UDMpe7cLViY",
+    "t": "Conociendo La Morada Maldita"
+   },
+   {
+    "yt": "u0Dz4MvLGfQ",
+    "t": "Tutorial de La Morada Maldita, con su autor, Sergio Ortiz"
+   }
+  ]
  },
  {
   "id": "munchkin",
@@ -707,7 +991,17 @@
   "tmin": 60,
   "weight": 1.8,
   "year": 2001,
-  "img": "portadas/munchkin.jpg"
+  "img": "portadas/munchkin.jpg",
+  "videos": [
+   {
+    "yt": "yq1sRKVlLuo",
+    "t": "Cómo Jugar a Munchkin, Tutorial Express (Español) Juego de Mesa -Games On Board-"
+   },
+   {
+    "yt": "-pUvtPv5f_I",
+    "t": "Munchkin ¿cómo se juega? | Steve Jackson Games | Buro | Partida de Locos"
+   }
+  ]
  },
  {
   "id": "my-city",
@@ -728,7 +1022,13 @@
   "tmin": 30,
   "weight": 2,
   "year": 2020,
-  "img": "portadas/my-city.jpg"
+  "img": "portadas/my-city.jpg",
+  "videos": [
+   {
+    "yt": "4n_SmCETyAE",
+    "t": "Conociendo My City"
+   }
+  ]
  },
  {
   "id": "my-island",
@@ -749,7 +1049,13 @@
   "tmin": 30,
   "weight": 2.3,
   "year": 2023,
-  "img": "portadas/my-island.jpg"
+  "img": "portadas/my-island.jpg",
+  "videos": [
+   {
+    "yt": "4bYKTyzv0MI",
+    "t": "MY ISLAND (Devir) Opinión y ¿Como se juega? - SIN SPOILERS"
+   }
+  ]
  },
  {
   "id": "mysterium",
@@ -770,7 +1076,13 @@
   "tmin": 42,
   "weight": 1.9,
   "year": 2015,
-  "img": "portadas/mysterium.jpg"
+  "img": "portadas/mysterium.jpg",
+  "videos": [
+   {
+    "yt": "o-GK91HfCMo",
+    "t": "Conociendo Mysterium"
+   }
+  ]
  },
  {
   "id": "pakal",
@@ -790,7 +1102,17 @@
   "tmin": 20,
   "weight": 1.2,
   "year": 2020,
-  "img": "portadas/pakal.jpg"
+  "img": "portadas/pakal.jpg",
+  "videos": [
+   {
+    "yt": "IvQ-zQf3fpA",
+    "t": "Conociendo Pakal"
+   },
+   {
+    "yt": "NOHvnXExy34",
+    "t": "Pakal Juego de mesa - Vídeo tutorial"
+   }
+  ]
  },
  {
   "id": "party-co-extreme",
@@ -831,7 +1153,17 @@
   "tmin": 15,
   "weight": 1.6,
   "year": 2014,
-  "img": "portadas/patchwork.jpg"
+  "img": "portadas/patchwork.jpg",
+  "videos": [
+   {
+    "yt": "qoUYRGRId58",
+    "t": "Abriendo Patchwork"
+   },
+   {
+    "yt": "rGBh4H9pIng",
+    "t": "Patchwork: Cómo Jugar"
+   }
+  ]
  },
  {
   "id": "pelusas",
@@ -850,7 +1182,17 @@
   "tmin": 20,
   "weight": 1,
   "year": 2021,
-  "img": "portadas/pelusas.jpg"
+  "img": "portadas/pelusas.jpg",
+  "videos": [
+   {
+    "yt": "Q2KX7909aOo",
+    "t": "Conociendo Pelusas"
+   },
+   {
+    "yt": "-dkeGwyNfoE",
+    "t": "PELUSAS - Cómo se juega - TUTORIAL - Juego de Mesa - unna"
+   }
+  ]
  },
  {
   "id": "pelusas-revolution",
@@ -869,7 +1211,17 @@
   "tmin": 15,
   "weight": 1.1,
   "year": 2024,
-  "img": "portadas/pelusas-revolution.jpg"
+  "img": "portadas/pelusas-revolution.jpg",
+  "videos": [
+   {
+    "yt": "-4Ia_vUcEeY",
+    "t": "Conociendo Pelusas Revolution"
+   },
+   {
+    "yt": "Dq2aqWdM2XA",
+    "t": "PELUSAS REVOLUTION ¿Cómo se juega?*MERCURIO*¡Descubre el Juego de Pelusas más Brillante Jamás Hecho!"
+   }
+  ]
  },
  {
   "id": "polilla-tramposa",
@@ -889,7 +1241,13 @@
   "tmin": 30,
   "weight": 1.2,
   "year": 2011,
-  "img": "portadas/polilla-tramposa.jpg"
+  "img": "portadas/polilla-tramposa.jpg",
+  "videos": [
+   {
+    "yt": "xe3-rM_mYqM",
+    "t": "Cómo jugar a La Polilla Tramposa - Devir"
+   }
+  ]
  },
  {
   "id": "railroad-tiles",
@@ -910,7 +1268,17 @@
   "tmin": 30,
   "weight": 1.7,
   "year": 2025,
-  "img": "portadas/railroad-tiles.jpg"
+  "img": "portadas/railroad-tiles.jpg",
+  "videos": [
+   {
+    "yt": "XNUCr156Ljg",
+    "t": "Conociendo Railroad Tiles"
+   },
+   {
+    "yt": "VIyldmyQGx8",
+    "t": "Presentación - Railroad Tiles (Horrible Guild)"
+   }
+  ]
  },
  {
   "id": "rummikub-travel",
@@ -930,7 +1298,17 @@
   "tmin": 60,
   "weight": 1.7,
   "year": 1977,
-  "img": "portadas/rummikub-travel.jpg"
+  "img": "portadas/rummikub-travel.jpg",
+  "videos": [
+   {
+    "yt": "zOieUvxYgxs",
+    "t": "CÓMO JUGAR RUMMIKUB (RUMMY)"
+   },
+   {
+    "yt": "baK17I1-NRg",
+    "t": "Rummikub: Cómo Jugar/Tutorial"
+   }
+  ]
  },
  {
   "id": "saboteur",
@@ -950,7 +1328,17 @@
   "tmin": 30,
   "weight": 1.3,
   "year": 2004,
-  "img": "portadas/saboteur.jpg"
+  "img": "portadas/saboteur.jpg",
+  "videos": [
+   {
+    "yt": "n8sdapIZy4U",
+    "t": "COMO SE JUEGA A SABOTEUR - JUEGO DE MESA  ¡A POR EL ORO! @MercurioDistribuciones"
+   },
+   {
+    "yt": "xon456secYY",
+    "t": "Saboteur: Cómo Jugar + Opinión  | ⛏️   Roles Ocultos ⛏️"
+   }
+  ]
  },
  {
   "id": "scrawl",
@@ -970,7 +1358,17 @@
   "tmin": 30,
   "weight": 1,
   "year": 2016,
-  "img": "portadas/scrawl.jpg"
+  "img": "portadas/scrawl.jpg",
+  "videos": [
+   {
+    "yt": "3rmatp5vkZU",
+    "t": "Cómo jugar a Scrawl"
+   },
+   {
+    "yt": "4ow9iM4b50E",
+    "t": "¿Cómo se juega? - Scraw, - Juego de mesa"
+   }
+  ]
  },
  {
   "id": "sushi-go",
@@ -990,7 +1388,17 @@
   "tmin": 15,
   "weight": 1.2,
   "year": 2013,
-  "img": "portadas/sushi-go.jpg"
+  "img": "portadas/sushi-go.jpg",
+  "videos": [
+   {
+    "yt": "WkCfpQFbw78",
+    "t": "Abriendo Sushi Go!"
+   },
+   {
+    "yt": "aBE7ctwkTmU",
+    "t": "¿Cómo jugar al SUSHI GO? ¡Aprendelo en 5 minutos!"
+   }
+  ]
  },
  {
   "id": "thats-not-a-hat",
@@ -1010,7 +1418,13 @@
   "tmin": 15,
   "weight": 1.1,
   "year": 2023,
-  "img": "portadas/thats-not-a-hat.jpg"
+  "img": "portadas/thats-not-a-hat.jpg",
+  "videos": [
+   {
+    "yt": "jmrR-Sb1wzQ",
+    "t": "Conociendo That's Not A Hat"
+   }
+  ]
  },
  {
   "id": "the-island",
@@ -1031,7 +1445,17 @@
   "tmin": 45,
   "weight": 1.7,
   "year": 1982,
-  "img": "portadas/the-island.jpg"
+  "img": "portadas/the-island.jpg",
+  "videos": [
+   {
+    "yt": "g_crDl7ipZQ",
+    "t": "Conociendo The Island"
+   },
+   {
+    "yt": "KON84KQOskw",
+    "t": "⭕ SURVIVE THE ISLAND 🦈 Reseña y Cómo se juega / Tutorial 🦈 Juego de mesa - Asmodee"
+   }
+  ]
  },
  {
   "id": "the-mind",
@@ -1051,7 +1475,13 @@
   "tmin": 20,
   "weight": 1.1,
   "year": 2018,
-  "img": "portadas/the-mind.jpg"
+  "img": "portadas/the-mind.jpg",
+  "videos": [
+   {
+    "yt": "S4M7MrrnrlE",
+    "t": "Conociendo The Mind"
+   }
+  ]
  },
  {
   "id": "throw-throw-burrito",
@@ -1072,7 +1502,13 @@
   "tmin": 15,
   "weight": 1.1,
   "year": 2019,
-  "img": "portadas/throw-throw-burrito.jpg"
+  "img": "portadas/throw-throw-burrito.jpg",
+  "videos": [
+   {
+    "yt": "S0n360a3tUE",
+    "t": "Conociendo Throw Throw Burrito"
+   }
+  ]
  },
  {
   "id": "toma-6",
@@ -1093,7 +1529,17 @@
   "tmin": 45,
   "weight": 1.2,
   "year": 1994,
-  "img": "portadas/toma-6.jpg"
+  "img": "portadas/toma-6.jpg",
+  "videos": [
+   {
+    "yt": "CnHN4_jSNuE",
+    "t": "Cómo se juega a ¡Toma 6!"
+   },
+   {
+    "yt": "UV1aYbydlbA",
+    "t": "Toma 6: Cómo Jugar/Tutorial"
+   }
+  ]
  },
  {
   "id": "top-ten",
@@ -1114,7 +1560,13 @@
   "tmin": 30,
   "weight": 1.08,
   "year": 2020,
-  "img": "portadas/top-ten.jpg"
+  "img": "portadas/top-ten.jpg",
+  "videos": [
+   {
+    "yt": "e9J1PbrZ77M",
+    "t": "Conociendo Top Ten"
+   }
+  ]
  },
  {
   "id": "twilight-struggle",
@@ -1135,7 +1587,17 @@
   "tmin": 120,
   "weight": 3.6,
   "year": 2005,
-  "img": "portadas/twilight-struggle.jpg"
+  "img": "portadas/twilight-struggle.jpg",
+  "videos": [
+   {
+    "yt": "KyBlaLlQPWo",
+    "t": "✅ Cómo jugar a Twilight Struggle  - Devir"
+   },
+   {
+    "yt": "CPShk2e6BiE",
+    "t": "Twilight Struggle - Cómo se juega - Tutorial - Juego de Mesa"
+   }
+  ]
  },
  {
   "id": "ubongo",
@@ -1155,7 +1617,13 @@
   "tmin": 25,
   "weight": 1.5,
   "year": 2003,
-  "img": "portadas/ubongo.jpg"
+  "img": "portadas/ubongo.jpg",
+  "videos": [
+   {
+    "yt": "e7aGs6veEh4",
+    "t": "Conociendo Ubongo"
+   }
+  ]
  },
  {
   "id": "uno-flex",
@@ -1172,7 +1640,17 @@
   ],
   "weight": 1.7,
   "year": 2023,
-  "img": "portadas/uno-flex.jpg"
+  "img": "portadas/uno-flex.jpg",
+  "videos": [
+   {
+    "yt": "TpSmW8FViOw",
+    "t": "¿Cómo jugar UNO FLEX? 👨‍🏫 | UNO"
+   },
+   {
+    "yt": "hhuDzcOvDIQ",
+    "t": "Cómo Jugar UNO FLEX ✅️ ❌️"
+   }
+  ]
  },
  {
   "id": "virus",
@@ -1192,7 +1670,17 @@
   "tmin": 20,
   "weight": 1.1,
   "year": 2015,
-  "img": "portadas/virus.jpg"
+  "img": "portadas/virus.jpg",
+  "videos": [
+   {
+    "yt": "5ONOyFfBTJ0",
+    "t": "Virus! - Cómo se juega"
+   },
+   {
+    "yt": "knf9MqQoif0",
+    "t": "Cómo se juega - Virus! El juego de mesa más contagioso"
+   }
+  ]
  },
  {
   "id": "virus-roll-write",
@@ -1212,7 +1700,17 @@
   "tmin": 20,
   "weight": 1.9,
   "year": 2024,
-  "img": "portadas/virus-roll-write.jpg"
+  "img": "portadas/virus-roll-write.jpg",
+  "videos": [
+   {
+    "yt": "iY9fTfLJg2g",
+    "t": "Cómo se juega a… Virus! Roll & Write 🦠 🎲 ✏️"
+   },
+   {
+    "yt": "3_ciSsTGEf8",
+    "t": "🦠 VIRUS ROLL AND WRITE ✍ (Tranjis) Opinión y ¿Cómo se juega?"
+   }
+  ]
  },
  {
   "id": "wavelength",
@@ -1233,7 +1731,13 @@
   "tmin": 30,
   "weight": 1.1,
   "year": 2019,
-  "img": "portadas/wavelength.jpg"
+  "img": "portadas/wavelength.jpg",
+  "videos": [
+   {
+    "yt": "aZMN7A9Ka2o",
+    "t": "Conociendo Wavelength"
+   }
+  ]
  },
  {
   "id": "welcome-perfecto-hogar",
@@ -1253,7 +1757,17 @@
   "tmin": 25,
   "weight": 1.8,
   "year": 2018,
-  "img": "portadas/welcome-perfecto-hogar.jpg"
+  "img": "portadas/welcome-perfecto-hogar.jpg",
+  "videos": [
+   {
+    "yt": "3bjutMEOQ8I",
+    "t": "Conociendo Welcome Hacia el Perfecto Hogar"
+   },
+   {
+    "yt": "06phBOEAKv0",
+    "t": "Welcome Hacia El Perfecto Hogar - SD Games - Videoreseña"
+   }
+  ]
  },
  {
   "id": "aventureros-europa",
@@ -1274,7 +1788,17 @@
   "tmin": 30,
   "weight": 1.92,
   "year": 2005,
-  "img": "portadas/aventureros-europa.jpg"
+  "img": "portadas/aventureros-europa.jpg",
+  "videos": [
+   {
+    "yt": "tKpnsMCC1wQ",
+    "t": "¿Cómo se juega Aventureros al Tren Europa?"
+   },
+   {
+    "yt": "xasBS-wpm5c",
+    "t": "AVENTUREROS AL TREN EUROPA : Como se juega [ES] (Reglas - tutorial - instrucciones )"
+   }
+  ]
  },
  {
   "id": "no-gracias",
@@ -1294,7 +1818,17 @@
   "tmin": 20,
   "weight": 1.1,
   "year": 2004,
-  "img": "portadas/no-gracias.jpg"
+  "img": "portadas/no-gracias.jpg",
+  "videos": [
+   {
+    "yt": "DYUXVvJzCtM",
+    "t": "Conociendo ¡No, Gracias!"
+   },
+   {
+    "yt": "NoH-OJYPOEc",
+    "t": "💡Cómo Jugar No, Gracias | Guía Completa para Principiantes"
+   }
+  ]
  },
  {
   "id": "cascadia-landmarks",
@@ -1310,7 +1844,17 @@
   "tmin": 30,
   "weight": 2.2,
   "year": 2023,
-  "img": "portadas/cascadia-landmarks.jpg"
+  "img": "portadas/cascadia-landmarks.jpg",
+  "videos": [
+   {
+    "yt": "2uP3iN4dIQ8",
+    "t": "Expansión Cascadia Hitos - Juego de Mesa"
+   },
+   {
+    "yt": "LHarxBa9tmw",
+    "t": "CASCADIA LANDMARKS: componentes, que aporta la expansión y opinión."
+   }
+  ]
  },
  {
   "id": "catan-mercaderes-barbaros",
@@ -1326,7 +1870,13 @@
   "tmin": 60,
   "weight": 2.6,
   "year": 2007,
-  "img": "portadas/catan-mercaderes-barbaros.jpg"
+  "img": "portadas/catan-mercaderes-barbaros.jpg",
+  "videos": [
+   {
+    "yt": "squmTbn8JZg",
+    "t": "CATAN: Mercaderes y Bárbaros - Devir — Videoreseña"
+   }
+  ]
  },
  {
   "id": "catan-navegantes",
@@ -1342,7 +1892,13 @@
   "tmin": 90,
   "weight": 2.4,
   "year": 1997,
-  "img": "portadas/catan-navegantes.jpg"
+  "img": "portadas/catan-navegantes.jpg",
+  "videos": [
+   {
+    "yt": "7YV8IvJ0HQk",
+    "t": "COMO SE JUEGA A CATAN NAVEGANTES - LA MEJOR EXPANSION DE CATAN @DevirTV"
+   }
+  ]
  },
  {
   "id": "catan-piratas-exploradores",
@@ -1358,6 +1914,16 @@
   "tmin": 90,
   "weight": 2.8,
   "year": 2013,
-  "img": "portadas/catan-piratas-exploradores.jpg"
+  "img": "portadas/catan-piratas-exploradores.jpg",
+  "videos": [
+   {
+    "yt": "5oTsBeNoFO8",
+    "t": "Catan Piratas y Exploradores: Cómo Jugar y Consejos"
+   },
+   {
+    "yt": "CKD8iAT4mfM",
+    "t": "Juego de mesa Catan Piratas y Exploradores"
+   }
+  ]
  }
 ]

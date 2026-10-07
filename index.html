@@ -51,7 +51,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 
 /* Rejilla */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:22px 18px}
-.box{display:grid;grid-template-rows:auto 1fr;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;min-width:0}
+.box{position:relative;display:grid;grid-template-rows:auto 1fr;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;min-width:0}
 .cover{position:relative;aspect-ratio:1/1;max-width:100%;background:var(--line);overflow:hidden}
 .cover img{position:relative;width:100%;height:100%;object-fit:contain;background:var(--surface);display:block}
 .gen{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:14px;color:#fff}
@@ -79,6 +79,56 @@ button,input,select,textarea{font:inherit;color:inherit}
 .exps a:hover{text-decoration:underline}
 .empty{border:1px dashed var(--line);border-radius:10px;padding:32px 20px;text-align:center;color:var(--muted);display:grid;gap:10px;justify-items:center}
 .empty strong{color:var(--ink);font-family:var(--display);font-stretch:110%;font-size:18px}
+
+/* Tarjeta clicable: el botón del título cubre la tarjeta; los enlaces quedan por encima */
+.open{background:none;border:0;padding:0;margin:0;font:inherit;color:inherit;text-align:left;cursor:pointer}
+.open::after{content:"";position:absolute;inset:0}
+.open:focus-visible{outline:none}
+.box:has(.open:focus-visible){outline:3px solid var(--meeple);outline-offset:2px}
+.box:hover{border-color:var(--muted)}
+.foot a,.exps a{position:relative}
+.vbadge{position:absolute;left:8px;bottom:8px;z-index:1;background:rgba(0,0,0,.72);color:#fff;font-family:var(--mono);font-size:11.5px;padding:2px 8px;border-radius:999px;pointer-events:none}
+:focus-visible{outline:3px solid var(--meeple);outline-offset:2px}
+
+/* Ficha */
+body:has(.ficha[open]){overflow:hidden}
+.ficha{width:min(760px,calc(100vw - 32px));max-width:none;max-height:calc(100dvh - 48px);padding:0;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);overflow:auto;overscroll-behavior:contain}
+.ficha::backdrop{background:rgba(10,14,12,.62)}
+.fbody{position:relative;padding:20px;display:grid;gap:20px;min-width:0}
+.fclose{position:absolute;top:10px;right:10px;z-index:2;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;font-size:15px;line-height:1}
+.fhead{display:grid;grid-template-columns:160px minmax(0,1fr);gap:18px;align-items:start}
+.fhead .cover{border-radius:var(--r)}
+.fhinfo{display:grid;gap:8px;min-width:0;padding-right:40px}
+.fhinfo h2{margin:0;font-family:var(--display);font-stretch:110%;font-weight:900;font-size:clamp(22px,4vw,30px);line-height:1.05;text-wrap:balance}
+.howto{display:grid;gap:10px;min-width:0}
+.howhead{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.howhead h3{margin:0;font-family:var(--display);font-stretch:110%;font-weight:800;font-size:17px}
+.nav{display:flex;gap:6px}
+.nav button{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;font-size:18px;line-height:1}
+.nav button:disabled{opacity:.35;cursor:default}
+.track{list-style:none;margin:0;padding:0 0 6px;display:grid;grid-auto-flow:column;grid-auto-columns:calc(50% - 6px);gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;overscroll-behavior-x:contain}
+.vid{scroll-snap-align:start;display:grid;gap:6px;align-content:start;min-width:0}
+.vframe{position:relative;aspect-ratio:16/9;background:#000;border-radius:var(--r);overflow:hidden}
+.vframe img,.vframe iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
+.play{position:absolute;inset:0;margin:auto;width:58px;height:40px;border:0;border-radius:10px;background:rgba(0,0,0,.72);color:#fff;font-size:17px;cursor:pointer}
+.vframe:hover .play,.play:focus-visible{background:var(--meeple);color:#1d2421}
+.vt{margin:0;font-size:13px;line-height:1.35}
+.vexp{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.novid{margin:0;color:var(--muted)}
+.ffoot{display:grid;gap:10px;border-top:1px solid var(--line);padding-top:14px;font-size:14px;text-align:left;color:var(--ink)}
+.ffoot .exps{border:0;padding:0}
+.flinks{display:flex;flex-wrap:wrap;gap:8px 20px}
+.ficha a{color:var(--felt);font-weight:700;text-decoration:none}
+.ficha a:hover{text-decoration:underline}
+.ficha .exps a{color:var(--ink);font-weight:400}
+@media (max-width:520px){
+  .ficha{width:100vw;height:100dvh;max-height:100dvh;margin:0;border:0;border-radius:0}
+  .fbody{padding:calc(16px + env(safe-area-inset-top)) calc(16px + env(safe-area-inset-right)) calc(20px + env(safe-area-inset-bottom)) calc(16px + env(safe-area-inset-left))}
+  .fclose{top:calc(8px + env(safe-area-inset-top));right:calc(8px + env(safe-area-inset-right))}
+  .fhead{grid-template-columns:96px minmax(0,1fr);gap:12px}
+  .track{grid-auto-columns:88%}
+  .ficha .tags{display:flex}
+}
 
 /* Panel de edición */
 .hint{font-size:12.5px;color:var(--muted);margin:0}
@@ -126,6 +176,8 @@ footer a{color:inherit}
   <div id="emptyState" class="empty"><strong>Cargando la estantería…</strong></div>
   <footer>Datos y portadas de <a href="https://boardgamegeek.com" target="_blank" rel="noopener">BoardGameGeek</a>.</footer>
 </div>
+
+<dialog id="ficha" class="ficha" aria-labelledby="fichaTitulo"><div class="fbody" id="fichaBody"></div></dialog>
 
 <script>
 const state = { games: [], players: null, time: null, q: "", sort: "name" };
@@ -194,10 +246,11 @@ function render(){
     const best = g.best ? (state.players===g.best ? `<span class="best">★ Ideal a ${g.best}</span>` : `<span class="best" style="color:var(--muted);font-weight:400">Mejor a ${g.best}</span>`) : "";
     const tags=(g.tags||[]).slice(0,3).map(t=>`<span class="tag">${esc(t)}</span>`).join("");
     const ex=exps[g.id]||[];
+    const nv=(g.videos||[]).length+ex.reduce((s,x)=>s+(x.videos||[]).length,0);
     return `<article class="box">
-      <div class="cover">${coverHTML(g)}</div>
+      <div class="cover">${coverHTML(g)}${nv?`<span class="vbadge">▶ ${nv} vídeo${nv===1?"":"s"}</span>`:""}</div>
       <div class="info">
-        <h3>${esc(g.name)}</h3>
+        <h3><button class="open" type="button" data-id="${esc(g.id)}" aria-label="Ver ficha de ${esc(g.name)}">${esc(g.name)}</button></h3>
         <div class="meta">
           ${playersTxt(g)?`<span>${playersTxt(g)}</span>`:""}
           ${timeTxt(g)?`<span>${timeTxt(g)}</span>`:""}
@@ -219,12 +272,111 @@ function render(){
   else empty.hidden=true;
 }
 
+/* Ficha del juego */
+const ficha=$("ficha"), baseTitle=document.title;
+const byId = id => state.games.find(g=>g.id===id);
+const baseOf = g => (g.parent && byId(g.parent)) || g;
+const expsOf = g => state.games.filter(x=>x.parent===g.id);
+const bggUrl = id => `https://boardgamegeek.com/boardgame/${encodeURIComponent(id)}`;
+const ytSearch = n => `https://www.youtube.com/results?search_query=${encodeURIComponent(n+" cómo se juega")}`;
+const validYt = v => v && /^[\w-]{11}$/.test(v.yt);
+function videosOf(g){
+  return [...(g.videos||[]).filter(validYt).map(v=>({...v})),
+    ...expsOf(g).flatMap(x=>(x.videos||[]).filter(validYt).map(v=>({...v,exp:short(x.name)})))];
+}
+function thumbHTML(yt,t){
+  return `<img src="https://i.ytimg.com/vi/${yt}/hqdefault.jpg" alt="" loading="lazy" decoding="async"><button class="play" type="button" aria-label="Reproducir: ${esc(t)}">▶</button>`;
+}
+function fichaHTML(g){
+  const vids=videosOf(g), ex=expsOf(g);
+  const meta=[playersTxt(g),timeTxt(g),g.age?`${g.age}+ años`:"",g.year?String(g.year):""].filter(Boolean).map(t=>`<span>${t}</span>`).join("");
+  const nota=g.rating?`<span>Nota BGG ${g.rating.toFixed(1)}</span>`:"";
+  const tags=(g.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join("");
+  const nav=vids.length>1?`<div class="nav"><button type="button" data-dir="-1" aria-label="Vídeo anterior">‹</button><button type="button" data-dir="1" aria-label="Vídeo siguiente">›</button></div>`:"";
+  const howto=vids.length
+    ?`<ul class="track" aria-label="Vídeos de cómo jugar">${vids.map(v=>`<li class="vid">
+        <div class="vframe" data-yt="${v.yt}" data-t="${esc(v.t)}">${thumbHTML(v.yt,v.t)}</div>
+        <p class="vt">${v.exp?`<span class="vexp">Expansión: ${esc(v.exp)}</span>`:""}${esc(v.t)}</p></li>`).join("")}</ul>`
+    :`<p class="novid">Todavía no hay vídeos de este juego. <a href="${ytSearch(g.name)}" target="_blank" rel="noopener">Buscar «${esc(g.name)} cómo se juega» en YouTube ↗</a></p>`;
+  return `<button class="fclose" type="button" aria-label="Cerrar ficha">✕</button>
+    <header class="fhead">
+      <div class="cover">${coverHTML(g)}</div>
+      <div class="fhinfo">
+        <h2 id="fichaTitulo">${esc(g.name)}</h2>
+        <div class="meta">${meta}${weightHTML(g.weight)}${nota}</div>
+        ${g.best?`<span class="best">Mejor a ${g.best} jugadores</span>`:""}
+        ${tags?`<div class="tags">${tags}</div>`:""}
+      </div>
+    </header>
+    <section class="howto" aria-labelledby="howtoTitulo">
+      <div class="howhead"><h3 id="howtoTitulo">Cómo jugar</h3>${nav}</div>
+      ${howto}
+    </section>
+    <footer class="ffoot">
+      ${ex.length?`<div class="exps"><span>Expansiones</span>${ex.map(x=>x.bgg
+        ?`<a href="${bggUrl(x.bgg)}" target="_blank" rel="noopener">+ ${esc(short(x.name))} ↗</a>`
+        :`<div>+ ${esc(short(x.name))}</div>`).join("")}</div>`:""}
+      <div class="flinks">
+        ${g.bgg?`<a href="${bggUrl(g.bgg)}" target="_blank" rel="noopener">Ficha en BoardGameGeek ↗</a>`:""}
+        <a href="${ytSearch(g.name)}" target="_blank" rel="noopener">Más vídeos en YouTube ↗</a>
+      </div>
+    </footer>`;
+}
+function updNav(){
+  const t=ficha.querySelector(".track"), [prev,next]=ficha.querySelectorAll(".nav button");
+  if(!t||!prev) return;
+  prev.disabled=t.scrollLeft<=2;
+  next.disabled=t.scrollLeft+t.clientWidth>=t.scrollWidth-2;
+}
+function stopVideos(except){
+  ficha.querySelectorAll(".vframe.playing").forEach(f=>{ if(f===except) return;
+    f.classList.remove("playing"); f.innerHTML=thumbHTML(f.dataset.yt,f.dataset.t); });
+}
+function play(f){
+  stopVideos(f); f.classList.add("playing");
+  f.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${f.dataset.yt}?autoplay=1&rel=0" title="${esc(f.dataset.t)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
+}
+function openGame(id,push=true){
+  const g0=byId(id); if(!g0) return false;
+  const g=baseOf(g0), hash="#"+encodeURIComponent(g.id);
+  if(push){ if(location.hash!==hash) history.pushState({ficha:g.id},"",hash); }
+  else if(location.hash!==hash) history.replaceState(history.state,"",hash);
+  $("fichaBody").innerHTML=fichaHTML(g);
+  const t=ficha.querySelector(".track"); if(t) t.addEventListener("scroll",updNav,{passive:true});
+  document.title=`${g.name} · ${baseTitle}`;
+  if(!ficha.open) ficha.showModal();
+  ficha.scrollTop=0; updNav();
+  return true;
+}
+const closeFicha = () => { if(ficha.open) ficha.close(); };
+ficha.addEventListener("close",()=>{
+  stopVideos(); document.title=baseTitle;
+  if(!location.hash) return;  // ya cerrada por "atrás"
+  if(history.state&&history.state.ficha) history.back();
+  else history.replaceState(null,"",location.pathname+location.search);
+});
+ficha.addEventListener("click",e=>{
+  if(e.target===ficha) return closeFicha();  // clic en el fondo
+  if(e.target.closest(".fclose")) return closeFicha();
+  const p=e.target.closest(".play"); if(p) return play(p.closest(".vframe"));
+  const d=e.target.closest(".nav button");
+  if(d){ const t=ficha.querySelector(".track"), v=t.querySelector(".vid");
+    t.scrollBy({left:+d.dataset.dir*(v.offsetWidth+12)}); }
+});
+addEventListener("popstate",()=>{
+  const id=decodeURIComponent(location.hash.slice(1));
+  if(!(id&&openGame(id,false))) closeFicha();
+});
+addEventListener("resize",updNav);
+$("grid").addEventListener("click",e=>{ const b=e.target.closest(".open"); if(b) openGame(b.dataset.id); });
+
 $("q").addEventListener("input",e=>{ state.q=e.target.value.trim(); render(); });
 $("sort").addEventListener("change",e=>{ state.sort=e.target.value; render(); });
 chips();
 fetch("games.json",{cache:"no-cache"})
   .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
-  .then(data=>{ state.games=data; render(); })
+  .then(data=>{ state.games=data; render();
+    const id=decodeURIComponent(location.hash.slice(1)); if(id) openGame(id,false); })
   .catch(()=>{ $("emptyState").innerHTML="<strong>No se pudo cargar la colección</strong><span>Recarga la página en unos segundos.</span>"; });
 </script>
 </body>
