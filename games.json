@@ -207,7 +207,8 @@
  {
   "id": "cometas",
   "hue": 298,
-  "name": "Cometas"
+  "name": "Cometas",
+  "img": "portadas/cometas.jpg"
  },
  {
   "id": "concept",
@@ -558,9 +559,10 @@
   "img": "portadas/los-gatos-de-schrodinger.jpg"
  },
  {
-  "id": "macedonia-de-frutas",
+  "id": "macedonia-de-letras",
   "hue": 321,
-  "name": "Macedonia de frutas"
+  "name": "Macedonia de letras",
+  "img": "portadas/macedonia-de-letras.jpg"
  },
  {
   "id": "magic-maze",
@@ -636,7 +638,8 @@
    "Asociación de ideas"
   ],
   "tmax": 40,
-  "tmin": 40
+  "tmin": 40,
+  "img": "portadas/mismamente.jpg"
  },
  {
   "id": "monopoly",
@@ -682,7 +685,8 @@
  {
   "id": "morada-maldita",
   "hue": 115,
-  "name": "Morada Maldita"
+  "name": "Morada Maldita",
+  "img": "portadas/morada-maldita.jpg"
  },
  {
   "id": "munchkin",
