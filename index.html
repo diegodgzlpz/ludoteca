@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ludoteca de Diego</title>
+<meta name="description" content="Colección de juegos de mesa de Diego, con filtro por número de jugadores y tiempo.">
+<meta name="theme-color" content="#1f5c45">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='6' y='6' width='52' height='52' rx='12' fill='%231f5c45'/%3E%3Cg fill='%23e8b23a'%3E%3Ccircle cx='21' cy='21' r='5'/%3E%3Ccircle cx='43' cy='21' r='5'/%3E%3Ccircle cx='32' cy='32' r='5'/%3E%3Ccircle cx='21' cy='43' r='5'/%3E%3Ccircle cx='43' cy='43' r='5'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: estantería — cabecera compacta con contador, barra de filtros "¿a qué jugamos?", rejilla de cajas */
+:root{
+  --paper:#f3f4ef; --surface:#ffffff; --ink:#1d2421; --muted:#5d6a63; --line:#d9ddd5;
+  --felt:#1f5c45; --felt-ink:#ffffff; --meeple:#e8b23a; --danger:#b3412f;
+  --display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --r:6px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#121714; --surface:#1a211d; --ink:#e7ece8; --muted:#9aa89f; --line:#2c3630;
+  --felt:#5fbf93; --felt-ink:#0d1a14; --meeple:#f0c457; --danger:#e07a66; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#121714; --surface:#1a211d; --ink:#e7ece8; --muted:#9aa89f; --line:#2c3630;
+  --felt:#5fbf93; --felt-ink:#0d1a14; --meeple:#f0c457; --danger:#e07a66; color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:28px 64px;display:grid;gap:24px}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px}
+h1{font-family:var(--display);font-stretch:125%;font-weight:900;font-size:clamp(28px,5vw,44px);line-height:1;margin:0;letter-spacing:-.01em;text-wrap:balance}
+.sub{margin:6px 0 0;color:var(--muted);font-size:14px}
+.count{font-family:var(--mono);font-variant-numeric:tabular-nums}
+button,input,select,textarea{font:inherit;color:inherit}
+
+/* Filtros */
+.table{background:var(--felt);color:var(--felt-ink);border-radius:10px;padding:16px 18px;display:grid;gap:12px}
+.table h2{margin:0;font-family:var(--display);font-stretch:110%;font-weight:800;font-size:17px;letter-spacing:.01em}
+.frow{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:center}
+.fgroup{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.flabel{font-size:12px;text-transform:uppercase;letter-spacing:.08em;opacity:.85;margin-right:4px}
+.chip{border:1px solid color-mix(in srgb,var(--felt-ink) 35%,transparent);background:transparent;color:var(--felt-ink);border-radius:999px;padding:3px 11px;cursor:pointer;font-family:var(--mono);font-size:13px;min-width:34px}
+.chip[aria-pressed="true"]{background:var(--meeple);border-color:var(--meeple);color:#1d2421}
+.search{flex:1 1 200px;min-width:0;background:color-mix(in srgb,var(--felt-ink) 12%,transparent);border:1px solid color-mix(in srgb,var(--felt-ink) 30%,transparent);border-radius:var(--r);padding:7px 10px;color:var(--felt-ink)}
+.search::placeholder{color:color-mix(in srgb,var(--felt-ink) 70%,transparent)}
+.table select{background:color-mix(in srgb,var(--felt-ink) 12%,transparent);border:1px solid color-mix(in srgb,var(--felt-ink) 30%,transparent);border-radius:var(--r);padding:6px 8px;color:var(--felt-ink)}
+.table select option{color:#1d2421;background:#fff}
+
+/* Rejilla */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:22px 18px}
+.box{display:grid;grid-template-rows:auto 1fr;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;min-width:0}
+.cover{position:relative;aspect-ratio:1/1;max-width:100%;background:var(--line);overflow:hidden}
+.cover img{width:100%;height:100%;object-fit:cover;display:block}
+.gen{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:14px;color:#fff}
+.gen b{font-family:var(--display);font-stretch:118%;font-weight:900;font-size:24px;line-height:1.02;text-wrap:balance;text-shadow:0 1px 0 rgba(0,0,0,.15)}
+.gen small{font-family:var(--mono);font-size:11px;opacity:.85}
+.gen::after{content:"";position:absolute;inset:auto -20% -30% auto;width:70%;aspect-ratio:1;border-radius:50%;border:14px solid rgba(255,255,255,.14)}
+.info{display:grid;gap:8px;align-content:start;padding:12px 14px 14px;min-width:0}
+.info h3{margin:0;font-family:var(--display);font-stretch:105%;font-weight:800;font-size:17px;line-height:1.2;text-wrap:balance}
+.meta{display:flex;flex-wrap:wrap;gap:4px 12px;font-family:var(--mono);font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.meta span{white-space:nowrap}
+.weight{display:inline-flex;gap:3px;vertical-align:middle;margin-left:4px}
+.weight i{width:7px;height:7px;border-radius:50%;border:1px solid var(--muted)}
+.weight i.on{background:var(--meeple);border-color:var(--meeple)}
+.tags{display:flex;flex-wrap:wrap;gap:4px}
+.tag{font-size:11.5px;border:1px solid var(--line);border-radius:999px;padding:1px 8px;color:var(--muted)}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px;margin-top:2px}
+.foot a{color:var(--felt);font-weight:700;text-decoration:none}
+.foot a:hover{text-decoration:underline}
+.box.fits{outline:2px solid var(--meeple);outline-offset:-1px}
+.best{font-size:12px;color:var(--felt);font-weight:700}
+
+.exps{border-top:1px solid var(--line);padding-top:8px;display:grid;gap:3px;font-size:13px}
+.exps span{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.exps a,.exps button{color:var(--ink);text-decoration:none;background:none;border:0;padding:0;text-align:left;cursor:pointer;font:inherit}
+.exps a:hover{text-decoration:underline}
+.empty{border:1px dashed var(--line);border-radius:10px;padding:32px 20px;text-align:center;color:var(--muted);display:grid;gap:10px;justify-items:center}
+.empty strong{color:var(--ink);font-family:var(--display);font-stretch:110%;font-size:18px}
+
+/* Panel de edición */
+.hint{font-size:12.5px;color:var(--muted);margin:0}
+@media (max-width:520px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.gen{padding:10px}.gen b{font-size:16px}.info{padding:10px 10px 12px;gap:6px}.info h3{font-size:15px}.meta{font-size:11.5px;gap:2px 8px}.tags,.hint{display:none}.foot{font-size:12px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+img{max-width:100%}
+[hidden]{display:none!important}
+footer{color:var(--muted);font-size:12.5px;text-align:center}
+footer a{color:inherit}
+.exps a,.exps div{color:var(--ink);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Ludoteca de Diego</h1>
+      <p class="sub"><span class="count" id="count">—</span> · datos de BoardGameGeek</p>
+    </div>
+  </header>
+
+  <section class="table" aria-label="Filtros">
+    <h2>¿A qué jugamos hoy?</h2>
+    <div class="frow">
+      <div class="fgroup" id="playersGroup" role="group" aria-label="Número de jugadores"><span class="flabel">Somos</span></div>
+      <div class="fgroup" id="timeGroup" role="group" aria-label="Tiempo disponible"><span class="flabel">Tenemos</span></div>
+    </div>
+    <div class="frow">
+      <input class="search" id="q" type="search" placeholder="Buscar por nombre o mecánica" aria-label="Buscar">
+      <div class="fgroup">
+        <label class="flabel" for="sort">Ordenar</label>
+        <select id="sort">
+          <option value="name">Nombre</option>
+          <option value="weight">Dificultad</option>
+          <option value="time">Duración</option>
+          <option value="year">Año</option>
+          <option value="rating">Nota BGG</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <main id="grid" class="grid" aria-live="polite"></main>
+  <div id="emptyState" class="empty"><strong>Cargando la estantería…</strong></div>
+  <footer>Datos y portadas de <a href="https://boardgamegeek.com" target="_blank" rel="noopener">BoardGameGeek</a>.</footer>
+</div>
+
+<script>
+const state = { games: [], players: null, time: null, q: "", sort: "name" };
+const $ = id => document.getElementById(id);
+const PLAYER_OPTS = [1,2,3,4,5,6,7,8];
+const TIME_OPTS = [[30,"≤ 30 min"],[60,"≤ 1 h"],[120,"≤ 2 h"],[null,"Lo que haga falta"]];
+
+function chips(){
+  PLAYER_OPTS.forEach(n=>{
+    const b=document.createElement("button"); b.className="chip"; b.type="button";
+    b.textContent = n===8 ? "8+" : n; b.dataset.n=n;
+    b.onclick=()=>{ state.players = state.players===n?null:n; render(); };
+    $("playersGroup").appendChild(b);
+  });
+  TIME_OPTS.forEach(([v,l])=>{
+    const b=document.createElement("button"); b.className="chip"; b.type="button"; b.textContent=l; b.dataset.v=String(v);
+    b.onclick=()=>{ state.time=v; render(); };
+    $("timeGroup").appendChild(b);
+  });
+}
+function esc(s){ return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+function hueOf(s){ let h=0; for(const c of s) h=(h*31+c.charCodeAt(0))%360; return h; }
+function coverHTML(g){
+  const hue = g.hue ?? hueOf(g.name||"?");
+  const bg = `linear-gradient(150deg,hsl(${hue} 55% 42%),hsl(${(hue+28)%360} 60% 28%))`;
+  const gen = `<div class="gen" style="background:${bg}"><small>${g.year||""}</small><b>${esc(g.name)}</b></div>`;
+  const img = g.img ? `<img src="${esc(g.img)}" alt="Portada de ${esc(g.name)}" loading="lazy" decoding="async" onerror="this.remove()">` : "";
+  return gen + img;
+}
+function weightHTML(w){
+  if(!w) return "";
+  const n=Math.round(w); let s='<span class="weight" aria-hidden="true">';
+  for(let i=1;i<=5;i++) s+=`<i class="${i<=n?"on":""}"></i>`;
+  return `<span title="Dificultad según BGG: ${w.toFixed(2)} sobre 5">Dificultad ${w.toFixed(1)}${s}</span></span>`;
+}
+function playersTxt(g){ if(!g.pmin) return ""; return g.pmin===g.pmax?`${g.pmin} jug.`:`${g.pmin}–${g.pmax} jug.`; }
+function timeTxt(g){ if(!g.tmin&&!g.tmax) return ""; const a=g.tmin||g.tmax,b=g.tmax||g.tmin; return a===b?`${a} min`:`${a}–${b} min`; }
+function fitsPlayers(g){ if(state.players==null) return true; if(!g.pmin) return false;
+  const n=state.players; return n===8 ? g.pmax>=8 : (g.pmin<=n && g.pmax>=n); }
+function fitsTime(g){ if(state.time==null) return true; const t=g.tmax||g.tmin; return t ? t<=state.time : false; }
+function fitsQuery(g){ if(!state.q) return true;
+  return [g.name,(g.tags||[]).join(" ")].join(" ").toLowerCase().includes(state.q.toLowerCase()); }
+function sorted(list){
+  const k=state.sort, num=(x,d)=>x==null?d:x;
+  return [...list].sort((a,b)=>{
+    if(k==="weight") return num(a.weight,9)-num(b.weight,9);
+    if(k==="time") return num(a.tmax||a.tmin,9999)-num(b.tmax||b.tmin,9999);
+    if(k==="year") return num(b.year,0)-num(a.year,0);
+    if(k==="rating") return num(b.rating,0)-num(a.rating,0);
+    return a.name.localeCompare(b.name,"es",{ignorePunctuation:true});
+  });
+}
+const short = n => n.replace(/^[^:]+:\s*/,"");
+
+function render(){
+  document.querySelectorAll("#playersGroup .chip").forEach(b=>b.setAttribute("aria-pressed",String(+b.dataset.n===state.players)));
+  document.querySelectorAll("#timeGroup .chip").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.v===String(state.time))));
+  const ids=new Set(state.games.map(g=>g.id));
+  const bases=state.games.filter(g=>!g.parent||!ids.has(g.parent));
+  const exps={}; state.games.forEach(g=>{ if(g.parent&&ids.has(g.parent)) (exps[g.parent] ||= []).push(g); });
+  const nExp=state.games.length-bases.length;
+  const list=sorted(bases.filter(g=>fitsPlayers(g)&&fitsTime(g)&&(fitsQuery(g)||(exps[g.id]||[]).some(fitsQuery))));
+  const total=bases.length, expTxt=nExp?` + ${nExp} expansi${nExp===1?"ón":"ones"}`:"";
+  $("count").textContent = list.length===total ? `${total} juegos${expTxt}` : `${list.length} de ${total} juegos`;
+  $("grid").innerHTML = list.map(g=>{
+    const best = g.best ? (state.players===g.best ? `<span class="best">★ Ideal a ${g.best}</span>` : `<span class="best" style="color:var(--muted);font-weight:400">Mejor a ${g.best}</span>`) : "";
+    const tags=(g.tags||[]).slice(0,3).map(t=>`<span class="tag">${esc(t)}</span>`).join("");
+    const ex=exps[g.id]||[];
+    return `<article class="box">
+      <div class="cover">${coverHTML(g)}</div>
+      <div class="info">
+        <h3>${esc(g.name)}</h3>
+        <div class="meta">
+          ${playersTxt(g)?`<span>${playersTxt(g)}</span>`:""}
+          ${timeTxt(g)?`<span>${timeTxt(g)}</span>`:""}
+          ${g.age?`<span>${g.age}+</span>`:""}
+          ${weightHTML(g.weight)}
+        </div>
+        ${best}
+        ${tags?`<div class="tags">${tags}</div>`:""}
+        ${ex.length?`<div class="exps"><span>Expansiones</span>${ex.map(x=>x.bgg
+          ?`<a href="https://boardgamegeek.com/boardgame/${encodeURIComponent(x.bgg)}" target="_blank" rel="noopener">+ ${esc(short(x.name))}</a>`
+          :`<div>+ ${esc(short(x.name))}</div>`).join("")}</div>`:""}
+        <div class="foot">
+          ${g.bgg?`<a href="https://boardgamegeek.com/boardgame/${encodeURIComponent(g.bgg)}" target="_blank" rel="noopener">BGG${g.rating?` · ${g.rating.toFixed(1)}`:""} ↗</a>`:`<span class="hint">Sin ficha en BGG</span>`}
+        </div>
+      </div></article>`;
+  }).join("");
+  const empty=$("emptyState");
+  if(list.length===0){ empty.hidden=false; empty.innerHTML="<strong>Ningún juego encaja</strong><span>Prueba con otro número de jugadores o más tiempo.</span>"; }
+  else empty.hidden=true;
+}
+
+$("q").addEventListener("input",e=>{ state.q=e.target.value.trim(); render(); });
+$("sort").addEventListener("change",e=>{ state.sort=e.target.value; render(); });
+chips();
+fetch("games.json",{cache:"no-cache"})
+  .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(data=>{ state.games=data; render(); })
+  .catch(()=>{ $("emptyState").innerHTML="<strong>No se pudo cargar la colección</strong><span>Recarga la página en unos segundos.</span>"; });
+</script>
+</body>
+</html>
