@@ -31,6 +31,36 @@
   ]
  },
  {
+  "id": "agent-avenue",
+  "age": 8,
+  "best": 2,
+  "bgg": "422732",
+  "name": "Agent Avenue",
+  "pmax": 4,
+  "pmin": 2,
+  "rating": 7.5,
+  "tags": [
+   "Gestión de mano",
+   "Yo parto, tú eliges",
+   "Carreras"
+  ],
+  "tmax": 20,
+  "tmin": 10,
+  "weight": 1.25,
+  "year": 2024,
+  "img": "portadas/agent-avenue.png",
+  "videos": [
+   {
+    "yt": "RtBxdobl0pg",
+    "t": "Conociendo Agent Avenue"
+   },
+   {
+    "yt": "LFOXmGoo0gM",
+    "t": "Cómo jugar a Agent Avenue - Devir"
+   }
+  ]
+ },
+ {
   "id": "alhambra",
   "age": 8,
   "best": 3,
@@ -110,6 +140,32 @@
    {
     "yt": "f5FbkiVlxcs",
     "t": "Conociendo Burger ¡Ya!"
+   }
+  ]
+ },
+ {
+  "id": "cafe",
+  "age": 8,
+  "best": 2,
+  "bgg": "284936",
+  "name": "Café",
+  "pmax": 4,
+  "pmin": 1,
+  "rating": 7.1,
+  "tags": [
+   "Puntos de acción",
+   "Contratos",
+   "Patrones"
+  ],
+  "tmax": 45,
+  "tmin": 20,
+  "weight": 2.05,
+  "year": 2020,
+  "img": "portadas/cafe.jpg",
+  "videos": [
+   {
+    "yt": "OzGibvnIi4g",
+    "t": "Conociendo Café"
    }
   ]
  },
@@ -220,6 +276,32 @@
    {
     "yt": "EsmWvHjqr0o",
     "t": "Conociendo Cascadia"
+   }
+  ]
+ },
+ {
+  "id": "cascadia-rios-rodantes",
+  "age": 10,
+  "best": 1,
+  "bgg": "407318",
+  "name": "Cascadia Ríos Rodantes",
+  "pmax": 4,
+  "pmin": 1,
+  "rating": 7.2,
+  "tags": [
+   "Contratos",
+   "Dados",
+   "Bonus final"
+  ],
+  "tmax": 30,
+  "tmin": 15,
+  "weight": 2.0,
+  "year": 2024,
+  "img": "portadas/cascadia-rios-rodantes.jpg",
+  "videos": [
+   {
+    "yt": "oQRedSsLB_g",
+    "t": "Cascadia Rolling Rivers y Rolling Hills. Todo sobre los R&W"
    }
   ]
  },
@@ -461,6 +543,65 @@
   ]
  },
  {
+  "id": "exploding-kittens",
+  "age": 7,
+  "best": 4,
+  "bgg": "172225",
+  "name": "Exploding Kittens",
+  "pmax": 5,
+  "pmin": 2,
+  "rating": 6.1,
+  "tags": [
+   "Gestión de mano",
+   "Eliminación",
+   "Arriesgar"
+  ],
+  "tmax": 15,
+  "tmin": 15,
+  "weight": 1.08,
+  "year": 2015,
+  "img": "portadas/exploding-kittens.png",
+  "videos": [
+   {
+    "yt": "FYwUaSrW0ls",
+    "t": "Conociendo Exploding Kittens"
+   },
+   {
+    "yt": "WWqvY_ByzY8",
+    "t": "Exploding Kittens: Cómo jugar y así lo jugamos"
+   }
+  ]
+ },
+ {
+  "id": "fantasma-blitz",
+  "age": 8,
+  "best": 4,
+  "bgg": "83195",
+  "name": "Fantasma Blitz",
+  "pmax": 8,
+  "pmin": 2,
+  "rating": 6.7,
+  "tags": [
+   "Reconocimiento de patrones",
+   "Tiempo real"
+  ],
+  "tmax": 20,
+  "tmin": 20,
+  "weight": 1.13,
+  "year": 2010,
+  "img": "portadas/fantasma-blitz.jpg",
+  "videos": [
+   {
+    "yt": "cBruixpK1Fg",
+    "t": "Conociendo Fantasma Blitz"
+   },
+   {
+    "yt": "Mi0L6u_zpEU",
+    "t": "Aprende a Jugar FANTASMA BLITZ!"
+   }
+  ]
+ },
+ {
   "id": "feelinks-revelations",
   "age": 16,
   "best": 6,
@@ -497,7 +638,7 @@
   "best": 4,
   "bgg": "318243",
   "hue": 201,
-  "name": "Hitster 100% Español",
+  "name": "Hitster: El juego de los grandes éxitos",
   "pmax": 10,
   "pmin": 2,
   "rating": 7.5,
@@ -508,9 +649,37 @@
   ],
   "tmax": 30,
   "tmin": 30,
-  "weight": 1,
+  "weight": 1.02,
   "year": 2022,
-  "img": "portadas/hitster.jpg",
+  "img": "portadas/hitster.png",
+  "videos": [
+   {
+    "yt": "1bSSjCEvXZA",
+    "t": "Hitster: Cómo Jugar/Tutorial"
+   },
+   {
+    "yt": "0YFeppTLvuI",
+    "t": "HITSTER El juego de los grandes éxitos musicales ¿Lo mejor de Interocio 2024?"
+   }
+  ]
+ },
+ {
+  "id": "hitster-100-espanol",
+  "age": 14,
+  "bgg": "440919",
+  "name": "Hitster 100% Español",
+  "pmax": 8,
+  "pmin": 2,
+  "rating": 7.4,
+  "tags": [
+   "Party",
+   "Música",
+   "Ordenar"
+  ],
+  "tmax": 30,
+  "tmin": 30,
+  "year": 2025,
+  "img": "portadas/hitster-100-espanol.jpg",
   "videos": [
    {
     "yt": "hFnKP2ItzDA",
@@ -546,6 +715,32 @@
    {
     "yt": "mwU4JN4pLGo",
     "t": "HITSTER BINGO. Lo nuevo de HITSER. ¿Tan bueno como los anteriores, o mejor? APRENDE A JUGAR"
+   }
+  ]
+ },
+ {
+  "id": "hitster-temazos",
+  "age": 16,
+  "best": 4,
+  "bgg": "397736",
+  "name": "Hitster Temazos",
+  "pmax": 10,
+  "pmin": 2,
+  "rating": 7.4,
+  "tags": [
+   "Party",
+   "Música",
+   "Ordenar"
+  ],
+  "tmax": 30,
+  "tmin": 30,
+  "weight": 1.05,
+  "year": 2023,
+  "img": "portadas/hitster-temazos.jpg",
+  "videos": [
+   {
+    "yt": "WTi_USc5Qjo",
+    "t": "HITSTER vs HITSTER TEMAZOS vs HITSTER SUMMER PARTY ¿Cuál elegir?"
    }
   ]
  },
@@ -1031,6 +1226,36 @@
   ]
  },
  {
+  "id": "my-city-roll-write",
+  "age": 10,
+  "best": 2,
+  "bgg": "351476",
+  "name": "My City Roll & Write",
+  "pmax": 6,
+  "pmin": 1,
+  "rating": 7.0,
+  "tags": [
+   "Dados",
+   "Campaña",
+   "Acción simultánea"
+  ],
+  "tmax": 30,
+  "tmin": 30,
+  "weight": 1.49,
+  "year": 2022,
+  "img": "portadas/my-city-roll-write.jpg",
+  "videos": [
+   {
+    "yt": "chGSH5ivyJU",
+    "t": "Conociendo My City Roll & Write"
+   },
+   {
+    "yt": "uo_LQme9PYg",
+    "t": "MY CITY Roll and Write (Devir) Opinión y ¿Cómo se juega?"
+   }
+  ]
+ },
+ {
   "id": "my-island",
   "age": 10,
   "best": 2,
@@ -1224,6 +1449,64 @@
   ]
  },
  {
+  "id": "piko-piko",
+  "age": 8,
+  "best": 4,
+  "bgg": "15818",
+  "name": "Piko Piko",
+  "pmax": 7,
+  "pmin": 2,
+  "rating": 6.6,
+  "tags": [
+   "Dados",
+   "Arriesgar"
+  ],
+  "tmax": 20,
+  "tmin": 20,
+  "weight": 1.16,
+  "year": 2005,
+  "img": "portadas/piko-piko.jpg",
+  "videos": [
+   {
+    "yt": "zmoWWpP3X8U",
+    "t": "Cómo se juega a Piko Piko"
+   },
+   {
+    "yt": "goMrzElbS_Y",
+    "t": "Piko Piko (Pickomino): Unboxing + Cómo Jugar/Tutorial"
+   }
+  ]
+ },
+ {
+  "id": "pistas-cruzadas",
+  "age": 7,
+  "best": 4,
+  "bgg": "300753",
+  "name": "Pistas Cruzadas",
+  "pmax": 6,
+  "pmin": 2,
+  "rating": 7.2,
+  "tags": [
+   "Cooperativo",
+   "Tiempo real"
+  ],
+  "tmax": 10,
+  "tmin": 5,
+  "weight": 1.08,
+  "year": 2020,
+  "img": "portadas/pistas-cruzadas.jpg",
+  "videos": [
+   {
+    "yt": "dWxL-igaKtg",
+    "t": "Conociendo Pistas Cruzadas"
+   },
+   {
+    "yt": "XYv3ShXoi-U",
+    "t": "Pistas Cruzadas: Cómo Jugar/Tutorial"
+   }
+  ]
+ },
+ {
   "id": "polilla-tramposa",
   "age": 7,
   "best": 5,
@@ -1246,6 +1529,32 @@
    {
     "yt": "xe3-rM_mYqM",
     "t": "Cómo jugar a La Polilla Tramposa - Devir"
+   }
+  ]
+ },
+ {
+  "id": "railroad-ink-challenge-amarillo",
+  "age": 8,
+  "best": 2,
+  "bgg": "306882",
+  "name": "Railroad Ink Challenge Amarillo",
+  "pmax": 4,
+  "pmin": 1,
+  "rating": 7.4,
+  "tags": [
+   "Conexiones",
+   "Dados",
+   "Construcción de rutas"
+  ],
+  "tmax": 30,
+  "tmin": 15,
+  "weight": 2.03,
+  "year": 2021,
+  "img": "portadas/railroad-ink-challenge-amarillo.jpg",
+  "videos": [
+   {
+    "yt": "MsFytZphq4w",
+    "t": "RAILROAD INK CHALLENGE: Cómo se juega"
    }
   ]
  },
@@ -1367,6 +1676,32 @@
    {
     "yt": "4ow9iM4b50E",
     "t": "¿Cómo se juega? - Scraw, - Juego de mesa"
+   }
+  ]
+ },
+ {
+  "id": "sushi-bar",
+  "age": 8,
+  "best": 4,
+  "bgg": "37400",
+  "name": "Sushi Bar",
+  "pmax": 5,
+  "pmin": 2,
+  "rating": 6.5,
+  "tags": [
+   "Dados",
+   "Memoria",
+   "Arriesgar"
+  ],
+  "tmax": 20,
+  "tmin": 20,
+  "weight": 1.22,
+  "year": 2008,
+  "img": "portadas/sushi-bar.jpg",
+  "videos": [
+   {
+    "yt": "YWFn48WRD54",
+    "t": "Conociendo Sushi Bar"
    }
   ]
  },
@@ -1507,6 +1842,34 @@
    {
     "yt": "S0n360a3tUE",
     "t": "Conociendo Throw Throw Burrito"
+   }
+  ]
+ },
+ {
+  "id": "tiro-al-pato",
+  "age": 10,
+  "best": 6,
+  "bgg": "17027",
+  "name": "Tiro al pato",
+  "pmax": 6,
+  "pmin": 3,
+  "rating": 6.2,
+  "tags": [
+   "Gestión de mano"
+  ],
+  "tmax": 20,
+  "tmin": 20,
+  "weight": 1.1,
+  "year": 2005,
+  "img": "portadas/tiro-al-pato.jpg",
+  "videos": [
+   {
+    "yt": "BcObel3osd4",
+    "t": "Conociendo Tiro al Pato"
+   },
+   {
+    "yt": "jVqluq-CJLE",
+    "t": "Cómo se juega a Tiro al Pato"
    }
   ]
  },
@@ -1923,6 +2286,35 @@
    {
     "yt": "CKD8iAT4mfM",
     "t": "Juego de mesa Catan Piratas y Exploradores"
+   }
+  ]
+ },
+ {
+  "id": "piko-piko-extrapiko",
+  "age": 8,
+  "bgg": "181614",
+  "name": "Piko Piko: Extrapiko",
+  "parent": "piko-piko",
+  "pmax": 7,
+  "pmin": 2,
+  "rating": 6.9,
+  "tags": [
+   "Dados",
+   "Arriesgar"
+  ],
+  "tmax": 30,
+  "tmin": 20,
+  "weight": 1.2,
+  "year": 2015,
+  "img": "portadas/piko-piko-extrapiko.jpg",
+  "videos": [
+   {
+    "yt": "P19JMiVYC5A",
+    "t": "Ampliando Piko Piko: Extrapiko"
+   },
+   {
+    "yt": "FQaSyFmJes4",
+    "t": "JUEGO PIKO PIKO + EXTRA como jugar y opinión"
    }
   ]
  }
