@@ -1,6 +1,6 @@
 # Ludoteca de Diego
 
-Inventario de juegos de mesa con filtro por número de jugadores y tiempo disponible.
+Inventario de juegos de mesa con filtro por número de jugadores, tiempo disponible y edad.
 Sitio estático: `index.html` lee `games.json` y muestra las portadas de `portadas/`.
 
 ## Estructura
@@ -69,7 +69,8 @@ Añade una entrada a `games.json` y, si tienes portada, su imagen en `portadas/`
 | `pmin`, `pmax` | no | Jugadores mínimo y máximo. Sin ellos, el juego no aparece al filtrar por jugadores. |
 | `tmin`, `tmax` | no | Duración en minutos. Sin ellos, no aparece al filtrar por tiempo. |
 | `weight` | no | Dificultad de 1 a 5 (el *weight* de BGG). |
-| `age`, `year`, `rating`, `best` | no | Edad mínima, año, nota de BGG y mejor número de jugadores. |
+| `age` | no | Edad mínima. Sin ella, el juego no aparece al filtrar por edad. |
+| `year`, `rating`, `best` | no | Año, nota de BGG y mejor número de jugadores. |
 | `tags` | no | Mecánicas; se muestran las tres primeras y sirven para la búsqueda. |
 | `img` | no | Ruta de la portada. Sin ella se genera una portada con el nombre. |
 | `parent` | no | `id` del juego base si es una expansión. Se muestra dentro de su tarjeta. |

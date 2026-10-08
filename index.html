@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Ludoteca de Diego</title>
-<meta name="description" content="Colección de juegos de mesa de Diego, con filtro por número de jugadores y tiempo.">
+<meta name="description" content="Colección de juegos de mesa de Diego, con filtro por número de jugadores, tiempo y edad.">
 <meta name="theme-color" content="#1f5c45">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='6' y='6' width='52' height='52' rx='12' fill='%231f5c45'/%3E%3Cg fill='%23e8b23a'%3E%3Ccircle cx='21' cy='21' r='5'/%3E%3Ccircle cx='43' cy='21' r='5'/%3E%3Ccircle cx='32' cy='32' r='5'/%3E%3Ccircle cx='21' cy='43' r='5'/%3E%3Ccircle cx='43' cy='43' r='5'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -156,6 +156,7 @@ footer a{color:inherit}
     <div class="frow">
       <div class="fgroup" id="playersGroup" role="group" aria-label="Número de jugadores"><span class="flabel">Somos</span></div>
       <div class="fgroup" id="timeGroup" role="group" aria-label="Tiempo disponible"><span class="flabel">Tenemos</span></div>
+      <div class="fgroup" id="ageGroup" role="group" aria-label="Edad del jugador más joven"><span class="flabel">El más peque tiene</span></div>
     </div>
     <div class="frow">
       <input class="search" id="q" type="search" placeholder="Buscar por nombre o mecánica" aria-label="Buscar">
@@ -180,10 +181,11 @@ footer a{color:inherit}
 <dialog id="ficha" class="ficha" aria-labelledby="fichaTitulo"><div class="fbody" id="fichaBody"></div></dialog>
 
 <script>
-const state = { games: [], players: null, time: null, q: "", sort: "name" };
+const state = { games: [], players: null, time: null, age: null, q: "", sort: "name" };
 const $ = id => document.getElementById(id);
 const PLAYER_OPTS = [1,2,3,4,5,6,7,8];
 const TIME_OPTS = [[30,"≤ 30 min"],[60,"≤ 1 h"],[120,"≤ 2 h"],[null,"Lo que haga falta"]];
+const AGE_OPTS = [[6,"6"],[8,"8"],[10,"10"],[12,"12"],[14,"14"],[18,"Adultos"]];
 
 function chips(){
   PLAYER_OPTS.forEach(n=>{
@@ -196,6 +198,12 @@ function chips(){
     const b=document.createElement("button"); b.className="chip"; b.type="button"; b.textContent=l; b.dataset.v=String(v);
     b.onclick=()=>{ state.time=v; render(); };
     $("timeGroup").appendChild(b);
+  });
+  AGE_OPTS.forEach(([v,l])=>{
+    const b=document.createElement("button"); b.className="chip"; b.type="button"; b.textContent=l; b.dataset.a=v;
+    if(v<18) b.setAttribute("aria-label",`${v} años`);
+    b.onclick=()=>{ state.age = state.age===v?null:v; render(); };
+    $("ageGroup").appendChild(b);
   });
 }
 function esc(s){ return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
@@ -218,6 +226,7 @@ function timeTxt(g){ if(!g.tmin&&!g.tmax) return ""; const a=g.tmin||g.tmax,b=g.
 function fitsPlayers(g){ if(state.players==null) return true; if(!g.pmin) return false;
   const n=state.players; return n===8 ? g.pmax>=8 : (g.pmin<=n && g.pmax>=n); }
 function fitsTime(g){ if(state.time==null) return true; const t=g.tmax||g.tmin; return t ? t<=state.time : false; }
+function fitsAge(g){ if(state.age==null) return true; return g.age ? g.age<=state.age : false; }
 function fitsQuery(g){ if(!state.q) return true;
   return [g.name,(g.tags||[]).join(" ")].join(" ").toLowerCase().includes(state.q.toLowerCase()); }
 function sorted(list){
@@ -235,11 +244,12 @@ const short = n => n.replace(/^[^:]+:\s*/,"");
 function render(){
   document.querySelectorAll("#playersGroup .chip").forEach(b=>b.setAttribute("aria-pressed",String(+b.dataset.n===state.players)));
   document.querySelectorAll("#timeGroup .chip").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.v===String(state.time))));
+  document.querySelectorAll("#ageGroup .chip").forEach(b=>b.setAttribute("aria-pressed",String(+b.dataset.a===state.age)));
   const ids=new Set(state.games.map(g=>g.id));
   const bases=state.games.filter(g=>!g.parent||!ids.has(g.parent));
   const exps={}; state.games.forEach(g=>{ if(g.parent&&ids.has(g.parent)) (exps[g.parent] ||= []).push(g); });
   const nExp=state.games.length-bases.length;
-  const list=sorted(bases.filter(g=>fitsPlayers(g)&&fitsTime(g)&&(fitsQuery(g)||(exps[g.id]||[]).some(fitsQuery))));
+  const list=sorted(bases.filter(g=>fitsPlayers(g)&&fitsTime(g)&&fitsAge(g)&&(fitsQuery(g)||(exps[g.id]||[]).some(fitsQuery))));
   const total=bases.length, expTxt=nExp?` + ${nExp} expansi${nExp===1?"ón":"ones"}`:"";
   $("count").textContent = list.length===total ? `${total} juegos${expTxt}` : `${list.length} de ${total} juegos`;
   $("grid").innerHTML = list.map(g=>{
@@ -268,7 +278,7 @@ function render(){
       </div></article>`;
   }).join("");
   const empty=$("emptyState");
-  if(list.length===0){ empty.hidden=false; empty.innerHTML="<strong>Ningún juego encaja</strong><span>Prueba con otro número de jugadores o más tiempo.</span>"; }
+  if(list.length===0){ empty.hidden=false; empty.innerHTML="<strong>Ningún juego encaja</strong><span>Prueba con otro número de jugadores, más tiempo u otra edad.</span>"; }
   else empty.hidden=true;
 }
 
