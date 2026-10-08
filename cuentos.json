@@ -1,5 +1,38 @@
 [
  {
+  "id": "aladdin",
+  "name": "Aladdín",
+  "author": "Disney",
+  "publisher": "Everest (Nueva antología Disney)",
+  "year": 1993,
+  "isbn": "9788424133801",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Clásicos"
+  ],
+  "img": "portadas-cuentos/aladdin.jpg"
+ },
+ {
+  "id": "animalfabeto",
+  "name": "Animalfabeto",
+  "author": "Eva Mejuto",
+  "illustrator": "Nuria Díaz Valle",
+  "publisher": "Triqueta Verde",
+  "year": 2025,
+  "isbn": "9791387501280",
+  "age": 3,
+  "pages": 72,
+  "format": "Cartoné",
+  "temas": [
+   "Animales",
+   "Abecedario"
+  ],
+  "img": "portadas-cuentos/animalfabeto.jpg"
+ },
+ {
   "id": "avelina-eres-divina",
   "name": "Avelina, eres divina",
   "author": "Gracia Iglesias",
@@ -14,6 +47,115 @@
    "Libro-juego"
   ],
   "img": "portadas-cuentos/avelina-eres-divina.jpg"
+ },
+ {
+  "id": "bambi",
+  "name": "Bambi",
+  "author": "Disney",
+  "publisher": "Everest (Nueva antología Disney)",
+  "year": 1999,
+  "isbn": "9788424133818",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Clásicos"
+  ],
+  "img": "portadas-cuentos/bambi.jpg"
+ },
+ {
+  "id": "blancanieves-y-los-siete-enanitos",
+  "name": "Blancanieves y los siete enanitos",
+  "author": "Disney",
+  "publisher": "Everest (Nueva antología Disney)",
+  "year": 1999,
+  "isbn": "9788424133832",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Clásicos"
+  ],
+  "img": "portadas-cuentos/blancanieves-y-los-siete-enanitos.jpg"
+ },
+ {
+  "id": "bluey-carrera-de-bebes",
+  "name": "Bluey: Carrera de bebés",
+  "author": "Bluey",
+  "publisher": "Beascoa",
+  "year": 2025,
+  "isbn": "9788448869953",
+  "age": 3,
+  "pages": 24,
+  "format": "Tapa dura",
+  "temas": [
+   "Familia",
+   "Crecer"
+  ],
+  "img": "portadas-cuentos/bluey-carrera-de-bebes.jpg"
+ },
+ {
+  "id": "bluey-cesar-el-conejo",
+  "name": "Bluey: César el conejo",
+  "author": "Bluey",
+  "publisher": "Beascoa",
+  "year": 2024,
+  "isbn": "9788448869083",
+  "age": 3,
+  "pages": 24,
+  "format": "Tapa dura",
+  "temas": [
+   "Familia",
+   "Pantallas"
+  ],
+  "img": "portadas-cuentos/bluey-cesar-el-conejo.jpg"
+ },
+ {
+  "id": "bluey-donde-esta-bluey",
+  "name": "Bluey: ¿Dónde está Bluey?",
+  "author": "Bluey",
+  "publisher": "Beascoa",
+  "year": 2024,
+  "isbn": "9788448867492",
+  "age": 3,
+  "pages": 32,
+  "format": "Tapa dura",
+  "temas": [
+   "Libro-juego"
+  ],
+  "img": "portadas-cuentos/bluey-donde-esta-bluey.jpg"
+ },
+ {
+  "id": "bluey-mi-mama-es-la-mejor",
+  "name": "Bluey: Mi mamá es la mejor",
+  "author": "Bluey",
+  "publisher": "Beascoa",
+  "year": 2024,
+  "isbn": "9788448867645",
+  "age": 3,
+  "pages": 24,
+  "format": "Tapa dura",
+  "temas": [
+   "Familia"
+  ],
+  "img": "portadas-cuentos/bluey-mi-mama-es-la-mejor.jpg"
+ },
+ {
+  "id": "bluey-mi-papa-es-maravilloso",
+  "name": "Bluey: Mi papá es maravilloso",
+  "author": "Bluey",
+  "publisher": "Beascoa",
+  "year": 2024,
+  "isbn": "9788448867652",
+  "age": 3,
+  "pages": 24,
+  "format": "Tapa dura",
+  "temas": [
+   "Familia"
+  ],
+  "img": "portadas-cuentos/bluey-mi-papa-es-maravilloso.jpg"
  },
  {
   "id": "buen-camino-celestino",
@@ -38,15 +180,145 @@
   "illustrator": "Carmen Mok",
   "publisher": "Patasdepeixe",
   "year": 2024,
-  "isbn": "9788412781052",
+  "isbn": "9788412781038",
   "age": 3,
   "pages": 32,
   "format": "Cartoné",
   "temas": [
    "Salud",
-   "Mascotas"
+   "Mascotas",
+   "Gallego"
   ],
   "img": "portadas-cuentos/cono-can.jpg"
+ },
+ {
+  "id": "cuentos-y-manzanas",
+  "name": "Cuentos y manzanas",
+  "author": "Patricia Fitti",
+  "publisher": "Manolito Books (Tetrabreak)",
+  "year": 2025,
+  "isbn": "9788419935809",
+  "age": 3,
+  "pages": 10,
+  "format": "Cartoné",
+  "temas": [
+   "Libro-juego"
+  ],
+  "img": "portadas-cuentos/cuentos-y-manzanas.jpg"
+ },
+ {
+  "id": "dumbo",
+  "name": "Dumbo",
+  "author": "Disney",
+  "publisher": "Everest (Nueva antología Disney)",
+  "year": 1999,
+  "isbn": "9788424133900",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Clásicos"
+  ]
+ },
+ {
+  "id": "el-cangrejo-que-vino-a-cenar",
+  "name": "El cangrejo que vino a cenar",
+  "author": "Steve Smallman",
+  "illustrator": "Joelle Dreidemy",
+  "publisher": "Beascoa",
+  "year": 2026,
+  "isbn": "9788448873028",
+  "age": 3,
+  "pages": 32,
+  "format": "Tapa dura",
+  "temas": [
+   "Verano",
+   "Amistad"
+  ],
+  "img": "portadas-cuentos/el-cangrejo-que-vino-a-cenar.jpg"
+ },
+ {
+  "id": "el-cocodrilo-que-vino-a-cenar",
+  "name": "El cocodrilo que vino a cenar",
+  "author": "Steve Smallman",
+  "illustrator": "Joelle Dreidemy",
+  "publisher": "Beascoa",
+  "year": 2020,
+  "isbn": "9788448856069",
+  "age": 3,
+  "pages": 32,
+  "format": "Tapa dura",
+  "temas": [
+   "Amistad",
+   "Familia"
+  ],
+  "img": "portadas-cuentos/el-cocodrilo-que-vino-a-cenar.jpg"
+ },
+ {
+  "id": "el-jorobado-de-notre-dame",
+  "name": "El jorobado de Notre Dame",
+  "author": "Disney",
+  "publisher": "Everest (Nueva antología Disney)",
+  "year": 1996,
+  "isbn": "9788424134006",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Clásicos"
+  ],
+  "img": "portadas-cuentos/el-jorobado-de-notre-dame.jpg"
+ },
+ {
+  "id": "el-libro-de-la-selva",
+  "name": "El libro de la selva",
+  "author": "Disney",
+  "publisher": "Everest (Nueva antología Disney)",
+  "year": 1999,
+  "isbn": "9788424133856",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Clásicos"
+  ]
+ },
+ {
+  "id": "el-reno-que-vino-a-cenar",
+  "name": "El reno que vino a cenar",
+  "author": "Steve Smallman",
+  "illustrator": "Joelle Dreidemy",
+  "publisher": "Beascoa",
+  "year": 2025,
+  "isbn": "9788448871239",
+  "age": 3,
+  "pages": 32,
+  "format": "Tapa dura",
+  "temas": [
+   "Navidad",
+   "Amistad"
+  ],
+  "img": "portadas-cuentos/el-reno-que-vino-a-cenar.jpg"
+ },
+ {
+  "id": "el-tigre-que-vino-a-cenar",
+  "name": "El tigre que vino a cenar",
+  "author": "Steve Smallman",
+  "illustrator": "Joelle Dreidemy",
+  "publisher": "Beascoa",
+  "year": 2021,
+  "isbn": "9788448858629",
+  "age": 3,
+  "pages": 32,
+  "format": "Tapa dura",
+  "temas": [
+   "Familia",
+   "Amistad"
+  ],
+  "img": "portadas-cuentos/el-tigre-que-vino-a-cenar.jpg"
  },
  {
   "id": "felipe-tiene-gripe",
@@ -99,6 +371,70 @@
   "img": "portadas-cuentos/frederick-aleman.jpg"
  },
  {
+  "id": "la-bella-durmiente",
+  "name": "La bella durmiente",
+  "author": "Disney",
+  "publisher": "Everest (Nueva antología Disney)",
+  "year": 1994,
+  "isbn": "9788424133825",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Clásicos"
+  ],
+  "img": "portadas-cuentos/la-bella-durmiente.jpg"
+ },
+ {
+  "id": "la-cenicienta",
+  "name": "La Cenicienta",
+  "author": "Disney",
+  "publisher": "Everest (Nueva antología Disney)",
+  "year": 1999,
+  "isbn": "9788424133849",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Clásicos"
+  ],
+  "img": "portadas-cuentos/la-cenicienta.jpg"
+ },
+ {
+  "id": "la-dama-y-el-vagabundo",
+  "name": "La dama y el vagabundo",
+  "author": "Disney",
+  "publisher": "Everest (Nueva antología Disney)",
+  "year": 1999,
+  "isbn": "9788424133887",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Clásicos"
+  ],
+  "img": "portadas-cuentos/la-dama-y-el-vagabundo.jpg"
+ },
+ {
+  "id": "la-elefanta-que-vino-a-cenar",
+  "name": "La elefanta que vino a cenar",
+  "author": "Steve Smallman",
+  "illustrator": "Joelle Dreidemy",
+  "publisher": "Beascoa",
+  "year": 2024,
+  "isbn": "9788448868772",
+  "age": 3,
+  "pages": 32,
+  "format": "Tapa dura",
+  "temas": [
+   "Amistad"
+  ],
+  "img": "portadas-cuentos/la-elefanta-que-vino-a-cenar.jpg"
+ },
+ {
   "id": "la-familia-de-basilia",
   "name": "La familia de Basilia",
   "author": "Gracia Iglesias",
@@ -114,6 +450,79 @@
    "Navidad"
   ],
   "img": "portadas-cuentos/la-familia-de-basilia.jpg"
+ },
+ {
+  "id": "la-navidad-de-mickey",
+  "name": "La Navidad de Mickey",
+  "author": "Disney",
+  "publisher": "Everest (Nueva antología Disney)",
+  "year": 1999,
+  "isbn": "9788424133986",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Navidad"
+  ]
+ },
+ {
+  "id": "lilly-la-vaca-viajera",
+  "name": "Lilly la vaca viajera",
+  "author": "Beat Jossen",
+  "isbn": "9783033087569",
+  "temas": [
+   "Animales",
+   "Viajes"
+  ]
+ },
+ {
+  "id": "los-aristogatos",
+  "name": "Los aristogatos",
+  "author": "Disney",
+  "publisher": "Everest (Nueva antología Disney)",
+  "year": 1998,
+  "isbn": "9788424133948",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Clásicos"
+  ],
+  "img": "portadas-cuentos/los-aristogatos.jpg"
+ },
+ {
+  "id": "los-lobos-que-vinieron-a-cenar",
+  "name": "Los lobos que vinieron a cenar",
+  "author": "Steve Smallman",
+  "illustrator": "Joelle Dreidemy",
+  "publisher": "Beascoa",
+  "year": 2019,
+  "isbn": "9788448852115",
+  "age": 3,
+  "pages": 32,
+  "format": "Tapa dura",
+  "temas": [
+   "Amistad"
+  ],
+  "img": "portadas-cuentos/los-lobos-que-vinieron-a-cenar.jpg"
+ },
+ {
+  "id": "los-rescatadores",
+  "name": "Los rescatadores",
+  "author": "Disney",
+  "publisher": "Everest (Nueva antología Disney)",
+  "year": 1997,
+  "isbn": "9788424133979",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Clásicos"
+  ],
+  "img": "portadas-cuentos/los-rescatadores.jpg"
  },
  {
   "id": "marcelina-en-la-cocina",
@@ -165,6 +574,70 @@
   "img": "portadas-cuentos/mi-primer-imaginario-de-formas-bilingue.jpg"
  },
  {
+  "id": "mozart-pequena-serenata-nocturna",
+  "name": "Mozart. Pequeña serenata nocturna",
+  "author": "Yoyo",
+  "publisher": "Yoyo (Mis primeros compositores)",
+  "year": 2026,
+  "isbn": "9788408285922",
+  "age": 0,
+  "pages": 14,
+  "format": "Libro de cartón",
+  "temas": [
+   "Música"
+  ],
+  "img": "portadas-cuentos/mozart-pequena-serenata-nocturna.jpg"
+ },
+ {
+  "id": "oliver-y-el-troll",
+  "name": "Oliver y el troll",
+  "author": "Adam Stower",
+  "illustrator": "Adam Stower",
+  "publisher": "Picarona",
+  "year": 2014,
+  "isbn": "9788416117055",
+  "age": 3,
+  "pages": 40,
+  "format": "Tapa dura",
+  "temas": [
+   "Amistad"
+  ],
+  "img": "portadas-cuentos/oliver-y-el-troll.jpg"
+ },
+ {
+  "id": "osito-tito-vamos-al-zoo",
+  "name": "Osito Tito. ¡Vamos al zoo!",
+  "author": "Benji Davies",
+  "publisher": "Timun Mas Infantil",
+  "year": 2016,
+  "isbn": "9788408158080",
+  "age": 0,
+  "pages": 10,
+  "format": "Libro de cartón",
+  "temas": [
+   "Animales",
+   "Libro-juego"
+  ],
+  "img": "portadas-cuentos/osito-tito-vamos-al-zoo.jpg"
+ },
+ {
+  "id": "oso-y-ratona-buenas-noches",
+  "name": "Oso y Ratona: ¡Buenas noches!",
+  "author": "Nicola Edwards",
+  "illustrator": "Maria Neradova",
+  "publisher": "Beascoa (Pequeñas manitas)",
+  "year": 2021,
+  "isbn": "9788448856090",
+  "age": 0,
+  "pages": 16,
+  "format": "Libro de cartón",
+  "temas": [
+   "Dormir",
+   "Libro-juego"
+  ],
+  "img": "portadas-cuentos/oso-y-ratona-buenas-noches.jpg"
+ },
+ {
   "id": "pero-que-le-pasa-a-blasa",
   "name": "¿Pero qué le pasa a Blasa?",
   "author": "Gracia Iglesias",
@@ -179,6 +652,38 @@
    "Emociones"
   ],
   "img": "portadas-cuentos/pero-que-le-pasa-a-blasa.jpg"
+ },
+ {
+  "id": "peter-pan",
+  "name": "Peter Pan",
+  "author": "Disney",
+  "publisher": "Everest (Nueva antología Disney)",
+  "year": 1998,
+  "isbn": "9788424133863",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Clásicos"
+  ],
+  "img": "portadas-cuentos/peter-pan.jpg"
+ },
+ {
+  "id": "pocahontas",
+  "name": "Pocahontas",
+  "author": "Disney",
+  "publisher": "Everest (Nueva antología Disney)",
+  "year": 1995,
+  "isbn": "9788424133993",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Clásicos"
+  ],
+  "img": "portadas-cuentos/pocahontas.jpg"
  },
  {
   "id": "que-jaleo-timoteo",
@@ -196,5 +701,39 @@
    "Amistad"
   ],
   "img": "portadas-cuentos/que-jaleo-timoteo.jpg"
+ },
+ {
+  "id": "robin-hood",
+  "name": "Robin Hood",
+  "author": "Disney",
+  "publisher": "Everest (Nueva antología Disney)",
+  "year": 1995,
+  "isbn": "9788424133962",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Clásicos"
+  ],
+  "img": "portadas-cuentos/robin-hood.jpg"
+ },
+ {
+  "id": "tu-y-yo-el-cuento-mas-bonito-del-mundo",
+  "name": "Tú y yo. El cuento más bonito del mundo",
+  "author": "Elisenda Roca",
+  "illustrator": "Raúl Nieto Guridi",
+  "publisher": "Combel",
+  "year": 2015,
+  "isbn": "9788491010388",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Familia",
+   "Hermanos",
+   "Emociones"
+  ],
+  "img": "portadas-cuentos/tu-y-yo-el-cuento-mas-bonito-del-mundo.jpg"
  }
 ]
