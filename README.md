@@ -1,4 +1,4 @@
-# Ludoteca de Diego
+# Ludoteca de Diego y Alba
 
 Inventario de juegos de mesa con filtro por número de jugadores, tiempo disponible y edad.
 Sitio estático: `index.html` lee `games.json` y muestra las portadas de `portadas/`.
@@ -110,7 +110,7 @@ Cada ficha tiene su dirección: `https://<usuario>.github.io/ludoteca/#<id>`, po
 
 ## Cuentos
 
-`cuentos.html` es la misma estantería para cuentos infantiles, en
+`cuentos.html` («Cuentos de Óliver») es la misma estantería para cuentos infantiles, en
 `https://<usuario>.github.io/ludoteca/cuentos.html`. Cada página enlaza a la otra
 desde la cabecera. Filtra por edad del niño o niña («Tiene»: Bebé, 2…8, 10+), por tema y
 por texto (título, autor, ilustrador o tema). Los cuentos no llevan vídeos. Los datos salen de
