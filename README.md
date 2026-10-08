@@ -113,8 +113,9 @@ Cada ficha tiene su dirección: `https://<usuario>.github.io/ludoteca/#<id>`, po
 `cuentos.html` es la misma estantería para cuentos infantiles, en
 `https://<usuario>.github.io/ludoteca/cuentos.html`. Cada página enlaza a la otra
 desde la cabecera. Filtra por edad del niño o niña («Tiene»: Bebé, 2…8, 10+), por tema y
-por texto (título, autor, ilustrador o tema). Los datos salen de
-[Open Library](https://openlibrary.org); para añadir uno, usa `/anadir-cuento <título o ISBN>`.
+por texto (título, autor, ilustrador o tema). Los cuentos no llevan vídeos. Los datos salen de
+[Open Library](https://openlibrary.org) y [Casa del Libro](https://www.casadellibro.com), que da
+la edad recomendada y las portadas; para añadir uno, usa `/anadir-cuento <título o ISBN>`.
 
 ```json
 {
@@ -129,8 +130,7 @@ por texto (título, autor, ilustrador o tema). Los datos salen de
   "pages": 40,
   "format": "Álbum ilustrado",
   "temas": ["Emociones"],
-  "img": "portadas-cuentos/el-monstruo-de-colores.jpg",
-  "videos": [{"yt": "<id>", "t": "<título del vídeo>"}]
+  "img": "portadas-cuentos/el-monstruo-de-colores.jpg"
 }
 ```
 
@@ -143,8 +143,8 @@ por texto (título, autor, ilustrador o tema). Los datos salen de
 | `age` | no | Edad mínima recomendada (0 para bebés). Sin ella, el cuento no aparece al filtrar por edad. |
 | `format` | no | Cartoné, Tapa blanda, Álbum ilustrado, Pop-up… |
 | `temas` | no | Se muestran los tres primeros; alimentan el desplegable «Tema» y la búsqueda. |
-| `img`, `videos`, `summary`, `hue` | no | Portada, vídeos de cuentacuentos (mismo formato que los juegos), resumen breve y tono de la portada generada. |
+| `img`, `summary`, `hue` | no | Portada (de Casa del Libro), resumen breve y tono de la portada generada. |
 
 Valida el archivo con `python -m json.tool cuentos.json > /dev/null`.
 
-Datos y portadas de [BoardGameGeek](https://boardgamegeek.com) y [Open Library](https://openlibrary.org).
+Datos y portadas de [BoardGameGeek](https://boardgamegeek.com), [Open Library](https://openlibrary.org) y [Casa del Libro](https://www.casadellibro.com).

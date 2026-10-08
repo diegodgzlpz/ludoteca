@@ -76,7 +76,6 @@ button,input,select,textarea{font:inherit;color:inherit}
 .open:focus-visible{outline:none}
 .box:has(.open:focus-visible){outline:3px solid var(--meeple);outline-offset:2px}
 .box:hover{border-color:var(--muted)}
-.vbadge{position:absolute;left:8px;bottom:8px;z-index:1;background:rgba(0,0,0,.72);color:#fff;font-family:var(--mono);font-size:11.5px;padding:2px 8px;border-radius:999px;pointer-events:none}
 :focus-visible{outline:3px solid var(--meeple);outline-offset:2px}
 
 /* Ficha */
@@ -93,20 +92,6 @@ body:has(.ficha[open]){overflow:hidden}
 .credits dt{color:var(--muted)}
 .credits dd{margin:0;min-width:0;overflow-wrap:anywhere}
 .notes{margin:0;font-size:14px;color:var(--muted)}
-.howto{display:grid;gap:10px;min-width:0}
-.howhead{display:flex;justify-content:space-between;align-items:center;gap:8px}
-.howhead h3{margin:0;font-family:var(--display);font-stretch:110%;font-weight:800;font-size:17px}
-.nav{display:flex;gap:6px}
-.nav button{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;font-size:18px;line-height:1}
-.nav button:disabled{opacity:.35;cursor:default}
-.track{list-style:none;margin:0;padding:0 0 6px;display:grid;grid-auto-flow:column;grid-auto-columns:calc(50% - 6px);gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;overscroll-behavior-x:contain}
-.vid{scroll-snap-align:start;display:grid;gap:6px;align-content:start;min-width:0}
-.vframe{position:relative;aspect-ratio:16/9;background:#000;border-radius:var(--r);overflow:hidden}
-.vframe img,.vframe iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
-.play{position:absolute;inset:0;margin:auto;width:58px;height:40px;border:0;border-radius:10px;background:rgba(0,0,0,.72);color:#fff;font-size:17px;cursor:pointer}
-.vframe:hover .play,.play:focus-visible{background:var(--meeple);color:#24201f}
-.vt{margin:0;font-size:13px;line-height:1.35}
-.novid{margin:0;color:var(--muted)}
 .ffoot{display:grid;gap:10px;border-top:1px solid var(--line);padding-top:14px;font-size:14px;text-align:left;color:var(--ink)}
 .flinks{display:flex;flex-wrap:wrap;gap:8px 20px}
 .ficha a{color:var(--felt);font-weight:700;text-decoration:none}
@@ -116,7 +101,6 @@ body:has(.ficha[open]){overflow:hidden}
   .fbody{padding:calc(16px + env(safe-area-inset-top)) calc(16px + env(safe-area-inset-right)) calc(20px + env(safe-area-inset-bottom)) calc(16px + env(safe-area-inset-left))}
   .fclose{top:calc(8px + env(safe-area-inset-top));right:calc(8px + env(safe-area-inset-right))}
   .fhead{grid-template-columns:96px minmax(0,1fr);gap:12px}
-  .track{grid-auto-columns:88%}
   .ficha .tags{display:flex}
 }
 @media (max-width:520px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.gen{padding:10px}.gen b{font-size:16px}.info{padding:10px 10px 12px;gap:6px}.info h3{font-size:15px}.by{font-size:12.5px}.meta{font-size:11.5px;gap:2px 8px}.tags{display:none}}
@@ -219,10 +203,9 @@ function render(){
   $("count").textContent = list.length===total ? `${total} cuento${total===1?"":"s"}` : `${list.length} de ${total} cuentos`;
   $("grid").innerHTML = list.map(b=>{
     const tags=(b.temas||[]).slice(0,3).map(t=>`<span class="tag">${esc(t)}</span>`).join("");
-    const nv=(b.videos||[]).filter(validYt).length;
     const meta=[ageTxt(b),pagesTxt(b),b.format||""].filter(Boolean).map(t=>`<span>${esc(t)}</span>`).join("");
     return `<article class="box">
-      <div class="cover">${coverHTML(b)}${nv?`<span class="vbadge">▶ ${nv} vídeo${nv===1?"":"s"}</span>`:""}</div>
+      <div class="cover">${coverHTML(b)}</div>
       <div class="info">
         <h3><button class="open" type="button" data-id="${esc(b.id)}" aria-label="Ver ficha de ${esc(b.name)}">${esc(b.name)}</button></h3>
         ${b.author?`<p class="by">${esc(b.author)}</p>`:""}
@@ -240,22 +223,10 @@ function render(){
 const ficha=$("ficha"), baseTitle=document.title;
 const byId = id => state.books.find(b=>b.id===id);
 const olUrl = isbn => `https://openlibrary.org/isbn/${encodeURIComponent(isbn)}`;
-const ytSearch = n => `https://www.youtube.com/results?search_query=${encodeURIComponent(n+" cuento")}`;
-const validYt = v => v && /^[\w-]{11}$/.test(v.yt);
-function thumbHTML(yt,t){
-  return `<img src="https://i.ytimg.com/vi/${yt}/hqdefault.jpg" alt="" loading="lazy" decoding="async"><button class="play" type="button" aria-label="Reproducir: ${esc(t)}">▶</button>`;
-}
 function fichaHTML(b){
-  const vids=(b.videos||[]).filter(validYt);
   const rows=[["Autor",b.author],["Ilustración",b.illustrator],["Editorial",b.publisher],["Año",b.year],["Formato",b.format],["Páginas",b.pages],["Edad",ageTxt(b)],["ISBN",b.isbn]]
     .filter(([,v])=>v!=null&&v!=="").map(([k,v])=>`<dt>${k}</dt><dd>${esc(v)}</dd>`).join("");
   const tags=(b.temas||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join("");
-  const nav=vids.length>1?`<div class="nav"><button type="button" data-dir="-1" aria-label="Vídeo anterior">‹</button><button type="button" data-dir="1" aria-label="Vídeo siguiente">›</button></div>`:"";
-  const howto=vids.length
-    ?`<ul class="track" aria-label="Vídeos del cuento">${vids.map(v=>`<li class="vid">
-        <div class="vframe" data-yt="${v.yt}" data-t="${esc(v.t)}">${thumbHTML(v.yt,v.t)}</div>
-        <p class="vt">${esc(v.t)}</p></li>`).join("")}</ul>`
-    :`<p class="novid">Todavía no hay vídeos de este cuento. <a href="${ytSearch(b.name)}" target="_blank" rel="noopener">Buscar «${esc(b.name)} cuento» en YouTube ↗</a></p>`;
   return `<button class="fclose" type="button" aria-label="Cerrar ficha">✕</button>
     <header class="fhead">
       <div class="cover">${coverHTML(b)}</div>
@@ -266,30 +237,9 @@ function fichaHTML(b){
         ${b.summary?`<p class="notes">${esc(b.summary)}</p>`:""}
       </div>
     </header>
-    <section class="howto" aria-labelledby="howtoTitulo">
-      <div class="howhead"><h3 id="howtoTitulo">Cuentacuentos</h3>${nav}</div>
-      ${howto}
-    </section>
-    <footer class="ffoot">
-      <div class="flinks">
-        ${b.isbn?`<a href="${olUrl(b.isbn)}" target="_blank" rel="noopener">Ficha en Open Library ↗</a>`:""}
-        <a href="${ytSearch(b.name)}" target="_blank" rel="noopener">Más vídeos en YouTube ↗</a>
-      </div>
-    </footer>`;
-}
-function updNav(){
-  const t=ficha.querySelector(".track"), [prev,next]=ficha.querySelectorAll(".nav button");
-  if(!t||!prev) return;
-  prev.disabled=t.scrollLeft<=2;
-  next.disabled=t.scrollLeft+t.clientWidth>=t.scrollWidth-2;
-}
-function stopVideos(except){
-  ficha.querySelectorAll(".vframe.playing").forEach(f=>{ if(f===except) return;
-    f.classList.remove("playing"); f.innerHTML=thumbHTML(f.dataset.yt,f.dataset.t); });
-}
-function play(f){
-  stopVideos(f); f.classList.add("playing");
-  f.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${f.dataset.yt}?autoplay=1&rel=0" title="${esc(f.dataset.t)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
+    ${b.isbn?`<footer class="ffoot">
+      <div class="flinks"><a href="${olUrl(b.isbn)}" target="_blank" rel="noopener">Ficha en Open Library ↗</a></div>
+    </footer>`:""}`;
 }
 function openBook(id,push=true){
   const b=byId(id); if(!b) return false;
@@ -297,15 +247,14 @@ function openBook(id,push=true){
   if(push){ if(location.hash!==hash) history.pushState({ficha:b.id},"",hash); }
   else if(location.hash!==hash) history.replaceState(history.state,"",hash);
   $("fichaBody").innerHTML=fichaHTML(b);
-  const t=ficha.querySelector(".track"); if(t) t.addEventListener("scroll",updNav,{passive:true});
   document.title=`${b.name} · ${baseTitle}`;
   if(!ficha.open) ficha.showModal();
-  ficha.scrollTop=0; updNav();
+  ficha.scrollTop=0;
   return true;
 }
 const closeFicha = () => { if(ficha.open) ficha.close(); };
 ficha.addEventListener("close",()=>{
-  stopVideos(); document.title=baseTitle;
+  document.title=baseTitle;
   if(!location.hash) return;  // ya cerrada por "atrás"
   if(history.state&&history.state.ficha) history.back();
   else history.replaceState(null,"",location.pathname+location.search);
@@ -313,16 +262,11 @@ ficha.addEventListener("close",()=>{
 ficha.addEventListener("click",e=>{
   if(e.target===ficha) return closeFicha();  // clic en el fondo
   if(e.target.closest(".fclose")) return closeFicha();
-  const p=e.target.closest(".play"); if(p) return play(p.closest(".vframe"));
-  const d=e.target.closest(".nav button");
-  if(d){ const t=ficha.querySelector(".track"), v=t.querySelector(".vid");
-    t.scrollBy({left:+d.dataset.dir*(v.offsetWidth+12)}); }
 });
 addEventListener("popstate",()=>{
   const id=decodeURIComponent(location.hash.slice(1));
   if(!(id&&openBook(id,false))) closeFicha();
 });
-addEventListener("resize",updNav);
 $("grid").addEventListener("click",e=>{ const b=e.target.closest(".open"); if(b) openBook(b.dataset.id); });
 
 $("q").addEventListener("input",e=>{ state.q=e.target.value.trim(); render(); });

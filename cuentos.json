@@ -7,18 +7,13 @@
   "publisher": "Ediciones Jaguar (Miau)",
   "year": 2025,
   "isbn": "9788410208476",
+  "age": 3,
   "pages": 32,
   "format": "Tapa dura",
   "temas": [
    "Libro-juego"
   ],
-  "img": "portadas-cuentos/avelina-eres-divina.jpg",
-  "videos": [
-   {
-    "yt": "2Xgy9pSWATc",
-    "t": "Booktrailer Avelina, eres divina"
-   }
-  ]
+  "img": "portadas-cuentos/avelina-eres-divina.jpg"
  },
  {
   "id": "buen-camino-celestino",
@@ -34,17 +29,7 @@
   "temas": [
    "Viajes"
   ],
-  "img": "portadas-cuentos/buen-camino-celestino.jpg",
-  "videos": [
-   {
-    "yt": "_k9g-6fLX9A",
-    "t": "Buen Camino, Celestino"
-   },
-   {
-    "yt": "pS3ZBzsnNz8",
-    "t": "¡Buen camino, Celestino! | La Caja de Cuentos de Manuela"
-   }
-  ]
+  "img": "portadas-cuentos/buen-camino-celestino.jpg"
  },
  {
   "id": "felipe-tiene-gripe",
@@ -59,17 +44,7 @@
   "temas": [
    "Salud"
   ],
-  "img": "portadas-cuentos/felipe-tiene-gripe.jpg",
-  "videos": [
-   {
-    "yt": "HQ3l_yMeaKY",
-    "t": "Cuentacuentos Pitiflú: Felipe tiene gripe"
-   },
-   {
-    "yt": "JnKjC4WTLkI",
-    "t": "Felipe tiene gripe, cuento divertido para infantil"
-   }
-  ]
+  "img": "portadas-cuentos/felipe-tiene-gripe.jpg"
  },
  {
   "id": "la-familia-de-basilia",
@@ -86,13 +61,7 @@
    "Familia",
    "Navidad"
   ],
-  "img": "portadas-cuentos/la-familia-de-basilia.jpg",
-  "videos": [
-   {
-    "yt": "YV2V1JhGr84",
-    "t": "Booktrailer La familia de Basilia"
-   }
-  ]
+  "img": "portadas-cuentos/la-familia-de-basilia.jpg"
  },
  {
   "id": "marcelina-en-la-cocina",
@@ -108,17 +77,7 @@
   "temas": [
    "Cocina"
   ],
-  "img": "portadas-cuentos/marcelina-en-la-cocina.jpg",
-  "videos": [
-   {
-    "yt": "ua_D3BRmRhQ",
-    "t": "Marcelina en la cocina. Cuento cantado"
-   },
-   {
-    "yt": "OwvKT40_E8M",
-    "t": "Marcelina en la cocina | Gracia Iglesias y Sara Sánchez"
-   }
-  ]
+  "img": "portadas-cuentos/marcelina-en-la-cocina.jpg"
  },
  {
   "id": "pero-que-le-pasa-a-blasa",
@@ -128,22 +87,13 @@
   "publisher": "Ediciones Jaguar (Miau)",
   "year": 2022,
   "isbn": "9788418609824",
+  "age": 3,
   "pages": 32,
   "format": "Tapa dura",
   "temas": [
    "Emociones"
   ],
-  "img": "portadas-cuentos/pero-que-le-pasa-a-blasa.jpg",
-  "videos": [
-   {
-    "yt": "eSYsFlsaXpY",
-    "t": "¿Pero qué le pasa a Blasa?"
-   },
-   {
-    "yt": "77twTrPUans",
-    "t": "Leyendo con Lita: ¿Pero qué le pasa a Blasa?"
-   }
-  ]
+  "img": "portadas-cuentos/pero-que-le-pasa-a-blasa.jpg"
  },
  {
   "id": "que-jaleo-timoteo",
@@ -160,16 +110,6 @@
    "Higiene",
    "Amistad"
   ],
-  "img": "portadas-cuentos/que-jaleo-timoteo.jpg",
-  "videos": [
-   {
-    "yt": "dTB6MWeZv1o",
-    "t": "Cuentacuentos Pitiflú: ¡Qué jaleo, Timoteo!"
-   },
-   {
-    "yt": "9yUD_85ovjE",
-    "t": "¡Qué jaleo, Timoteo! Cuento cantado"
-   }
-  ]
+  "img": "portadas-cuentos/que-jaleo-timoteo.jpg"
  }
 ]
