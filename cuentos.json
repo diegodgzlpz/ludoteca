@@ -32,6 +32,23 @@
   "img": "portadas-cuentos/buen-camino-celestino.jpg"
  },
  {
+  "id": "cono-can",
+  "name": "Cono Can",
+  "author": "Sarah Howden",
+  "illustrator": "Carmen Mok",
+  "publisher": "Patasdepeixe",
+  "year": 2024,
+  "isbn": "9788412781052",
+  "age": 3,
+  "pages": 32,
+  "format": "Cartoné",
+  "temas": [
+   "Salud",
+   "Mascotas"
+  ],
+  "img": "portadas-cuentos/cono-can.jpg"
+ },
+ {
   "id": "felipe-tiene-gripe",
   "name": "Felipe tiene gripe",
   "author": "Gracia Iglesias",
@@ -45,6 +62,41 @@
    "Salud"
   ],
   "img": "portadas-cuentos/felipe-tiene-gripe.jpg"
+ },
+ {
+  "id": "frederick",
+  "name": "Frederick",
+  "author": "Leo Lionni",
+  "illustrator": "Leo Lionni",
+  "publisher": "Kalandraka (Libros para soñar)",
+  "year": 2005,
+  "isbn": "9788493375911",
+  "age": 3,
+  "pages": 40,
+  "format": "Tapa dura",
+  "temas": [
+   "Poesía",
+   "Estaciones"
+  ],
+  "img": "portadas-cuentos/frederick.jpg"
+ },
+ {
+  "id": "frederick-aleman",
+  "name": "Frederick (alemán)",
+  "author": "Leo Lionni",
+  "illustrator": "Leo Lionni",
+  "publisher": "Middelhauve",
+  "year": 1975,
+  "isbn": "9783787695409",
+  "age": 3,
+  "pages": 28,
+  "format": "Tapa dura",
+  "temas": [
+   "Poesía",
+   "Estaciones",
+   "Alemán"
+  ],
+  "img": "portadas-cuentos/frederick-aleman.jpg"
  },
  {
   "id": "la-familia-de-basilia",
@@ -78,6 +130,39 @@
    "Cocina"
   ],
   "img": "portadas-cuentos/marcelina-en-la-cocina.jpg"
+ },
+ {
+  "id": "mi-primer-imaginario-de-contrarios-bilingue",
+  "name": "Mi primer imaginario de contrarios bilingüe",
+  "author": "Sarah Dyer",
+  "publisher": "SM (Imaginarios)",
+  "year": 2018,
+  "isbn": "9788467591064",
+  "age": 1,
+  "pages": 18,
+  "format": "Cartoné",
+  "temas": [
+   "Vocabulario",
+   "Inglés",
+   "Contrarios"
+  ],
+  "img": "portadas-cuentos/mi-primer-imaginario-de-contrarios-bilingue.jpg"
+ },
+ {
+  "id": "mi-primer-imaginario-de-formas-bilingue",
+  "name": "Mi primer imaginario de formas bilingüe",
+  "author": "Sarah Dyer",
+  "publisher": "SM (Imaginarios)",
+  "year": 2016,
+  "isbn": "9788467591057",
+  "age": 1,
+  "format": "Cartoné",
+  "temas": [
+   "Vocabulario",
+   "Inglés",
+   "Formas"
+  ],
+  "img": "portadas-cuentos/mi-primer-imaginario-de-formas-bilingue.jpg"
  },
  {
   "id": "pero-que-le-pasa-a-blasa",
