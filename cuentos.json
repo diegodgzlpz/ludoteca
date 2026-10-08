@@ -12,7 +12,24 @@
   "temas": [
    "Disney",
    "Clásicos"
-  ]
+  ],
+  "img": "portadas-cuentos/101-dalmatas.jpg"
+ },
+ {
+  "id": "adios-panal",
+  "name": "¡Adiós, pañal!",
+  "author": "Lucía Galán",
+  "illustrator": "Núria Aparicio",
+  "publisher": "Timun Mas Infantil",
+  "year": 2025,
+  "isbn": "9788408300779",
+  "age": 0,
+  "pages": 24,
+  "format": "Cartoné",
+  "temas": [
+   "Crecer"
+  ],
+  "img": "portadas-cuentos/adios-panal.jpg"
  },
  {
   "id": "aladdin",
@@ -31,6 +48,39 @@
   "img": "portadas-cuentos/aladdin.jpg"
  },
  {
+  "id": "animales-bestiales-mira-y-toca",
+  "name": "¡Animales bestiales! (Mira y toca)",
+  "author": "Mar Benegas",
+  "illustrator": "María Reyes Guijarro",
+  "publisher": "Combel",
+  "year": 2024,
+  "isbn": "9788411581363",
+  "age": 0,
+  "pages": 10,
+  "format": "Libro de cartón",
+  "temas": [
+   "Animales",
+   "Libro-juego"
+  ],
+  "img": "portadas-cuentos/animales-bestiales-mira-y-toca.jpg"
+ },
+ {
+  "id": "animales-del-mundo-no-1",
+  "name": "Animales del mundo nº 1",
+  "author": "Pere Rovira",
+  "illustrator": "Francisco Arredondo",
+  "publisher": "Susaeta",
+  "year": 2003,
+  "isbn": "9788430539185",
+  "age": 6,
+  "pages": 176,
+  "format": "Cartoné",
+  "temas": [
+   "Animales"
+  ],
+  "img": "portadas-cuentos/animales-del-mundo-no-1.jpg"
+ },
+ {
   "id": "animalfabeto",
   "name": "Animalfabeto",
   "author": "Eva Mejuto",
@@ -46,6 +96,37 @@
    "Abecedario"
   ],
   "img": "portadas-cuentos/animalfabeto.jpg"
+ },
+ {
+  "id": "animalotes",
+  "name": "Animalotes",
+  "author": "Pepe Carreiro",
+  "publisher": "A Nosa Terra",
+  "year": 2008,
+  "isbn": "9788483412350",
+  "age": 0,
+  "pages": 12,
+  "temas": [
+   "Animales",
+   "Gallego"
+  ],
+  "img": "portadas-cuentos/animalotes.jpg"
+ },
+ {
+  "id": "atchus-felipe",
+  "name": "Atchús Felipe",
+  "author": "Gracia Iglesias",
+  "illustrator": "Sara Sánchez",
+  "publisher": "Ediciones Jaguar (Miau)",
+  "year": 2020,
+  "isbn": "9788417272814",
+  "age": 0,
+  "pages": 16,
+  "format": "Libro de cartón",
+  "temas": [
+   "Salud"
+  ],
+  "img": "portadas-cuentos/atchus-felipe.jpg"
  },
  {
   "id": "avelina-eres-divina",
@@ -143,6 +224,21 @@
   "img": "portadas-cuentos/bluey-donde-esta-bluey.jpg"
  },
  {
+  "id": "bluey-imagina-y-juega-libro-con-imanes",
+  "name": "Bluey: ¡Imagina y juega! Libro con imanes",
+  "author": "Bluey",
+  "publisher": "Beascoa",
+  "year": 2024,
+  "isbn": "9788448869113",
+  "age": 3,
+  "pages": 10,
+  "format": "Libro de cartón",
+  "temas": [
+   "Libro-juego"
+  ],
+  "img": "portadas-cuentos/bluey-imagina-y-juega-libro-con-imanes.jpg"
+ },
+ {
   "id": "bluey-mi-mama-es-la-mejor",
   "name": "Bluey: Mi mamá es la mejor",
   "author": "Bluey",
@@ -173,6 +269,22 @@
   "img": "portadas-cuentos/bluey-mi-papa-es-maravilloso.jpg"
  },
  {
+  "id": "bota",
+  "name": "Bota",
+  "author": "David Hernández Sevillano",
+  "illustrator": "Ximena García",
+  "publisher": "La Guarida (Leo, río y canto)",
+  "year": 2023,
+  "isbn": "9788412504675",
+  "age": 0,
+  "pages": 18,
+  "format": "Cartoné",
+  "temas": [
+   "Rimas"
+  ],
+  "img": "portadas-cuentos/bota.jpg"
+ },
+ {
   "id": "buen-camino-celestino",
   "name": "¡Buen camino, Celestino!",
   "author": "Gracia Iglesias",
@@ -187,6 +299,89 @@
    "Viajes"
   ],
   "img": "portadas-cuentos/buen-camino-celestino.jpg"
+ },
+ {
+  "id": "buenas-noches-pepe-y-mila",
+  "name": "Buenas noches, Pepe y Mila",
+  "author": "Yayo Kawamura",
+  "illustrator": "Yayo Kawamura",
+  "publisher": "SM",
+  "year": 2014,
+  "isbn": "9788467565478",
+  "age": 0,
+  "pages": 16,
+  "format": "Libro de cartón",
+  "temas": [
+   "Dormir"
+  ],
+  "img": "portadas-cuentos/buenas-noches-pepe-y-mila.jpg"
+ },
+ {
+  "id": "busca-y-encuentra-en-el-mundo",
+  "name": "Busca y encuentra en el mundo",
+  "author": "Thierry Laval",
+  "publisher": "SM",
+  "year": 2008,
+  "isbn": "9788467522242",
+  "age": 3,
+  "pages": 16,
+  "format": "Tapa dura",
+  "temas": [
+   "Libro-juego",
+   "Animales"
+  ],
+  "img": "portadas-cuentos/busca-y-encuentra-en-el-mundo.jpg"
+ },
+ {
+  "id": "caracol-e-caracola",
+  "name": "Caracol e Caracola",
+  "author": "Armando Quintero",
+  "illustrator": "André Letria",
+  "publisher": "OQO (nanOQOs)",
+  "year": 2008,
+  "isbn": "9788496788770",
+  "age": 0,
+  "pages": 24,
+  "format": "Libro de cartón",
+  "temas": [
+   "Amistad",
+   "Gallego"
+  ],
+  "img": "portadas-cuentos/caracol-e-caracola.jpg"
+ },
+ {
+  "id": "chap-chap",
+  "name": "Chap chap",
+  "author": "Jonathan Litton",
+  "illustrator": "Kasia Nowowiejska",
+  "publisher": "Combel (Diversión pop-up)",
+  "year": 2016,
+  "isbn": "9788491011422",
+  "age": 3,
+  "pages": 10,
+  "format": "Pop-up",
+  "temas": [
+   "Animales",
+   "Mar"
+  ],
+  "img": "portadas-cuentos/chap-chap.jpg"
+ },
+ {
+  "id": "como-celebramos-el-carnaval",
+  "name": "Cómo celebramos el carnaval",
+  "author": "Laura Vila",
+  "illustrator": "Esther Bernal",
+  "publisher": "Anaya",
+  "year": 2024,
+  "isbn": "9788414336847",
+  "age": 3,
+  "pages": 16,
+  "format": "Tapa blanda",
+  "temas": [
+   "Fiestas",
+   "Rimas"
+  ],
+  "img": "portadas-cuentos/como-celebramos-el-carnaval.jpg"
  },
  {
   "id": "cono-can",
@@ -207,6 +402,23 @@
   "img": "portadas-cuentos/cono-can.jpg"
  },
  {
+  "id": "cric-crac-quien-hay",
+  "name": "Cric-crac, ¿quién hay?",
+  "author": "Tristan Mory",
+  "illustrator": "Tristan Mory",
+  "publisher": "Combel",
+  "year": 2022,
+  "isbn": "9788491018506",
+  "age": 0,
+  "pages": 10,
+  "format": "Libro de cartón",
+  "temas": [
+   "Animales",
+   "Libro-juego"
+  ],
+  "img": "portadas-cuentos/cric-crac-quien-hay.jpg"
+ },
+ {
   "id": "cuentos-y-manzanas",
   "name": "Cuentos y manzanas",
   "author": "Patricia Fitti",
@@ -222,6 +434,54 @@
   "img": "portadas-cuentos/cuentos-y-manzanas.jpg"
  },
  {
+  "id": "donde-esta-el-senor-leon",
+  "name": "¿Dónde está el señor León?",
+  "author": "Ingela P. Arrhenius",
+  "publisher": "Timun Mas Infantil",
+  "year": 2018,
+  "isbn": "9788408177623",
+  "age": 0,
+  "pages": 10,
+  "format": "Libro de cartón",
+  "temas": [
+   "Animales",
+   "Libro-juego"
+  ],
+  "img": "portadas-cuentos/donde-esta-el-senor-leon.jpg"
+ },
+ {
+  "id": "donde-esta-mi-mama",
+  "name": "¿Dónde está mi mamá?",
+  "author": "Susaeta",
+  "publisher": "Susaeta",
+  "year": 2019,
+  "isbn": "9788467769388",
+  "age": 0,
+  "pages": 10,
+  "format": "Cartoné",
+  "temas": [
+   "Animales",
+   "Familia"
+  ],
+  "img": "portadas-cuentos/donde-esta-mi-mama.jpg"
+ },
+ {
+  "id": "donde-esta-oli-busca-en-el-parque",
+  "name": "¿Dónde está Oli? ¡Busca en el parque!",
+  "author": "Camilla Reid",
+  "illustrator": "Carly Gledhill",
+  "publisher": "Bruño",
+  "year": 2025,
+  "isbn": "9788469643969",
+  "age": 0,
+  "pages": 10,
+  "format": "Cartoné",
+  "temas": [
+   "Libro-juego"
+  ],
+  "img": "portadas-cuentos/donde-esta-oli-busca-en-el-parque.jpg"
+ },
+ {
   "id": "dumbo",
   "name": "Dumbo",
   "author": "Disney",
@@ -234,7 +494,8 @@
   "temas": [
    "Disney",
    "Clásicos"
-  ]
+  ],
+  "img": "portadas-cuentos/dumbo.jpg"
  },
  {
   "id": "el-cangrejo-que-vino-a-cenar",
@@ -299,7 +560,39 @@
   "temas": [
    "Disney",
    "Clásicos"
-  ]
+  ],
+  "img": "portadas-cuentos/el-libro-de-la-selva.jpg"
+ },
+ {
+  "id": "el-monstruo-de-colores",
+  "name": "El monstruo de colores",
+  "author": "Anna Llenas",
+  "illustrator": "Anna Llenas",
+  "publisher": "Flamboyant",
+  "year": 2017,
+  "isbn": "9788494681516",
+  "age": 3,
+  "pages": 20,
+  "format": "Cartoné",
+  "temas": [
+   "Emociones"
+  ],
+  "img": "portadas-cuentos/el-monstruo-de-colores.jpg"
+ },
+ {
+  "id": "el-pollo-pepe",
+  "name": "El pollo Pepe",
+  "author": "Nick Denchfield",
+  "publisher": "SM",
+  "year": 2002,
+  "isbn": "9788434856813",
+  "age": 0,
+  "pages": 10,
+  "format": "Pop-up",
+  "temas": [
+   "Animales"
+  ],
+  "img": "portadas-cuentos/el-pollo-pepe.jpg"
  },
  {
   "id": "el-reno-que-vino-a-cenar",
@@ -334,6 +627,22 @@
    "Amistad"
   ],
   "img": "portadas-cuentos/el-tigre-que-vino-a-cenar.jpg"
+ },
+ {
+  "id": "escucha-a-los-animales",
+  "name": "Escucha a los animales",
+  "author": "Susaeta",
+  "publisher": "Susaeta",
+  "year": 2025,
+  "isbn": "9788410847880",
+  "age": 0,
+  "pages": 10,
+  "format": "Libro de cartón",
+  "temas": [
+   "Animales",
+   "Sonidos"
+  ],
+  "img": "portadas-cuentos/escucha-a-los-animales.jpg"
  },
  {
   "id": "felipe-tiene-gripe",
@@ -511,7 +820,25 @@
   "temas": [
    "Disney",
    "Navidad"
-  ]
+  ],
+  "img": "portadas-cuentos/la-navidad-de-mickey.jpg"
+ },
+ {
+  "id": "la-ovejita-va-a-la-piscina",
+  "name": "La ovejita va a la piscina",
+  "author": "Steve Smallman",
+  "illustrator": "Joelle Dreidemy",
+  "publisher": "Beascoa (Pequeñas manitas)",
+  "year": 2022,
+  "isbn": "9788448859947",
+  "age": 0,
+  "pages": 10,
+  "format": "Libro de cartón",
+  "temas": [
+   "Verano",
+   "Libro-juego"
+  ],
+  "img": "portadas-cuentos/la-ovejita-va-a-la-piscina.jpg"
  },
  {
   "id": "la-sirenita",
@@ -530,6 +857,55 @@
   "img": "portadas-cuentos/la-sirenita.jpg"
  },
  {
+  "id": "las-crias-de-los-animales",
+  "name": "Las crías de los animales",
+  "author": "Thierry Bedouet",
+  "publisher": "SM",
+  "year": 2019,
+  "isbn": "9788491827832",
+  "age": 0,
+  "pages": 12,
+  "format": "Cartoné",
+  "temas": [
+   "Animales"
+  ],
+  "img": "portadas-cuentos/las-crias-de-los-animales.jpg"
+ },
+ {
+  "id": "las-formas",
+  "name": "Las formas",
+  "author": "Xavier Deneux",
+  "illustrator": "Xavier Deneux",
+  "publisher": "Combel (Palabras y figuras)",
+  "year": 2013,
+  "isbn": "9788498258356",
+  "age": 3,
+  "pages": 20,
+  "format": "Libro de cartón",
+  "temas": [
+   "Formas",
+   "Libro-juego"
+  ],
+  "img": "portadas-cuentos/las-formas.jpg"
+ },
+ {
+  "id": "libro-de-imanes-colores-del-mundo-submarino",
+  "name": "Libro de imanes: colores del mundo submarino",
+  "author": "Equipo Gemini",
+  "publisher": "Edebé",
+  "year": 2025,
+  "isbn": "9788468375168",
+  "age": 0,
+  "pages": 10,
+  "format": "Libro de cartón",
+  "temas": [
+   "Colores",
+   "Mar",
+   "Libro-juego"
+  ],
+  "img": "portadas-cuentos/libro-de-imanes-colores-del-mundo-submarino.jpg"
+ },
+ {
   "id": "lilly-la-vaca-viajera",
   "name": "Lilly la vaca viajera",
   "author": "Beat Jossen",
@@ -538,7 +914,25 @@
   "temas": [
    "Animales",
    "Viajes"
-  ]
+  ],
+  "img": "portadas-cuentos/lilly-la-vaca-viajera.jpg"
+ },
+ {
+  "id": "limon",
+  "name": "Limón",
+  "author": "Antonio Rubio",
+  "illustrator": "Óscar Villán",
+  "publisher": "Kalandraka (De la cuna a la luna)",
+  "year": 2025,
+  "isbn": "9788413433974",
+  "age": 0,
+  "pages": 16,
+  "format": "Libro de cartón",
+  "temas": [
+   "Rimas",
+   "Gallego"
+  ],
+  "img": "portadas-cuentos/limon.jpg"
  },
  {
   "id": "los-aristogatos",
@@ -605,6 +999,23 @@
   "img": "portadas-cuentos/marcelina-en-la-cocina.jpg"
  },
  {
+  "id": "menudo-agujero",
+  "name": "¡Menudo agujero!",
+  "author": "Mar Benegas",
+  "illustrator": "Anna Maria Ruiz Miralles",
+  "publisher": "Combel (Marsupiflap)",
+  "year": 2024,
+  "isbn": "9788411581585",
+  "age": 3,
+  "pages": 20,
+  "format": "Tapa dura",
+  "temas": [
+   "Rimas",
+   "Números"
+  ],
+  "img": "portadas-cuentos/menudo-agujero.jpg"
+ },
+ {
   "id": "merlin-el-encantador",
   "name": "Merlín, el encantador",
   "author": "Disney",
@@ -619,6 +1030,21 @@
    "Clásicos"
   ],
   "img": "portadas-cuentos/merlin-el-encantador.jpg"
+ },
+ {
+  "id": "mi-primer-concierto-de-musica-clasica",
+  "name": "Mi primer concierto de música clásica",
+  "author": "Séverine Cordier",
+  "publisher": "Timun Mas Infantil",
+  "year": 2022,
+  "isbn": "9788408257073",
+  "age": 0,
+  "pages": 14,
+  "format": "Libro de cartón",
+  "temas": [
+   "Música"
+  ],
+  "img": "portadas-cuentos/mi-primer-concierto-de-musica-clasica.jpg"
  },
  {
   "id": "mi-primer-imaginario-de-contrarios-bilingue",
@@ -654,6 +1080,21 @@
   "img": "portadas-cuentos/mi-primer-imaginario-de-formas-bilingue.jpg"
  },
  {
+  "id": "mimitos-los-besos-de-mama",
+  "name": "Mimitos: Los besos de mamá",
+  "author": "Sophie Bouxom",
+  "publisher": "Catapulta",
+  "year": 2024,
+  "isbn": "9789878151984",
+  "age": 0,
+  "pages": 10,
+  "format": "Cartoné",
+  "temas": [
+   "Familia"
+  ],
+  "img": "portadas-cuentos/mimitos-los-besos-de-mama.jpg"
+ },
+ {
   "id": "mozart-pequena-serenata-nocturna",
   "name": "Mozart. Pequeña serenata nocturna",
   "author": "Yoyo",
@@ -683,6 +1124,21 @@
    "Amistad"
   ],
   "img": "portadas-cuentos/oliver-y-el-troll.jpg"
+ },
+ {
+  "id": "osito-tito-vamos-a-jugar",
+  "name": "Osito Tito. ¡Vamos a jugar!",
+  "author": "Benji Davies",
+  "publisher": "Timun Mas Infantil",
+  "year": 2016,
+  "isbn": "9788408128373",
+  "age": 0,
+  "pages": 10,
+  "format": "Libro de cartón",
+  "temas": [
+   "Libro-juego"
+  ],
+  "img": "portadas-cuentos/osito-tito-vamos-a-jugar.jpg"
  },
  {
   "id": "osito-tito-vamos-al-zoo",
@@ -716,6 +1172,38 @@
    "Libro-juego"
   ],
   "img": "portadas-cuentos/oso-y-ratona-buenas-noches.jpg"
+ },
+ {
+  "id": "paco-y-vivaldi",
+  "name": "Paco y Vivaldi",
+  "author": "Magali Le Huche",
+  "publisher": "Timun Mas Infantil",
+  "year": 2018,
+  "isbn": "9788408179870",
+  "age": 3,
+  "pages": 32,
+  "format": "Tapa dura",
+  "temas": [
+   "Música"
+  ],
+  "img": "portadas-cuentos/paco-y-vivaldi.jpg"
+ },
+ {
+  "id": "papa-dice",
+  "name": "Papá dice",
+  "author": "Margarita del Mazo",
+  "illustrator": "Cecilia Moreno",
+  "publisher": "Ediciones Jaguar (Miau de cartón)",
+  "year": 2017,
+  "isbn": "9788416434725",
+  "age": 0,
+  "pages": 18,
+  "format": "Libro de cartón",
+  "temas": [
+   "Animales",
+   "Familia"
+  ],
+  "img": "portadas-cuentos/papa-dice.jpg"
  },
  {
   "id": "pero-que-le-pasa-a-blasa",
@@ -799,6 +1287,23 @@
   "img": "portadas-cuentos/que-jaleo-timoteo.jpg"
  },
  {
+  "id": "quien-soy",
+  "name": "¿Quién soy?",
+  "author": "Tristan Mory",
+  "illustrator": "Tristan Mory",
+  "publisher": "Combel",
+  "year": 2019,
+  "isbn": "9788491014744",
+  "age": 0,
+  "pages": 24,
+  "format": "Libro de cartón",
+  "temas": [
+   "Animales",
+   "Libro-juego"
+  ],
+  "img": "portadas-cuentos/quien-soy.jpg"
+ },
+ {
   "id": "robin-hood",
   "name": "Robin Hood",
   "author": "Disney",
@@ -813,6 +1318,38 @@
    "Clásicos"
   ],
   "img": "portadas-cuentos/robin-hood.jpg"
+ },
+ {
+  "id": "salta-que-salta",
+  "name": "Salta que salta",
+  "author": "Mar Benegas",
+  "illustrator": "Luisa Vera",
+  "publisher": "Combel (La cereza)",
+  "year": 2021,
+  "isbn": "9788491016861",
+  "age": 0,
+  "pages": 12,
+  "format": "Libro de cartón",
+  "temas": [
+   "Rimas"
+  ],
+  "img": "portadas-cuentos/salta-que-salta.jpg"
+ },
+ {
+  "id": "tras-tras",
+  "name": "Tras-tras",
+  "author": "Mar Benegas",
+  "illustrator": "María Reyes Guijarro",
+  "publisher": "Combel (La cereza)",
+  "year": 2019,
+  "isbn": "9788491014331",
+  "age": 0,
+  "pages": 12,
+  "format": "Libro de cartón",
+  "temas": [
+   "Rimas"
+  ],
+  "img": "portadas-cuentos/tras-tras.jpg"
  },
  {
   "id": "tu-y-yo-el-cuento-mas-bonito-del-mundo",
