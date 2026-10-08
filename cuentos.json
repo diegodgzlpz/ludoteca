@@ -1,5 +1,20 @@
 [
  {
+  "id": "101-dalmatas",
+  "name": "101 Dálmatas",
+  "author": "Disney",
+  "publisher": "Everest (Nueva antología Disney)",
+  "year": 1994,
+  "isbn": "9788424133917",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Clásicos"
+  ]
+ },
+ {
   "id": "aladdin",
   "name": "Aladdín",
   "author": "Disney",
@@ -371,6 +386,22 @@
   "img": "portadas-cuentos/frederick-aleman.jpg"
  },
  {
+  "id": "hercules",
+  "name": "Hércules",
+  "author": "Disney",
+  "publisher": "Everest (Nueva antología Disney)",
+  "year": 1997,
+  "isbn": "9788424134013",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Clásicos"
+  ],
+  "img": "portadas-cuentos/hercules.jpg"
+ },
+ {
   "id": "la-bella-durmiente",
   "name": "La bella durmiente",
   "author": "Disney",
@@ -385,6 +416,22 @@
    "Clásicos"
   ],
   "img": "portadas-cuentos/la-bella-durmiente.jpg"
+ },
+ {
+  "id": "la-bella-y-la-bestia",
+  "name": "La bella y la bestia",
+  "author": "Disney",
+  "publisher": "Everest (Clásicos ilustrados Disney)",
+  "year": 1993,
+  "isbn": "9788424134112",
+  "age": 3,
+  "pages": 96,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Clásicos"
+  ],
+  "img": "portadas-cuentos/la-bella-y-la-bestia.jpg"
  },
  {
   "id": "la-cenicienta",
@@ -467,6 +514,22 @@
   ]
  },
  {
+  "id": "la-sirenita",
+  "name": "La sirenita",
+  "author": "Disney",
+  "publisher": "Everest (Nueva antología Disney)",
+  "year": 1998,
+  "isbn": "9788424133870",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Clásicos"
+  ],
+  "img": "portadas-cuentos/la-sirenita.jpg"
+ },
+ {
   "id": "lilly-la-vaca-viajera",
   "name": "Lilly la vaca viajera",
   "author": "Beat Jossen",
@@ -540,6 +603,22 @@
    "Cocina"
   ],
   "img": "portadas-cuentos/marcelina-en-la-cocina.jpg"
+ },
+ {
+  "id": "merlin-el-encantador",
+  "name": "Merlín, el encantador",
+  "author": "Disney",
+  "publisher": "Everest (Nueva antología Disney)",
+  "year": 1997,
+  "isbn": "9788424133931",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Clásicos"
+  ],
+  "img": "portadas-cuentos/merlin-el-encantador.jpg"
  },
  {
   "id": "mi-primer-imaginario-de-contrarios-bilingue",
@@ -669,6 +748,22 @@
    "Clásicos"
   ],
   "img": "portadas-cuentos/peter-pan.jpg"
+ },
+ {
+  "id": "pinocho",
+  "name": "Pinocho",
+  "author": "Disney",
+  "publisher": "Everest (Nueva antología Disney)",
+  "year": 1999,
+  "isbn": "9788424133924",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Disney",
+   "Clásicos"
+  ],
+  "img": "portadas-cuentos/pinocho.jpg"
  },
  {
   "id": "pocahontas",
