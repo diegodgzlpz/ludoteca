@@ -333,6 +333,36 @@
   ]
  },
  {
+  "id": "colourbrain",
+  "age": 8,
+  "best": 4,
+  "bgg": "223742",
+  "name": "Colourbrain",
+  "pmax": 12,
+  "pmin": 2,
+  "rating": 6.3,
+  "tags": [
+   "Party",
+   "Preguntas",
+   "Acción simultánea"
+  ],
+  "tmax": 30,
+  "tmin": 30,
+  "weight": 1.0,
+  "year": 2017,
+  "img": "portadas/colourbrain.jpg",
+  "videos": [
+   {
+    "yt": "_ZZJM1eJVVU",
+    "t": "Conociendo Colour Brain"
+   },
+   {
+    "yt": "fNd2JctlV3M",
+    "t": "Cómo se juega a Colour Brain"
+   }
+  ]
+ },
+ {
   "id": "colt-express-big-box",
   "age": 10,
   "best": 5,
@@ -463,6 +493,36 @@
    {
     "yt": "W2iEC76X56Q",
     "t": "✅ Cómo jugar a Código Secreto Disney - Devir"
+   }
+  ]
+ },
+ {
+  "id": "disney-villainous",
+  "age": 10,
+  "best": 3,
+  "bgg": "256382",
+  "name": "Disney Villainous",
+  "pmax": 6,
+  "pmin": 2,
+  "rating": 6.9,
+  "tags": [
+   "Gestión de mano",
+   "Poderes variables",
+   "Puteo"
+  ],
+  "tmax": 120,
+  "tmin": 45,
+  "weight": 2.49,
+  "year": 2018,
+  "img": "portadas/disney-villainous.jpg",
+  "videos": [
+   {
+    "yt": "vsit3udwaDw",
+    "t": "Conociendo Villainous"
+   },
+   {
+    "yt": "B8avvDqLmVo",
+    "t": "Villainous (juego de mesa): Aprende a ser villano (cómo se juega)"
    }
   ]
  },
@@ -772,6 +832,36 @@
   ]
  },
  {
+  "id": "iq-files-pecados",
+  "age": 14,
+  "best": 2,
+  "bgg": "332181",
+  "name": "IQ Files: Pecados",
+  "pmax": 6,
+  "pmin": 1,
+  "rating": 6.6,
+  "tags": [
+   "Cooperativo",
+   "Deducción",
+   "Puzles"
+  ],
+  "tmax": 150,
+  "tmin": 90,
+  "weight": 3.0,
+  "year": 2021,
+  "img": "portadas/iq-files-pecados.png",
+  "videos": [
+   {
+    "yt": "8i2W-CmDLpE",
+    "t": "Conociendo IQ Files"
+   },
+   {
+    "yt": "u51GUJUdlvQ",
+    "t": "IQ FILES Cómo se juega"
+   }
+  ]
+ },
+ {
   "id": "its-a-wonderful-world",
   "age": 14,
   "best": 4,
@@ -821,6 +911,30 @@
    {
     "yt": "FeYS-mfwJLk",
     "t": "Tutorial Jaipur juego de mesa"
+   }
+  ]
+ },
+ {
+  "id": "jenga",
+  "age": 6,
+  "best": 4,
+  "bgg": "2452",
+  "name": "Jenga",
+  "pmax": 8,
+  "pmin": 1,
+  "rating": 5.7,
+  "tags": [
+   "Destreza"
+  ],
+  "tmax": 20,
+  "tmin": 20,
+  "weight": 1.1,
+  "year": 1983,
+  "img": "portadas/jenga.jpg",
+  "videos": [
+   {
+    "yt": "DVsZQ2iPt4U",
+    "t": "Cómo se juega - Jenga"
    }
   ]
  },
@@ -918,6 +1032,24 @@
   ]
  },
  {
+  "id": "kluster-duo",
+  "age": 7,
+  "best": 2,
+  "bgg": "408383",
+  "name": "Kluster Duo",
+  "pmax": 2,
+  "pmin": 1,
+  "rating": 6.5,
+  "tags": [
+   "Destreza"
+  ],
+  "tmax": 20,
+  "tmin": 10,
+  "weight": 1.0,
+  "year": 2023,
+  "img": "portadas/kluster-duo.png"
+ },
+ {
   "id": "la-isla-prohibida",
   "age": 10,
   "best": 4,
@@ -944,6 +1076,35 @@
   ]
  },
  {
+  "id": "linkee",
+  "age": 14,
+  "best": 4,
+  "bgg": "147194",
+  "name": "Linkee",
+  "pmax": 30,
+  "pmin": 2,
+  "rating": 6.4,
+  "tags": [
+   "Party",
+   "Preguntas"
+  ],
+  "tmax": 30,
+  "tmin": 30,
+  "weight": 1.15,
+  "year": 2012,
+  "img": "portadas/linkee.jpg",
+  "videos": [
+   {
+    "yt": "hN-iptpyxbY",
+    "t": "Conociendo Linkee"
+   },
+   {
+    "yt": "7DFG6bm5fSs",
+    "t": "Vamos a aprender a jugar a LINKEE, un party game imprescindible"
+   }
+  ]
+ },
+ {
   "id": "los-gatos-de-schrodinger",
   "age": 8,
   "best": 4,
@@ -966,6 +1127,36 @@
    {
     "yt": "rz6VkLDH6EY",
     "t": "Cómo jugar a Los Gatos de Schrödinger"
+   }
+  ]
+ },
+ {
+  "id": "los-hombres-lobo-de-castronegro",
+  "age": 10,
+  "best": 12,
+  "bgg": "25821",
+  "name": "Los Hombres Lobo de Castronegro",
+  "pmax": 18,
+  "pmin": 8,
+  "rating": 6.7,
+  "tags": [
+   "Roles ocultos",
+   "Eliminación",
+   "Por equipos"
+  ],
+  "tmax": 30,
+  "tmin": 30,
+  "weight": 1.31,
+  "year": 2001,
+  "img": "portadas/los-hombres-lobo-de-castronegro.jpg",
+  "videos": [
+   {
+    "yt": "0U3JAfoeCvc",
+    "t": "HOMBRES LOBO DE CASTRONEGRO - Aprende a jugar"
+   },
+   {
+    "yt": "29vMhcBBTOQ",
+    "t": "HOMBRES LOBO DE CASTRONEGRO. Aprendemos a jugar a..."
    }
   ]
  },
@@ -1036,6 +1227,30 @@
    {
     "yt": "U7SaUPM4hcE",
     "t": "Conociendo Maki Stack"
+   }
+  ]
+ },
+ {
+  "id": "mastermind",
+  "age": 8,
+  "best": 2,
+  "bgg": "2392",
+  "name": "Mastermind",
+  "pmax": 2,
+  "pmin": 2,
+  "rating": 5.7,
+  "tags": [
+   "Deducción"
+  ],
+  "tmax": 20,
+  "tmin": 20,
+  "weight": 1.78,
+  "year": 1971,
+  "img": "portadas/mastermind.jpg",
+  "videos": [
+   {
+    "yt": "sL5sf318GHY",
+    "t": "Cómo jugar al Mastermind"
    }
   ]
  },
@@ -1507,6 +1722,34 @@
   ]
  },
  {
+  "id": "play-hit",
+  "age": 16,
+  "bgg": "432681",
+  "name": "Play Hit",
+  "pmax": 10,
+  "pmin": 2,
+  "rating": 5.8,
+  "tags": [
+   "Música",
+   "Preguntas"
+  ],
+  "tmax": 30,
+  "tmin": 30,
+  "weight": 1.0,
+  "year": 2024,
+  "img": "portadas/play-hit.jpg",
+  "videos": [
+   {
+    "yt": "tQktENljZ5k",
+    "t": "Conociendo Play Hit"
+   },
+   {
+    "yt": "5aCgkFQuW5k",
+    "t": "Play Hit: Cómo se juega + Partida + Opinión"
+   }
+  ]
+ },
+ {
   "id": "polilla-tramposa",
   "age": 7,
   "best": 5,
@@ -1932,6 +2175,36 @@
   ]
  },
  {
+  "id": "trapwords",
+  "age": 8,
+  "best": 6,
+  "bgg": "257527",
+  "name": "Trapwords",
+  "pmax": 8,
+  "pmin": 4,
+  "rating": 7.0,
+  "tags": [
+   "Comunicación limitada",
+   "Por equipos",
+   "Party"
+  ],
+  "tmax": 45,
+  "tmin": 30,
+  "weight": 1.42,
+  "year": 2018,
+  "img": "portadas/trapwords.jpg",
+  "videos": [
+   {
+    "yt": "8rSGJIZuqiQ",
+    "t": "Conociendo Trapwords"
+   },
+   {
+    "yt": "-a2HxlkbCpw",
+    "t": "Aprende a jugar a Trapwords en 5 minutos"
+   }
+  ]
+ },
+ {
   "id": "twilight-struggle",
   "age": 13,
   "best": 2,
@@ -2012,6 +2285,35 @@
    {
     "yt": "hhuDzcOvDIQ",
     "t": "Cómo Jugar UNO FLEX ✅️ ❌️"
+   }
+  ]
+ },
+ {
+  "id": "uno-flip",
+  "age": 7,
+  "best": 4,
+  "bgg": "271460",
+  "name": "UNO Flip",
+  "pmax": 10,
+  "pmin": 2,
+  "rating": 6.3,
+  "tags": [
+   "Gestión de mano",
+   "Puteo"
+  ],
+  "tmax": 30,
+  "tmin": 30,
+  "weight": 1.24,
+  "year": 2019,
+  "img": "portadas/uno-flip.jpg",
+  "videos": [
+   {
+    "yt": "6QcCaTRtIK0",
+    "t": "Cómo jugar Uno Flip"
+   },
+   {
+    "yt": "cjtZ1dOCk2Q",
+    "t": "Como jugar UNO FLIP desde 0 (después del UNO clásico)"
    }
   ]
  },
@@ -2129,6 +2431,58 @@
    {
     "yt": "06phBOEAKv0",
     "t": "Welcome Hacia El Perfecto Hogar - SD Games - Videoreseña"
+   }
+  ]
+ },
+ {
+  "id": "yo-soy-tu-peli",
+  "best": 6,
+  "bgg": "414469",
+  "name": "Yo soy tu peli",
+  "pmax": 10,
+  "pmin": 4,
+  "rating": 6.7,
+  "tags": [
+   "Party",
+   "Preguntas"
+  ],
+  "tmax": 30,
+  "tmin": 30,
+  "img": "portadas/yo-soy-tu-peli.png",
+  "videos": [
+   {
+    "yt": "VkZy68SKkvk",
+    "t": "Aprende a Jugar YO SOY TU PELI - Tutorial, Ejemplos y Comentarios"
+   }
+  ]
+ },
+ {
+  "id": "alguien-ha-probado-este-juego",
+  "age": 12,
+  "best": 5,
+  "bgg": "31016",
+  "name": "¿Alguien ha probado este juego?",
+  "pmax": 10,
+  "pmin": 2,
+  "rating": 5.4,
+  "tags": [
+   "Gestión de mano",
+   "Memoria",
+   "Eliminación"
+  ],
+  "tmax": 10,
+  "tmin": 1,
+  "weight": 1.08,
+  "year": 2007,
+  "img": "portadas/alguien-ha-probado-este-juego.jpg",
+  "videos": [
+   {
+    "yt": "YdQfEd1JygA",
+    "t": "Conociendo ¿Alguien Ha Probado Este Juego?"
+   },
+   {
+    "yt": "0_sw6TASPi8",
+    "t": "¿Alguien ha probado este juego? - Cómo se juega y opinión"
    }
   ]
  },
@@ -2315,6 +2669,36 @@
    {
     "yt": "FQaSyFmJes4",
     "t": "JUEGO PIKO PIKO + EXTRA como jugar y opinión"
+   }
+  ]
+ },
+ {
+  "id": "the-island-strikes-back",
+  "age": 8,
+  "bgg": "177156",
+  "name": "The Island Strikes Back",
+  "parent": "the-island",
+  "pmax": 6,
+  "pmin": 2,
+  "rating": 7.5,
+  "tags": [
+   "Puntos de acción",
+   "Dados",
+   "Tablero modular"
+  ],
+  "tmax": 60,
+  "tmin": 45,
+  "weight": 1.7,
+  "year": 2015,
+  "img": "portadas/the-island-strikes-back.jpg",
+  "videos": [
+   {
+    "yt": "Drk0Qa2Kt-0",
+    "t": "Ampliando The Island: The Island Strikes Back"
+   },
+   {
+    "yt": "p4Ut7kfvV44",
+    "t": "The Island + Expansión The Island Strikes Back!!! - Unboxing y cómo se juega"
    }
   ]
  }
