@@ -9,6 +9,9 @@ Sitio estático: `index.html` lee `games.json` y muestra las portadas de `portad
 index.html      La página (HTML, CSS y JS en un solo archivo, sin dependencias)
 games.json      La colección: la única fuente de datos
 portadas/       Una imagen por juego: <id>.jpg o <id>.png
+cuentos.html    La página de cuentos infantiles (misma estructura, color ciruela)
+cuentos.json    La colección de cuentos
+portadas-cuentos/  Una imagen por cuento: <id>.jpg o <id>.png
 .nojekyll       Evita que GitHub Pages procese el sitio con Jekyll
 ```
 
@@ -105,4 +108,43 @@ Cada ficha tiene su dirección: `https://<usuario>.github.io/ludoteca/#<id>`, po
 `#catan`. Abrir esa dirección abre la ficha; el enlace de una expansión
 (`#catan-navegantes`) abre la ficha de su juego base.
 
-Datos y portadas de [BoardGameGeek](https://boardgamegeek.com).
+## Cuentos
+
+`cuentos.html` es la misma estantería para cuentos infantiles, en
+`https://<usuario>.github.io/ludoteca/cuentos.html`. Cada página enlaza a la otra
+desde la cabecera. Filtra por edad del niño o niña («Tiene»: Bebé, 2…8, 10+), por tema y
+por texto (título, autor, ilustrador o tema). Los datos salen de
+[Open Library](https://openlibrary.org); para añadir uno, usa `/anadir-cuento <título o ISBN>`.
+
+```json
+{
+  "id": "el-monstruo-de-colores",
+  "name": "El monstruo de colores",
+  "author": "Anna Llenas",
+  "illustrator": "Anna Llenas",
+  "publisher": "Flamboyant",
+  "year": 2014,
+  "isbn": "9788494157820",
+  "age": 3,
+  "pages": 40,
+  "format": "Álbum ilustrado",
+  "temas": ["Emociones"],
+  "img": "portadas-cuentos/el-monstruo-de-colores.jpg",
+  "videos": [{"yt": "<id>", "t": "<título del vídeo>"}]
+}
+```
+
+| Campo | Obligatorio | Significado |
+|---|---|---|
+| `id` | sí | Identificador único, en minúsculas y con guiones. Nombre del archivo de portada. |
+| `name` | sí | Título que se muestra. |
+| `author`, `illustrator`, `publisher` | no | Autor, ilustrador y editorial de la edición. |
+| `year`, `pages`, `isbn` | no | Año de la edición, páginas e ISBN-13 (enlaza a Open Library). |
+| `age` | no | Edad mínima recomendada (0 para bebés). Sin ella, el cuento no aparece al filtrar por edad. |
+| `format` | no | Cartoné, Tapa blanda, Álbum ilustrado, Pop-up… |
+| `temas` | no | Se muestran los tres primeros; alimentan el desplegable «Tema» y la búsqueda. |
+| `img`, `videos`, `summary`, `hue` | no | Portada, vídeos de cuentacuentos (mismo formato que los juegos), resumen breve y tono de la portada generada. |
+
+Valida el archivo con `python -m json.tool cuentos.json > /dev/null`.
+
+Datos y portadas de [BoardGameGeek](https://boardgamegeek.com) y [Open Library](https://openlibrary.org).
