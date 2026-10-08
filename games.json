@@ -1,5 +1,35 @@
 [
  {
+  "id": "3-little-pigs",
+  "age": 2,
+  "best": 2,
+  "bgg": "320766",
+  "name": "3 Little Pigs",
+  "pmax": 4,
+  "pmin": 1,
+  "rating": 6.2,
+  "tags": [
+   "Cooperativo",
+   "Dados",
+   "Infantil"
+  ],
+  "tmax": 20,
+  "tmin": 10,
+  "weight": 1.0,
+  "year": 2022,
+  "img": "portadas/3-little-pigs.jpg",
+  "videos": [
+   {
+    "yt": "0fuSexWzFj4",
+    "t": "Los 3 Cerditos de Goula"
+   },
+   {
+    "yt": "Ewiun2CVqMo",
+    "t": "Jugando a los 3 cerditos de Goula"
+   }
+  ]
+ },
+ {
   "id": "7-wonders",
   "age": 10,
   "best": 4,
@@ -302,6 +332,26 @@
    {
     "yt": "oQRedSsLB_g",
     "t": "Cascadia Rolling Rivers y Rolling Hills. Todo sobre los R&W"
+   }
+  ]
+ },
+ {
+  "id": "coloformix",
+  "age": 4,
+  "name": "Coloformix",
+  "pmax": 1,
+  "pmin": 1,
+  "tags": [
+   "Puzles",
+   "Infantil"
+  ],
+  "tmax": 10,
+  "tmin": 10,
+  "img": "portadas/coloformix.jpg",
+  "videos": [
+   {
+    "yt": "ug_YIY2iZfY",
+    "t": "Coloformix, un juego para trabajar las tablas de doble entrada"
    }
   ]
  },
@@ -689,6 +739,29 @@
    {
     "yt": "pIT-voVuxLI",
     "t": "Cómo se juega a Feelinks Revelations"
+   }
+  ]
+ },
+ {
+  "id": "funny-duck",
+  "age": 2,
+  "bgg": "438092",
+  "name": "Funny Duck",
+  "pmax": 4,
+  "pmin": 2,
+  "tags": [
+   "Cooperativo",
+   "Infantil"
+  ],
+  "img": "portadas/funny-duck.jpg",
+  "videos": [
+   {
+    "yt": "S-0u-bj844U",
+    "t": "Funny Duck - Cómo se juega - Reseña rápida"
+   },
+   {
+    "yt": "nBzs-oWePPc",
+    "t": "FUNNY DUCK. Mi primer juego"
    }
   ]
  },
@@ -1105,6 +1178,46 @@
   ]
  },
  {
+  "id": "little-family",
+  "age": 2,
+  "bgg": "320842",
+  "name": "Little Family",
+  "pmax": 4,
+  "pmin": 2,
+  "tags": [
+   "Emparejar",
+   "Infantil"
+  ],
+  "tmax": 10,
+  "tmin": 10,
+  "year": 2020,
+  "img": "portadas/little-family.jpg",
+  "videos": [
+   {
+    "yt": "sej2n-fKs_g",
+    "t": "¿Cómo se juega al LITTLE FAMILY? || Kinuma Recomienda"
+   },
+   {
+    "yt": "BqY9f4_lX3g",
+    "t": "Jugando a LITTLE FAMILY"
+   }
+  ]
+ },
+ {
+  "id": "little-select",
+  "age": 3,
+  "bgg": "446960",
+  "name": "Little Select",
+  "pmax": 4,
+  "pmin": 2,
+  "tags": [
+   "Infantil"
+  ],
+  "tmax": 10,
+  "tmin": 10,
+  "img": "portadas/little-select.jpg"
+ },
+ {
   "id": "los-gatos-de-schrodinger",
   "age": 8,
   "best": 4,
@@ -1277,6 +1390,32 @@
    {
     "yt": "uoskaot4yCs",
     "t": "Conociendo Mente Vacuna"
+   }
+  ]
+ },
+ {
+  "id": "minimatch",
+  "age": 3,
+  "best": 2,
+  "bgg": "89396",
+  "name": "MiniMatch",
+  "pmax": 5,
+  "pmin": 2,
+  "rating": 5.9,
+  "tags": [
+   "Memoria",
+   "Reconocimiento de patrones",
+   "Infantil"
+  ],
+  "tmax": 10,
+  "tmin": 10,
+  "weight": 1.0,
+  "year": 2009,
+  "img": "portadas/minimatch.jpg",
+  "videos": [
+   {
+    "yt": "mc02KjXbFp0",
+    "t": "Jugar al Minimatch, juego de cartas de Djeco"
    }
   ]
  },
@@ -1660,6 +1799,31 @@
    {
     "yt": "Dq2aqWdM2XA",
     "t": "PELUSAS REVOLUTION ¿Cómo se juega?*MERCURIO*¡Descubre el Juego de Pelusas más Brillante Jamás Hecho!"
+   }
+  ]
+ },
+ {
+  "id": "pesky-island",
+  "age": 3,
+  "best": 3,
+  "bgg": "436968",
+  "name": "Pesky Island",
+  "pmax": 4,
+  "pmin": 2,
+  "tags": [
+   "Dados",
+   "Movimiento",
+   "Infantil"
+  ],
+  "tmax": 30,
+  "tmin": 10,
+  "weight": 1.0,
+  "year": 2025,
+  "img": "portadas/pesky-island.jpg",
+  "videos": [
+   {
+    "yt": "0RssQsKdwkg",
+    "t": "Cómo se juega a Pesky Island. Instrucciones para pasarlo Cayro."
    }
   ]
  },
@@ -2485,6 +2649,10 @@
     "t": "¿Alguien ha probado este juego? - Cómo se juega y opinión"
    }
   ]
+ },
+ {
+  "id": "hacemos-el-mono",
+  "name": "¿Hacemos el mono?"
  },
  {
   "id": "aventureros-europa",
