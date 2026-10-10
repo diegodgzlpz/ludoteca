@@ -1,14 +1,14 @@
 # Ludoteca de Diego y Alba
 
 Inventario de juegos de mesa con filtro por número de jugadores, tiempo disponible y edad.
-Sitio estático: `index.html` lee `games.json` y muestra las portadas de `portadas/`.
+Sitio estático: `index.html` lee `games.json` y muestra las portadas de `portadas-juegos/`.
 
 ## Estructura
 
 ```
 index.html      La página (HTML, CSS y JS en un solo archivo, sin dependencias)
 games.json      La colección: la única fuente de datos
-portadas/       Una imagen por juego: <id>.jpg o <id>.png
+portadas-juegos/ Una imagen por juego: <id>.jpg o <id>.png
 cuentos.html    La página de cuentos infantiles (misma estructura, color ciruela)
 cuentos.json    La colección de cuentos
 portadas-cuentos/  Una imagen por cuento: <id>.jpg o <id>.png
@@ -17,7 +17,7 @@ portadas-cuentos/  Una imagen por cuento: <id>.jpg o <id>.png
 
 ## Publicar en GitHub Pages
 
-1. Copia tus portadas descargadas dentro de `portadas/` (los nombres ya coinciden con `games.json`).
+1. Copia tus portadas descargadas dentro de `portadas-juegos/` (los nombres ya coinciden con `games.json`).
 2. Crea un repositorio **público** en GitHub, por ejemplo `ludoteca`, y sube el contenido:
    ```
    git init
@@ -42,7 +42,7 @@ python -m http.server 8000
 
 ## Añadir un juego
 
-Añade una entrada a `games.json` y, si tienes portada, su imagen en `portadas/`:
+Añade una entrada a `games.json` y, si tienes portada, su imagen en `portadas-juegos/`:
 
 ```json
 {
@@ -57,7 +57,7 @@ Añade una entrada a `games.json` y, si tienes portada, su imagen en `portadas/`
   "rating": 7.6,
   "best": 2,
   "tags": ["Patrones", "Colección de sets"],
-  "img": "portadas/azul-pabellon-de-verano.jpg",
+  "img": "portadas-juegos/azul-pabellon-de-verano.jpg",
   "videos": [
     {"yt": "WOoKrjIkMxU", "t": "Conociendo Azul Pabellón de Verano"}
   ]

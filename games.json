@@ -17,7 +17,7 @@
   "tmin": 10,
   "weight": 1.0,
   "year": 2022,
-  "img": "portadas/3-little-pigs.jpg",
+  "img": "portadas-juegos/3-little-pigs.jpg",
   "videos": [
    {
     "yt": "0fuSexWzFj4",
@@ -48,7 +48,7 @@
   "tmin": 30,
   "weight": 2.31,
   "year": 2010,
-  "img": "portadas/7-wonders.jpg",
+  "img": "portadas-juegos/7-wonders.jpg",
   "videos": [
    {
     "yt": "t9VfGyVCLzc",
@@ -78,7 +78,7 @@
   "tmin": 10,
   "weight": 1.25,
   "year": 2024,
-  "img": "portadas/agent-avenue.png",
+  "img": "portadas-juegos/agent-avenue.png",
   "videos": [
    {
     "yt": "RtBxdobl0pg",
@@ -109,7 +109,7 @@
   "tmin": 45,
   "weight": 2.1,
   "year": 2003,
-  "img": "portadas/alhambra.jpg",
+  "img": "portadas-juegos/alhambra.jpg",
   "videos": [
    {
     "yt": "2e-3FzNlFUI",
@@ -139,7 +139,7 @@
   "tmin": 30,
   "weight": 1.8,
   "year": 2017,
-  "img": "portadas/azul.jpg",
+  "img": "portadas-juegos/azul.jpg",
   "videos": [
    {
     "yt": "j1DlqFPqZMY",
@@ -165,7 +165,7 @@
   "tmin": 15,
   "weight": 1,
   "year": 2022,
-  "img": "portadas/burger-ya.jpg",
+  "img": "portadas-juegos/burger-ya.jpg",
   "videos": [
    {
     "yt": "f5FbkiVlxcs",
@@ -191,7 +191,7 @@
   "tmin": 20,
   "weight": 2.05,
   "year": 2020,
-  "img": "portadas/cafe.jpg",
+  "img": "portadas-juegos/cafe.jpg",
   "videos": [
    {
     "yt": "OzGibvnIi4g",
@@ -217,7 +217,7 @@
   "tmin": 30,
   "weight": 2.2,
   "year": 2020,
-  "img": "portadas/calico.jpg",
+  "img": "portadas-juegos/calico.jpg",
   "videos": [
    {
     "yt": "aA_orAIDfuw",
@@ -244,7 +244,7 @@
   "tmin": 20,
   "weight": 1.5,
   "year": 2014,
-  "img": "portadas/camel-up.jpg",
+  "img": "portadas-juegos/camel-up.jpg",
   "videos": [
    {
     "yt": "uGxRsR9v2Ds",
@@ -274,7 +274,7 @@
   "tmin": 30,
   "weight": 1.9,
   "year": 2000,
-  "img": "portadas/carcassonne-plus.jpg",
+  "img": "portadas-juegos/carcassonne-plus.jpg",
   "videos": [
    {
     "yt": "b0SDEcRwOlc",
@@ -301,7 +301,7 @@
   "tmin": 30,
   "weight": 1.8,
   "year": 2021,
-  "img": "portadas/cascadia.jpg",
+  "img": "portadas-juegos/cascadia.jpg",
   "videos": [
    {
     "yt": "EsmWvHjqr0o",
@@ -327,7 +327,7 @@
   "tmin": 15,
   "weight": 2.0,
   "year": 2024,
-  "img": "portadas/cascadia-rios-rodantes.jpg",
+  "img": "portadas-juegos/cascadia-rios-rodantes.jpg",
   "videos": [
    {
     "yt": "oQRedSsLB_g",
@@ -347,7 +347,7 @@
   ],
   "tmax": 10,
   "tmin": 10,
-  "img": "portadas/coloformix.jpg",
+  "img": "portadas-juegos/coloformix.jpg",
   "videos": [
    {
     "yt": "ug_YIY2iZfY",
@@ -374,7 +374,7 @@
   "tmin": 60,
   "weight": 2.28,
   "year": 1995,
-  "img": "portadas/catan.jpg",
+  "img": "portadas-juegos/catan.jpg",
   "videos": [
    {
     "yt": "Lh5LcChAzTg",
@@ -400,7 +400,7 @@
   "tmin": 30,
   "weight": 1.0,
   "year": 2017,
-  "img": "portadas/colourbrain.jpg",
+  "img": "portadas-juegos/colourbrain.jpg",
   "videos": [
    {
     "yt": "_ZZJM1eJVVU",
@@ -430,7 +430,7 @@
   "tmin": 40,
   "weight": 2.2,
   "year": 2022,
-  "img": "portadas/colt-express-big-box.jpg",
+  "img": "portadas-juegos/colt-express-big-box.jpg",
   "videos": [
    {
     "yt": "PiFP1Jw_Mfw",
@@ -446,7 +446,7 @@
   "id": "cometas",
   "hue": 298,
   "name": "Cometas",
-  "img": "portadas/cometas.jpg",
+  "img": "portadas-juegos/cometas.jpg",
   "videos": [
    {
     "yt": "y7bzrtd2omQ",
@@ -476,7 +476,7 @@
   "tmin": 40,
   "weight": 1.4,
   "year": 2013,
-  "img": "portadas/concept.jpg",
+  "img": "portadas-juegos/concept.jpg",
   "videos": [
    {
     "yt": "WIXswuvn-M4",
@@ -507,7 +507,7 @@
   "tmin": 15,
   "weight": 1.3,
   "year": 2015,
-  "img": "portadas/codigo-secreto.jpg",
+  "img": "portadas-juegos/codigo-secreto.jpg",
   "videos": [
    {
     "yt": "0P4NxYetoQc",
@@ -538,7 +538,7 @@
   "tmin": 15,
   "weight": 1.2,
   "year": 2017,
-  "img": "portadas/codigo-secreto-disney.jpg",
+  "img": "portadas-juegos/codigo-secreto-disney.jpg",
   "videos": [
    {
     "yt": "W2iEC76X56Q",
@@ -564,7 +564,7 @@
   "tmin": 45,
   "weight": 2.49,
   "year": 2018,
-  "img": "portadas/disney-villainous.jpg",
+  "img": "portadas-juegos/disney-villainous.jpg",
   "videos": [
    {
     "yt": "vsit3udwaDw",
@@ -595,7 +595,7 @@
   "tmin": 30,
   "weight": 1.2,
   "year": 2008,
-  "img": "portadas/dixit.jpg",
+  "img": "portadas-juegos/dixit.jpg",
   "videos": [
    {
     "yt": "DVPuPusMFpI",
@@ -619,7 +619,7 @@
   ],
   "weight": 1.1,
   "year": 2018,
-  "img": "portadas/dont-get-got.jpg",
+  "img": "portadas-juegos/dont-get-got.jpg",
   "videos": [
    {
     "yt": "mFAZ7njCte8",
@@ -644,7 +644,7 @@
   "tmin": 20,
   "weight": 1.5,
   "year": 2018,
-  "img": "portadas/el-mortal.jpg",
+  "img": "portadas-juegos/el-mortal.jpg",
   "videos": [
    {
     "yt": "q9LXlhhxn7E",
@@ -670,7 +670,7 @@
   "tmin": 15,
   "weight": 1.08,
   "year": 2015,
-  "img": "portadas/exploding-kittens.png",
+  "img": "portadas-juegos/exploding-kittens.png",
   "videos": [
    {
     "yt": "FYwUaSrW0ls",
@@ -699,7 +699,7 @@
   "tmin": 20,
   "weight": 1.13,
   "year": 2010,
-  "img": "portadas/fantasma-blitz.jpg",
+  "img": "portadas-juegos/fantasma-blitz.jpg",
   "videos": [
    {
     "yt": "cBruixpK1Fg",
@@ -730,7 +730,7 @@
   "tmin": 30,
   "weight": 1,
   "year": 2019,
-  "img": "portadas/feelinks-revelations.jpg",
+  "img": "portadas-juegos/feelinks-revelations.jpg",
   "videos": [
    {
     "yt": "Zx1lGFcIrKc",
@@ -753,7 +753,7 @@
    "Cooperativo",
    "Infantil"
   ],
-  "img": "portadas/funny-duck.jpg",
+  "img": "portadas-juegos/funny-duck.jpg",
   "videos": [
    {
     "yt": "S-0u-bj844U",
@@ -784,7 +784,7 @@
   "tmin": 30,
   "weight": 1.02,
   "year": 2022,
-  "img": "portadas/hitster.png",
+  "img": "portadas-juegos/hitster.png",
   "videos": [
    {
     "yt": "1bSSjCEvXZA",
@@ -812,7 +812,7 @@
   "tmax": 30,
   "tmin": 30,
   "year": 2025,
-  "img": "portadas/hitster-100-espanol.jpg",
+  "img": "portadas-juegos/hitster-100-espanol.jpg",
   "videos": [
    {
     "yt": "hFnKP2ItzDA",
@@ -839,7 +839,7 @@
   "tmin": 30,
   "weight": 1,
   "year": 2024,
-  "img": "portadas/hitster-bingo.jpg",
+  "img": "portadas-juegos/hitster-bingo.jpg",
   "videos": [
    {
     "yt": "R6MESdnF2Cs",
@@ -869,7 +869,7 @@
   "tmin": 30,
   "weight": 1.05,
   "year": 2023,
-  "img": "portadas/hitster-temazos.jpg",
+  "img": "portadas-juegos/hitster-temazos.jpg",
   "videos": [
    {
     "yt": "WTi_USc5Qjo",
@@ -896,7 +896,7 @@
   "tmin": 20,
   "weight": 1.2,
   "year": 2022,
-  "img": "portadas/identidad-secreta.jpg",
+  "img": "portadas-juegos/identidad-secreta.jpg",
   "videos": [
    {
     "yt": "S7V5wVR_G5U",
@@ -922,7 +922,7 @@
   "tmin": 90,
   "weight": 3.0,
   "year": 2021,
-  "img": "portadas/iq-files-pecados.png",
+  "img": "portadas-juegos/iq-files-pecados.png",
   "videos": [
    {
     "yt": "8i2W-CmDLpE",
@@ -952,7 +952,7 @@
   "tmin": 45,
   "weight": 2.3,
   "year": 2019,
-  "img": "portadas/its-a-wonderful-world.jpg",
+  "img": "portadas-juegos/its-a-wonderful-world.jpg",
   "videos": [
    {
     "yt": "y0HllnpthHE",
@@ -979,7 +979,7 @@
   "tmin": 30,
   "weight": 1.5,
   "year": 2009,
-  "img": "portadas/jaipur.jpg",
+  "img": "portadas-juegos/jaipur.jpg",
   "videos": [
    {
     "yt": "FeYS-mfwJLk",
@@ -1003,7 +1003,7 @@
   "tmin": 20,
   "weight": 1.1,
   "year": 1983,
-  "img": "portadas/jenga.jpg",
+  "img": "portadas-juegos/jenga.jpg",
   "videos": [
    {
     "yt": "DVsZQ2iPt4U",
@@ -1030,7 +1030,7 @@
   "tmin": 20,
   "weight": 1,
   "year": 2018,
-  "img": "portadas/just-one.jpg",
+  "img": "portadas-juegos/just-one.jpg",
   "videos": [
    {
     "yt": "fOntFQHpZ7I",
@@ -1061,7 +1061,7 @@
   "tmin": 90,
   "weight": 3.3,
   "year": 2012,
-  "img": "portadas/keyflower.jpg",
+  "img": "portadas-juegos/keyflower.jpg",
   "videos": [
    {
     "yt": "4o6pMGXHfnM",
@@ -1092,7 +1092,7 @@
   "tmin": 25,
   "weight": 1.8,
   "year": 2019,
-  "img": "portadas/kill-the-unicorns.jpg",
+  "img": "portadas-juegos/kill-the-unicorns.jpg",
   "videos": [
    {
     "yt": "ymz411A_y6Q",
@@ -1120,7 +1120,7 @@
   "tmin": 10,
   "weight": 1.0,
   "year": 2023,
-  "img": "portadas/kluster-duo.png"
+  "img": "portadas-juegos/kluster-duo.png"
  },
  {
   "id": "la-isla-prohibida",
@@ -1140,7 +1140,7 @@
   "tmin": 30,
   "weight": 1.7,
   "year": 2010,
-  "img": "portadas/la-isla-prohibida.jpg",
+  "img": "portadas-juegos/la-isla-prohibida.jpg",
   "videos": [
    {
     "yt": "fMqce1nc_MQ",
@@ -1165,7 +1165,7 @@
   "tmin": 30,
   "weight": 1.15,
   "year": 2012,
-  "img": "portadas/linkee.jpg",
+  "img": "portadas-juegos/linkee.jpg",
   "videos": [
    {
     "yt": "hN-iptpyxbY",
@@ -1191,7 +1191,7 @@
   "tmax": 10,
   "tmin": 10,
   "year": 2020,
-  "img": "portadas/little-family.jpg",
+  "img": "portadas-juegos/little-family.jpg",
   "videos": [
    {
     "yt": "sej2n-fKs_g",
@@ -1215,7 +1215,7 @@
   ],
   "tmax": 10,
   "tmin": 10,
-  "img": "portadas/little-select.jpg"
+  "img": "portadas-juegos/little-select.jpg"
  },
  {
   "id": "los-gatos-de-schrodinger",
@@ -1235,7 +1235,7 @@
   "tmin": 10,
   "weight": 1.3,
   "year": 2015,
-  "img": "portadas/los-gatos-de-schrodinger.jpg",
+  "img": "portadas-juegos/los-gatos-de-schrodinger.jpg",
   "videos": [
    {
     "yt": "rz6VkLDH6EY",
@@ -1261,7 +1261,7 @@
   "tmin": 30,
   "weight": 1.31,
   "year": 2001,
-  "img": "portadas/los-hombres-lobo-de-castronegro.jpg",
+  "img": "portadas-juegos/los-hombres-lobo-de-castronegro.jpg",
   "videos": [
    {
     "yt": "0U3JAfoeCvc",
@@ -1277,7 +1277,7 @@
   "id": "macedonia-de-letras",
   "hue": 321,
   "name": "Macedonia de letras",
-  "img": "portadas/macedonia-de-letras.jpg",
+  "img": "portadas-juegos/macedonia-de-letras.jpg",
   "videos": [
    {
     "yt": "vEC69MsDYsI",
@@ -1308,7 +1308,7 @@
   "tmin": 15,
   "weight": 1.7,
   "year": 2017,
-  "img": "portadas/magic-maze.jpg",
+  "img": "portadas-juegos/magic-maze.jpg",
   "videos": [
    {
     "yt": "anFk1Y3Lkrk",
@@ -1335,7 +1335,7 @@
   "tmin": 10,
   "weight": 1,
   "year": 2018,
-  "img": "portadas/maki-stack.jpg",
+  "img": "portadas-juegos/maki-stack.jpg",
   "videos": [
    {
     "yt": "U7SaUPM4hcE",
@@ -1359,7 +1359,7 @@
   "tmin": 20,
   "weight": 1.78,
   "year": 1971,
-  "img": "portadas/mastermind.jpg",
+  "img": "portadas-juegos/mastermind.jpg",
   "videos": [
    {
     "yt": "sL5sf318GHY",
@@ -1385,7 +1385,7 @@
   "tmin": 20,
   "weight": 1,
   "year": 2020,
-  "img": "portadas/mente-vacuna.jpg",
+  "img": "portadas-juegos/mente-vacuna.jpg",
   "videos": [
    {
     "yt": "uoskaot4yCs",
@@ -1411,7 +1411,7 @@
   "tmin": 10,
   "weight": 1.0,
   "year": 2009,
-  "img": "portadas/minimatch.jpg",
+  "img": "portadas-juegos/minimatch.jpg",
   "videos": [
    {
     "yt": "mc02KjXbFp0",
@@ -1432,7 +1432,7 @@
   ],
   "tmax": 40,
   "tmin": 40,
-  "img": "portadas/mismamente.jpg",
+  "img": "portadas-juegos/mismamente.jpg",
   "videos": [
    {
     "yt": "74RCLVyEsMY",
@@ -1463,7 +1463,7 @@
   "tmin": 60,
   "weight": 1.6,
   "year": 1935,
-  "img": "portadas/monopoly.jpg",
+  "img": "portadas-juegos/monopoly.jpg",
   "videos": [
    {
     "yt": "lBdZqvVc5GU",
@@ -1493,7 +1493,7 @@
   "tmin": 15,
   "weight": 1.3,
   "year": 2008,
-  "img": "portadas/monopoly-deal.jpg",
+  "img": "portadas-juegos/monopoly-deal.jpg",
   "videos": [
    {
     "yt": "AWNa_ukzwJk",
@@ -1509,7 +1509,7 @@
   "id": "morada-maldita",
   "hue": 115,
   "name": "Morada Maldita",
-  "img": "portadas/morada-maldita.jpg",
+  "img": "portadas-juegos/morada-maldita.jpg",
   "videos": [
    {
     "yt": "UDMpe7cLViY",
@@ -1540,7 +1540,7 @@
   "tmin": 60,
   "weight": 1.8,
   "year": 2001,
-  "img": "portadas/munchkin.jpg",
+  "img": "portadas-juegos/munchkin.jpg",
   "videos": [
    {
     "yt": "yq1sRKVlLuo",
@@ -1571,7 +1571,7 @@
   "tmin": 30,
   "weight": 2,
   "year": 2020,
-  "img": "portadas/my-city.jpg",
+  "img": "portadas-juegos/my-city.jpg",
   "videos": [
    {
     "yt": "4n_SmCETyAE",
@@ -1597,7 +1597,7 @@
   "tmin": 30,
   "weight": 1.49,
   "year": 2022,
-  "img": "portadas/my-city-roll-write.jpg",
+  "img": "portadas-juegos/my-city-roll-write.jpg",
   "videos": [
    {
     "yt": "chGSH5ivyJU",
@@ -1628,7 +1628,7 @@
   "tmin": 30,
   "weight": 2.3,
   "year": 2023,
-  "img": "portadas/my-island.jpg",
+  "img": "portadas-juegos/my-island.jpg",
   "videos": [
    {
     "yt": "4bYKTyzv0MI",
@@ -1655,7 +1655,7 @@
   "tmin": 42,
   "weight": 1.9,
   "year": 2015,
-  "img": "portadas/mysterium.jpg",
+  "img": "portadas-juegos/mysterium.jpg",
   "videos": [
    {
     "yt": "o-GK91HfCMo",
@@ -1681,7 +1681,7 @@
   "tmin": 20,
   "weight": 1.2,
   "year": 2020,
-  "img": "portadas/pakal.jpg",
+  "img": "portadas-juegos/pakal.jpg",
   "videos": [
    {
     "yt": "IvQ-zQf3fpA",
@@ -1712,7 +1712,7 @@
   "tmin": 30,
   "weight": 1.1,
   "year": 2005,
-  "img": "portadas/party-co-extreme.jpg"
+  "img": "portadas-juegos/party-co-extreme.jpg"
  },
  {
   "id": "patchwork",
@@ -1732,7 +1732,7 @@
   "tmin": 15,
   "weight": 1.6,
   "year": 2014,
-  "img": "portadas/patchwork.jpg",
+  "img": "portadas-juegos/patchwork.jpg",
   "videos": [
    {
     "yt": "qoUYRGRId58",
@@ -1761,7 +1761,7 @@
   "tmin": 20,
   "weight": 1,
   "year": 2021,
-  "img": "portadas/pelusas.jpg",
+  "img": "portadas-juegos/pelusas.jpg",
   "videos": [
    {
     "yt": "Q2KX7909aOo",
@@ -1790,7 +1790,7 @@
   "tmin": 15,
   "weight": 1.1,
   "year": 2024,
-  "img": "portadas/pelusas-revolution.jpg",
+  "img": "portadas-juegos/pelusas-revolution.jpg",
   "videos": [
    {
     "yt": "-4Ia_vUcEeY",
@@ -1819,7 +1819,7 @@
   "tmin": 10,
   "weight": 1.0,
   "year": 2025,
-  "img": "portadas/pesky-island.jpg",
+  "img": "portadas-juegos/pesky-island.jpg",
   "videos": [
    {
     "yt": "0RssQsKdwkg",
@@ -1844,7 +1844,7 @@
   "tmin": 20,
   "weight": 1.16,
   "year": 2005,
-  "img": "portadas/piko-piko.jpg",
+  "img": "portadas-juegos/piko-piko.jpg",
   "videos": [
    {
     "yt": "zmoWWpP3X8U",
@@ -1873,7 +1873,7 @@
   "tmin": 5,
   "weight": 1.08,
   "year": 2020,
-  "img": "portadas/pistas-cruzadas.jpg",
+  "img": "portadas-juegos/pistas-cruzadas.jpg",
   "videos": [
    {
     "yt": "dWxL-igaKtg",
@@ -1901,7 +1901,7 @@
   "tmin": 30,
   "weight": 1.0,
   "year": 2024,
-  "img": "portadas/play-hit.jpg",
+  "img": "portadas-juegos/play-hit.jpg",
   "videos": [
    {
     "yt": "tQktENljZ5k",
@@ -1931,7 +1931,7 @@
   "tmin": 30,
   "weight": 1.2,
   "year": 2011,
-  "img": "portadas/polilla-tramposa.jpg",
+  "img": "portadas-juegos/polilla-tramposa.jpg",
   "videos": [
    {
     "yt": "xe3-rM_mYqM",
@@ -1957,7 +1957,7 @@
   "tmin": 15,
   "weight": 2.03,
   "year": 2021,
-  "img": "portadas/railroad-ink-challenge-amarillo.jpg",
+  "img": "portadas-juegos/railroad-ink-challenge-amarillo.jpg",
   "videos": [
    {
     "yt": "MsFytZphq4w",
@@ -1984,7 +1984,7 @@
   "tmin": 30,
   "weight": 1.7,
   "year": 2025,
-  "img": "portadas/railroad-tiles.jpg",
+  "img": "portadas-juegos/railroad-tiles.jpg",
   "videos": [
    {
     "yt": "XNUCr156Ljg",
@@ -2014,7 +2014,7 @@
   "tmin": 60,
   "weight": 1.7,
   "year": 1977,
-  "img": "portadas/rummikub-travel.jpg",
+  "img": "portadas-juegos/rummikub-travel.jpg",
   "videos": [
    {
     "yt": "zOieUvxYgxs",
@@ -2044,7 +2044,7 @@
   "tmin": 30,
   "weight": 1.3,
   "year": 2004,
-  "img": "portadas/saboteur.jpg",
+  "img": "portadas-juegos/saboteur.jpg",
   "videos": [
    {
     "yt": "n8sdapIZy4U",
@@ -2074,7 +2074,7 @@
   "tmin": 30,
   "weight": 1,
   "year": 2016,
-  "img": "portadas/scrawl.jpg",
+  "img": "portadas-juegos/scrawl.jpg",
   "videos": [
    {
     "yt": "3rmatp5vkZU",
@@ -2104,7 +2104,7 @@
   "tmin": 20,
   "weight": 1.22,
   "year": 2008,
-  "img": "portadas/sushi-bar.jpg",
+  "img": "portadas-juegos/sushi-bar.jpg",
   "videos": [
    {
     "yt": "YWFn48WRD54",
@@ -2130,7 +2130,7 @@
   "tmin": 15,
   "weight": 1.2,
   "year": 2013,
-  "img": "portadas/sushi-go.jpg",
+  "img": "portadas-juegos/sushi-go.jpg",
   "videos": [
    {
     "yt": "WkCfpQFbw78",
@@ -2160,7 +2160,7 @@
   "tmin": 15,
   "weight": 1.1,
   "year": 2023,
-  "img": "portadas/thats-not-a-hat.jpg",
+  "img": "portadas-juegos/thats-not-a-hat.jpg",
   "videos": [
    {
     "yt": "jmrR-Sb1wzQ",
@@ -2187,7 +2187,7 @@
   "tmin": 45,
   "weight": 1.7,
   "year": 1982,
-  "img": "portadas/the-island.jpg",
+  "img": "portadas-juegos/the-island.jpg",
   "videos": [
    {
     "yt": "g_crDl7ipZQ",
@@ -2217,7 +2217,7 @@
   "tmin": 20,
   "weight": 1.1,
   "year": 2018,
-  "img": "portadas/the-mind.jpg",
+  "img": "portadas-juegos/the-mind.jpg",
   "videos": [
    {
     "yt": "S4M7MrrnrlE",
@@ -2244,7 +2244,7 @@
   "tmin": 15,
   "weight": 1.1,
   "year": 2019,
-  "img": "portadas/throw-throw-burrito.jpg",
+  "img": "portadas-juegos/throw-throw-burrito.jpg",
   "videos": [
    {
     "yt": "S0n360a3tUE",
@@ -2268,7 +2268,7 @@
   "tmin": 20,
   "weight": 1.1,
   "year": 2005,
-  "img": "portadas/tiro-al-pato.jpg",
+  "img": "portadas-juegos/tiro-al-pato.jpg",
   "videos": [
    {
     "yt": "BcObel3osd4",
@@ -2299,7 +2299,7 @@
   "tmin": 45,
   "weight": 1.2,
   "year": 1994,
-  "img": "portadas/toma-6.jpg",
+  "img": "portadas-juegos/toma-6.jpg",
   "videos": [
    {
     "yt": "CnHN4_jSNuE",
@@ -2330,7 +2330,7 @@
   "tmin": 30,
   "weight": 1.08,
   "year": 2020,
-  "img": "portadas/top-ten.jpg",
+  "img": "portadas-juegos/top-ten.jpg",
   "videos": [
    {
     "yt": "e9J1PbrZ77M",
@@ -2356,7 +2356,7 @@
   "tmin": 30,
   "weight": 1.42,
   "year": 2018,
-  "img": "portadas/trapwords.jpg",
+  "img": "portadas-juegos/trapwords.jpg",
   "videos": [
    {
     "yt": "8rSGJIZuqiQ",
@@ -2387,7 +2387,7 @@
   "tmin": 120,
   "weight": 3.6,
   "year": 2005,
-  "img": "portadas/twilight-struggle.jpg",
+  "img": "portadas-juegos/twilight-struggle.jpg",
   "videos": [
    {
     "yt": "KyBlaLlQPWo",
@@ -2417,7 +2417,7 @@
   "tmin": 25,
   "weight": 1.5,
   "year": 2003,
-  "img": "portadas/ubongo.jpg",
+  "img": "portadas-juegos/ubongo.jpg",
   "videos": [
    {
     "yt": "e7aGs6veEh4",
@@ -2440,7 +2440,7 @@
   ],
   "weight": 1.7,
   "year": 2023,
-  "img": "portadas/uno-flex.jpg",
+  "img": "portadas-juegos/uno-flex.jpg",
   "videos": [
    {
     "yt": "TpSmW8FViOw",
@@ -2469,7 +2469,7 @@
   "tmin": 30,
   "weight": 1.24,
   "year": 2019,
-  "img": "portadas/uno-flip.jpg",
+  "img": "portadas-juegos/uno-flip.jpg",
   "videos": [
    {
     "yt": "6QcCaTRtIK0",
@@ -2499,7 +2499,7 @@
   "tmin": 20,
   "weight": 1.1,
   "year": 2015,
-  "img": "portadas/virus.jpg",
+  "img": "portadas-juegos/virus.jpg",
   "videos": [
    {
     "yt": "5ONOyFfBTJ0",
@@ -2529,7 +2529,7 @@
   "tmin": 20,
   "weight": 1.9,
   "year": 2024,
-  "img": "portadas/virus-roll-write.jpg",
+  "img": "portadas-juegos/virus-roll-write.jpg",
   "videos": [
    {
     "yt": "iY9fTfLJg2g",
@@ -2560,7 +2560,7 @@
   "tmin": 30,
   "weight": 1.1,
   "year": 2019,
-  "img": "portadas/wavelength.jpg",
+  "img": "portadas-juegos/wavelength.jpg",
   "videos": [
    {
     "yt": "aZMN7A9Ka2o",
@@ -2586,7 +2586,7 @@
   "tmin": 25,
   "weight": 1.8,
   "year": 2018,
-  "img": "portadas/welcome-perfecto-hogar.jpg",
+  "img": "portadas-juegos/welcome-perfecto-hogar.jpg",
   "videos": [
    {
     "yt": "3bjutMEOQ8I",
@@ -2612,7 +2612,7 @@
   ],
   "tmax": 30,
   "tmin": 30,
-  "img": "portadas/yo-soy-tu-peli.png",
+  "img": "portadas-juegos/yo-soy-tu-peli.png",
   "videos": [
    {
     "yt": "VkZy68SKkvk",
@@ -2638,7 +2638,7 @@
   "tmin": 1,
   "weight": 1.08,
   "year": 2007,
-  "img": "portadas/alguien-ha-probado-este-juego.jpg",
+  "img": "portadas-juegos/alguien-ha-probado-este-juego.jpg",
   "videos": [
    {
     "yt": "YdQfEd1JygA",
@@ -2652,7 +2652,21 @@
  },
  {
   "id": "hacemos-el-mono",
-  "name": "¿Hacemos el mono?"
+  "name": "¿Hacemos el mono?",
+  "age": 2,
+  "pmax": 1,
+  "pmin": 1,
+  "tags": [
+   "Infantil",
+   "Destreza"
+  ],
+  "img": "portadas-juegos/hacemos-el-mono.jpg",
+  "videos": [
+   {
+    "yt": "20FpD9VL6SU",
+    "t": "Hacemos el mono - Lúdilo"
+   }
+  ]
  },
  {
   "id": "aventureros-europa",
@@ -2673,7 +2687,7 @@
   "tmin": 30,
   "weight": 1.92,
   "year": 2005,
-  "img": "portadas/aventureros-europa.jpg",
+  "img": "portadas-juegos/aventureros-europa.jpg",
   "videos": [
    {
     "yt": "tKpnsMCC1wQ",
@@ -2703,7 +2717,7 @@
   "tmin": 20,
   "weight": 1.1,
   "year": 2004,
-  "img": "portadas/no-gracias.jpg",
+  "img": "portadas-juegos/no-gracias.jpg",
   "videos": [
    {
     "yt": "DYUXVvJzCtM",
@@ -2729,7 +2743,7 @@
   "tmin": 30,
   "weight": 2.2,
   "year": 2023,
-  "img": "portadas/cascadia-landmarks.jpg",
+  "img": "portadas-juegos/cascadia-landmarks.jpg",
   "videos": [
    {
     "yt": "2uP3iN4dIQ8",
@@ -2755,7 +2769,7 @@
   "tmin": 60,
   "weight": 2.6,
   "year": 2007,
-  "img": "portadas/catan-mercaderes-barbaros.jpg",
+  "img": "portadas-juegos/catan-mercaderes-barbaros.jpg",
   "videos": [
    {
     "yt": "squmTbn8JZg",
@@ -2777,7 +2791,7 @@
   "tmin": 90,
   "weight": 2.4,
   "year": 1997,
-  "img": "portadas/catan-navegantes.jpg",
+  "img": "portadas-juegos/catan-navegantes.jpg",
   "videos": [
    {
     "yt": "7YV8IvJ0HQk",
@@ -2799,7 +2813,7 @@
   "tmin": 90,
   "weight": 2.8,
   "year": 2013,
-  "img": "portadas/catan-piratas-exploradores.jpg",
+  "img": "portadas-juegos/catan-piratas-exploradores.jpg",
   "videos": [
    {
     "yt": "5oTsBeNoFO8",
@@ -2828,7 +2842,7 @@
   "tmin": 20,
   "weight": 1.2,
   "year": 2015,
-  "img": "portadas/piko-piko-extrapiko.jpg",
+  "img": "portadas-juegos/piko-piko-extrapiko.jpg",
   "videos": [
    {
     "yt": "P19JMiVYC5A",
@@ -2858,7 +2872,7 @@
   "tmin": 45,
   "weight": 1.7,
   "year": 2015,
-  "img": "portadas/the-island-strikes-back.jpg",
+  "img": "portadas-juegos/the-island-strikes-back.jpg",
   "videos": [
    {
     "yt": "Drk0Qa2Kt-0",

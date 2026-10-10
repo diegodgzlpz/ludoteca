@@ -177,6 +177,21 @@
   "img": "portadas-cuentos/blancanieves-y-los-siete-enanitos.jpg"
  },
  {
+  "id": "bluey-y-sus-amigos-pequena-biblioteca",
+  "name": "Bluey y sus amigos: Pequeña biblioteca",
+  "author": "Bluey",
+  "publisher": "Beascoa (Pequeñas manitas)",
+  "year": 2025,
+  "isbn": "9788448870355",
+  "age": 3,
+  "pages": 48,
+  "format": "Libro de cartón",
+  "temas": [
+   "Amistad"
+  ],
+  "img": "portadas-cuentos/bluey-y-sus-amigos-pequena-biblioteca.jpg"
+ },
+ {
   "id": "bluey-carrera-de-bebes",
   "name": "Bluey: Carrera de bebés",
   "author": "Bluey",
@@ -207,6 +222,21 @@
    "Pantallas"
   ],
   "img": "portadas-cuentos/bluey-cesar-el-conejo.jpg"
+ },
+ {
+  "id": "bluey-pequena-biblioteca",
+  "name": "Bluey: Pequeña biblioteca",
+  "author": "Bluey",
+  "publisher": "Beascoa",
+  "year": 2024,
+  "isbn": "9788448867775",
+  "age": 3,
+  "pages": 48,
+  "format": "Libro de cartón",
+  "temas": [
+   "Familia"
+  ],
+  "img": "portadas-cuentos/bluey-pequena-biblioteca.jpg"
  },
  {
   "id": "bluey-donde-esta-bluey",
@@ -367,6 +397,24 @@
   "img": "portadas-cuentos/chap-chap.jpg"
  },
  {
+  "id": "cinco",
+  "name": "Cinco",
+  "author": "Antonio Rubio",
+  "illustrator": "Óscar Villán",
+  "publisher": "Kalandraka (Do berce á lúa)",
+  "year": 2005,
+  "isbn": "9788484645429",
+  "age": 0,
+  "pages": 14,
+  "format": "Tapa blanda",
+  "temas": [
+   "Números",
+   "Rimas",
+   "Gallego"
+  ],
+  "img": "portadas-cuentos/cinco.jpg"
+ },
+ {
   "id": "como-celebramos-el-carnaval",
   "name": "Cómo celebramos el carnaval",
   "author": "Laura Vila",
@@ -498,6 +546,23 @@
   "img": "portadas-cuentos/dumbo.jpg"
  },
  {
+  "id": "el-arbol-de-los-recuerdos",
+  "name": "El árbol de los recuerdos",
+  "author": "Britta Teckentrup",
+  "illustrator": "Britta Teckentrup",
+  "publisher": "NubeOcho (Somos8)",
+  "year": 2015,
+  "isbn": "9788494379703",
+  "age": 3,
+  "pages": 32,
+  "format": "Tapa dura",
+  "temas": [
+   "Emociones",
+   "Animales"
+  ],
+  "img": "portadas-cuentos/el-arbol-de-los-recuerdos.jpg"
+ },
+ {
   "id": "el-cangrejo-que-vino-a-cenar",
   "name": "El cangrejo que vino a cenar",
   "author": "Steve Smallman",
@@ -562,6 +627,56 @@
    "Clásicos"
   ],
   "img": "portadas-cuentos/el-libro-de-la-selva.jpg"
+ },
+ {
+  "id": "el-libro-de-los-animales-salvajes-y-sus-sonidos",
+  "name": "El libro de los animales salvajes y sus sonidos",
+  "publisher": "Picarona",
+  "year": 2018,
+  "isbn": "9788491451617",
+  "age": 3,
+  "pages": 14,
+  "format": "Libro de cartón",
+  "temas": [
+   "Animales",
+   "Sonidos"
+  ],
+  "img": "portadas-cuentos/el-libro-de-los-animales-salvajes-y-sus-sonidos.jpg"
+ },
+ {
+  "id": "el-libro-dejachupetes",
+  "name": "El libro dejachupetes",
+  "author": "Vanesa Pérez-Sauquillo",
+  "illustrator": "Sara Sánchez",
+  "publisher": "Beascoa (Grandes pasitos)",
+  "year": 2017,
+  "isbn": "9788448847876",
+  "age": 0,
+  "pages": 24,
+  "format": "Tapa dura",
+  "temas": [
+   "Crecer",
+   "Rimas"
+  ],
+  "img": "portadas-cuentos/el-libro-dejachupetes.jpg"
+ },
+ {
+  "id": "el-libro-dejapanales",
+  "name": "El libro dejapañales",
+  "author": "Vanesa Pérez-Sauquillo",
+  "illustrator": "Sara Sánchez",
+  "publisher": "Beascoa (Grandes pasitos)",
+  "year": 2018,
+  "isbn": "9788448849757",
+  "age": 0,
+  "pages": 24,
+  "format": "Tapa dura",
+  "temas": [
+   "Crecer",
+   "Animales",
+   "Rimas"
+  ],
+  "img": "portadas-cuentos/el-libro-dejapanales.jpg"
  },
  {
   "id": "el-monstruo-de-colores",
@@ -1126,6 +1241,39 @@
   "img": "portadas-cuentos/oliver-y-el-troll.jpg"
  },
  {
+  "id": "os-bolechas-festexan-o-nadal",
+  "name": "Os Bolechas festexan o Nadal",
+  "author": "Pepe Carreiro",
+  "publisher": "A Nosa Terra (Os Bolechas)",
+  "year": 2006,
+  "isbn": "9788483411308",
+  "age": 7,
+  "pages": 24,
+  "format": "Tapa dura",
+  "temas": [
+   "Navidad",
+   "Familia",
+   "Gallego"
+  ],
+  "img": "portadas-cuentos/os-bolechas-festexan-o-nadal.jpg"
+ },
+ {
+  "id": "osito-tito-feliz-navidad",
+  "name": "Osito Tito. ¡Feliz Navidad!",
+  "author": "Benji Davies",
+  "publisher": "Timun Mas Infantil",
+  "year": 2020,
+  "isbn": "9788408229711",
+  "age": 0,
+  "pages": 10,
+  "format": "Libro de cartón",
+  "temas": [
+   "Navidad",
+   "Libro-juego"
+  ],
+  "img": "portadas-cuentos/osito-tito-feliz-navidad.jpg"
+ },
+ {
   "id": "osito-tito-vamos-a-jugar",
   "name": "Osito Tito. ¡Vamos a jugar!",
   "author": "Benji Davies",
@@ -1270,6 +1418,23 @@
   "img": "portadas-cuentos/pocahontas.jpg"
  },
  {
+  "id": "poom-poom",
+  "name": "¡Poom, poom!",
+  "author": "Isabel Otter",
+  "illustrator": "Sophie Ledesma",
+  "publisher": "Combel (Escondites)",
+  "year": 2020,
+  "isbn": "9788491016335",
+  "age": 0,
+  "pages": 12,
+  "format": "Libro de cartón",
+  "temas": [
+   "Libro-juego",
+   "Dinosaurios"
+  ],
+  "img": "portadas-cuentos/poom-poom.jpg"
+ },
+ {
   "id": "que-jaleo-timoteo",
   "name": "¡Qué jaleo, Timoteo!",
   "author": "Gracia Iglesias",
@@ -1336,6 +1501,22 @@
   "img": "portadas-cuentos/salta-que-salta.jpg"
  },
  {
+  "id": "tengo-un-volcan",
+  "name": "Tengo un volcán",
+  "author": "Míriam Tirado",
+  "illustrator": "Joan Turu",
+  "publisher": "Carambuco (Calita)",
+  "year": 2018,
+  "isbn": "9788494820694",
+  "age": 5,
+  "pages": 28,
+  "format": "Tapa dura",
+  "temas": [
+   "Emociones"
+  ],
+  "img": "portadas-cuentos/tengo-un-volcan.jpg"
+ },
+ {
   "id": "tras-tras",
   "name": "Tras-tras",
   "author": "Mar Benegas",
@@ -1368,5 +1549,22 @@
    "Emociones"
   ],
   "img": "portadas-cuentos/tu-y-yo-el-cuento-mas-bonito-del-mundo.jpg"
+ },
+ {
+  "id": "un-libro-repleto-de-letras",
+  "name": "Un libro repleto de letras",
+  "author": "Òscar Dalmau",
+  "illustrator": "Jesús Morentin",
+  "publisher": "Coco Books",
+  "year": 2024,
+  "isbn": "9788412792430",
+  "age": 3,
+  "pages": 48,
+  "format": "Tapa dura",
+  "temas": [
+   "Abecedario",
+   "Rimas"
+  ],
+  "img": "portadas-cuentos/un-libro-repleto-de-letras.jpg"
  }
 ]
