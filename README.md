@@ -124,6 +124,8 @@ Las fichas de cuentos no llevan este botón.
   La tarjeta muestra «✓ Jugado · ★★★★».
 - **Yo**: filtro Todos / Jugados / Sin jugar.
 - **🎲 Sorpréndeme**: abre al azar un juego sin jugar que encaje con los filtros puestos.
+- **En el móvil** los filtros y el orden se pliegan tras el botón «Filtros y orden», que
+  muestra cuántos filtros hay activos; la búsqueda y Sorpréndeme quedan siempre a la vista.
 
 Las marcas se guardan **solo en el navegador de cada dispositivo** (`localStorage`, clave
 `ludoteca:mis-juegos`): no hay cuentas, no se sincronizan entre móvil y ordenador y se

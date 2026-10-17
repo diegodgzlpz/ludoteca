@@ -58,10 +58,17 @@ h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,6vw,56px);lin
 .other{color:var(--accent-ink);font-weight:600;font-size:14px;text-decoration:none;white-space:nowrap;padding:6px 0}
 .other:hover{text-decoration:underline;text-underline-offset:3px}
 button,input,select,textarea{font:inherit;color:inherit}
+button,a{-webkit-tap-highlight-color:transparent}
 
 /* Filtros */
 .table{background:var(--panel);color:var(--panel-ink);border-radius:var(--r);padding:22px 24px 24px;display:grid;gap:16px}
 .table h2{margin:0;font-family:var(--display);font-weight:400;font-size:24px;line-height:1.2;letter-spacing:-.01em}
+.thead{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.fmore{display:grid;gap:16px}
+.ftoggle{display:none;align-items:center;gap:8px;min-height:36px;padding:0 12px 0 14px;border:1px solid var(--panel-line);border-radius:999px;background:transparent;color:var(--panel-ink);font-size:14px;font-weight:500;cursor:pointer;white-space:nowrap}
+.nf{min-width:20px;height:20px;padding:0 6px;border-radius:999px;background:var(--chip-on);color:var(--chip-on-ink);font-size:12px;font-weight:600;line-height:20px;text-align:center}
+.chev{transition:transform .2s}
+.ftoggle[aria-expanded="true"] .chev{transform:rotate(180deg)}
 .frow{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center}
 .fgroup{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .flabel{font-size:13px;font-weight:500;color:var(--panel-soft);margin-right:6px}
@@ -184,7 +191,7 @@ body:has(.ficha[open]){overflow:hidden}
 }
 
 .hint{font-size:12.5px;color:var(--muted);margin:0}
-@media (max-width:520px){.wrap{padding-block:28px 32px;gap:22px}.table{padding:18px 16px 20px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.gen{padding:10px}.gen b{font-size:17px}.info{padding:10px 10px 12px;gap:6px}.info h3{font-size:16px}.meta{font-size:11.5px;gap:2px 8px}.box .tags,.box .hint{display:none}.foot{font-size:12px;flex-wrap:wrap}.table .btn{width:100%}}
+@media (max-width:520px){.wrap{padding-block:28px 32px;gap:22px}.table{padding:18px 16px 20px}.table h2{font-size:21px}.ftoggle{display:inline-flex}.table:not(.expanded) .fmore{display:none}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.gen{padding:10px}.gen b{font-size:17px}.info{padding:10px 10px 12px;gap:6px}.info h3{font-size:16px}.meta{font-size:11.5px;gap:2px 8px}.box .tags,.box .hint{display:none}.foot{font-size:12px;flex-wrap:wrap}.table .btn{width:100%}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.box:hover{transform:none!important}}
 
 img{max-width:100%}
@@ -205,7 +212,11 @@ img{max-width:100%}
   </header>
 
   <section class="table" aria-label="Filtros">
-    <h2>¿A qué jugamos hoy?</h2>
+    <div class="thead">
+      <h2>¿A qué jugamos hoy?</h2>
+      <button class="ftoggle" id="ftoggle" type="button" aria-expanded="false" aria-controls="fmore">Filtros y orden<span class="nf" id="nf" hidden></span><span class="chev" aria-hidden="true">▾</span></button>
+    </div>
+    <div class="fmore" id="fmore">
     <div class="frow">
       <div class="fgroup" id="playersGroup" role="group" aria-label="Número de jugadores"><span class="flabel">Somos</span></div>
       <div class="fgroup" id="timeGroup" role="group" aria-label="Tiempo disponible"><span class="flabel">Tenemos</span></div>
@@ -214,6 +225,7 @@ img{max-width:100%}
     <div class="frow">
       <div class="fgroup" id="mineGroup" role="group" aria-label="Juegos que he jugado"><span class="flabel">Yo</span></div>
       <div class="fgroup" id="sortGroup" role="group" aria-label="Ordenar (pulsa otra vez para invertir)"><span class="flabel">Ordenar</span></div>
+    </div>
     </div>
     <div class="frow">
       <input class="search" id="q" type="search" placeholder="Buscar por nombre o mecánica" aria-label="Buscar">
@@ -335,6 +347,9 @@ function render(){
     b.textContent = on ? `${s.l} ${state.dir===1?"↑":"↓"}` : s.l;
     b.setAttribute("aria-label", on ? `Ordenado por ${s.l.toLowerCase()}, ${s.txt[state.dir===1?0:1]}. Pulsa para invertir` : `Ordenar por ${s.l.toLowerCase()}`);
   });
+  const nf=[state.players,state.time,state.age,state.mine].filter(x=>x!=null).length;
+  $("nf").hidden=!nf; $("nf").textContent=nf;
+  $("ftoggle").setAttribute("aria-label",`Filtros y orden${nf?`, ${nf} filtro${nf===1?"":"s"} activo${nf===1?"":"s"}`:""}`);
   const ids=new Set(state.games.map(g=>g.id));
   const bases=state.games.filter(g=>!g.parent||!ids.has(g.parent));
   const exps={}; state.games.forEach(g=>{ if(g.parent&&ids.has(g.parent)) (exps[g.parent] ||= []).push(g); });
@@ -377,6 +392,10 @@ function render(){
 function clearFilters(){
   Object.assign(state,{players:null,time:null,age:null,mine:null,q:""}); $("q").value=""; render();
 }
+$("ftoggle").addEventListener("click",e=>{
+  const open=$("ftoggle").getAttribute("aria-expanded")!=="true";
+  $("ftoggle").setAttribute("aria-expanded",String(open)); document.querySelector(".table").classList.toggle("expanded",open);
+});
 $("surprise").addEventListener("click",e=>{
   const pool=state.visible.filter(g=>!mine(g.id).p), b=e.currentTarget;
   if(pool.length) return openGame(pool[Math.floor(Math.random()*pool.length)].id);
