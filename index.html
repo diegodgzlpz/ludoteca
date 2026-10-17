@@ -160,6 +160,17 @@ body:has(.ficha[open]){overflow:hidden}
 .ficha a{color:var(--accent-ink);font-weight:600;text-decoration:none}
 .ficha a:hover{text-decoration:underline;text-underline-offset:3px}
 .ficha .exps a{color:var(--ink);font-weight:400}
+.mine{font-size:12.5px;font-weight:600;color:var(--accent-ink);white-space:nowrap}
+.yo{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding-top:4px}
+.played{height:36px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:14px;font-weight:500;cursor:pointer;transition:background-color .15s,transform .1s}
+.played:hover{background:var(--sunk)}
+.played:active{transform:scale(.97)}
+.played[aria-pressed="true"]{background:var(--btn);border-color:var(--btn);color:var(--btn-ink)}
+.stars{display:inline-flex}
+.stars button{background:none;border:0;padding:2px 3px;font-size:24px;line-height:1;color:color-mix(in srgb,var(--muted) 45%,transparent);cursor:pointer;transition:color .15s,transform .1s}
+.stars button.on{color:var(--btn)}
+.stars button:hover{transform:scale(1.15)}
+.yo .hint{width:100%}
 .ficha a.wa{justify-self:start;display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 18px;border-radius:999px;background:#25d366;color:#0b141a;font-weight:600;transition:background-color .15s,transform .1s}
 .ficha a.wa:hover{background:#1ebe5a;text-decoration:none}
 .ficha a.wa:active{transform:scale(.97)}
@@ -173,7 +184,7 @@ body:has(.ficha[open]){overflow:hidden}
 }
 
 .hint{font-size:12.5px;color:var(--muted);margin:0}
-@media (max-width:520px){.wrap{padding-block:28px 32px;gap:22px}.table{padding:18px 16px 20px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.gen{padding:10px}.gen b{font-size:17px}.info{padding:10px 10px 12px;gap:6px}.info h3{font-size:16px}.meta{font-size:11.5px;gap:2px 8px}.tags,.hint{display:none}.foot{font-size:12px}}
+@media (max-width:520px){.wrap{padding-block:28px 32px;gap:22px}.table{padding:18px 16px 20px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.gen{padding:10px}.gen b{font-size:17px}.info{padding:10px 10px 12px;gap:6px}.info h3{font-size:16px}.meta{font-size:11.5px;gap:2px 8px}.box .tags,.box .hint{display:none}.foot{font-size:12px;flex-wrap:wrap}.table .btn{width:100%}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.box:hover{transform:none!important}}
 
 img{max-width:100%}
@@ -201,17 +212,12 @@ img{max-width:100%}
       <div class="fgroup" id="ageGroup" role="group" aria-label="Edad del jugador más joven"><span class="flabel">El más peque tiene</span></div>
     </div>
     <div class="frow">
+      <div class="fgroup" id="mineGroup" role="group" aria-label="Juegos que he jugado"><span class="flabel">Yo</span></div>
+      <div class="fgroup" id="sortGroup" role="group" aria-label="Ordenar (pulsa otra vez para invertir)"><span class="flabel">Ordenar</span></div>
+    </div>
+    <div class="frow">
       <input class="search" id="q" type="search" placeholder="Buscar por nombre o mecánica" aria-label="Buscar">
-      <div class="fgroup">
-        <label class="flabel" for="sort">Ordenar</label>
-        <select id="sort">
-          <option value="name">Nombre</option>
-          <option value="weight">Dificultad</option>
-          <option value="time">Duración</option>
-          <option value="year">Año</option>
-          <option value="rating">Nota BGG</option>
-        </select>
-      </div>
+      <button class="btn" id="surprise" type="button" title="Abre un juego que no has jugado y que encaja con los filtros">🎲 Sorpréndeme</button>
     </div>
   </section>
 
@@ -223,12 +229,31 @@ img{max-width:100%}
 <dialog id="ficha" class="ficha" aria-labelledby="fichaTitulo"><div class="fbody" id="fichaBody"></div></dialog>
 
 <script>
-const state = { games: [], players: null, time: null, age: null, q: "", sort: "name" };
+const state = { games: [], players: null, time: null, age: null, mine: null, q: "", sort: "name", dir: 1, visible: [] };
 const $ = id => document.getElementById(id);
 const PLAYER_OPTS = [1,2,3,4,5,6,7,8];
 const TIME_OPTS = [[30,"≤ 30 min"],[60,"≤ 1 h"],[120,"≤ 2 h"],[null,"Lo que haga falta"]];
 const AGE_OPTS = [[6,"6"],[8,"8"],[10,"10"],[12,"12"],[14,"14"],[18,"Adultos"]];
 const COVER_COLORS = ["#cc785c","#181715","#a9583e","#5e5d59","#8a6a4f"];
+const MINE_OPTS = [[null,"Todos"],["p","Jugados"],["np","Sin jugar"]];
+/* d: sentido del primer clic (1 = de menor a mayor); el segundo clic lo invierte */
+const SORTS = {
+  name:{l:"Nombre",d:1,v:g=>g.name,txt:["de la A a la Z","de la Z a la A"]},
+  weight:{l:"Dificultad",d:1,v:g=>g.weight,txt:["de más fácil a más difícil","de más difícil a más fácil"]},
+  time:{l:"Duración",d:1,v:g=>g.tmax||g.tmin,txt:["de más corto a más largo","de más largo a más corto"]},
+  year:{l:"Año",d:-1,v:g=>g.year,txt:["de más antiguo a más nuevo","de más nuevo a más antiguo"]},
+  rating:{l:"Nota BGG",d:-1,v:g=>g.rating,txt:["de peor a mejor nota","de mejor a peor nota"]},
+  mine:{l:"Mi nota",d:-1,v:g=>mine(g.id).r,txt:["de peor a mejor nota mía","de mejor a peor nota mía"]}
+};
+
+/* Mis juegos: jugado (p) y valoración 1–5 (r), guardados solo en este navegador */
+const MINE_KEY = "ludoteca:mis-juegos";
+let mis = {};
+try { mis = JSON.parse(localStorage.getItem(MINE_KEY)) || {}; } catch {}
+const mine = id => mis[id] || {};
+function saveMine(){ try { localStorage.setItem(MINE_KEY, JSON.stringify(mis)); } catch {} }
+function setPlayed(id,on){ if(on) mis[id]={...mine(id),p:true}; else delete mis[id]; saveMine(); }
+function setRating(id,r){ const m={...mine(id),p:true}; if(m.r===r) delete m.r; else m.r=r; mis[id]=m; saveMine(); }
 
 function chips(){
   PLAYER_OPTS.forEach(n=>{
@@ -247,6 +272,16 @@ function chips(){
     if(v<18) b.setAttribute("aria-label",`${v} años`);
     b.onclick=()=>{ state.age = state.age===v?null:v; render(); };
     $("ageGroup").appendChild(b);
+  });
+  MINE_OPTS.forEach(([v,l])=>{
+    const b=document.createElement("button"); b.className="chip"; b.type="button"; b.textContent=l; b.dataset.m=String(v);
+    b.onclick=()=>{ state.mine=v; render(); };
+    $("mineGroup").appendChild(b);
+  });
+  Object.entries(SORTS).forEach(([k,s])=>{
+    const b=document.createElement("button"); b.className="chip"; b.type="button"; b.dataset.k=k;
+    b.onclick=()=>{ if(state.sort===k) state.dir=-state.dir; else { state.sort=k; state.dir=s.d; } render(); };
+    $("sortGroup").appendChild(b);
   });
 }
 function esc(s){ return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
@@ -272,15 +307,20 @@ function fitsTime(g){ if(state.time==null) return true; const t=g.tmax||g.tmin; 
 function fitsAge(g){ if(state.age==null) return true; return g.age ? g.age<=state.age : false; }
 function fitsQuery(g){ if(!state.q) return true;
   return [g.name,(g.tags||[]).join(" ")].join(" ").toLowerCase().includes(state.q.toLowerCase()); }
+function fitsMine(g){ if(state.mine==null) return true; return state.mine==="p" ? !!mine(g.id).p : !mine(g.id).p; }
 function sorted(list){
-  const k=state.sort, num=(x,d)=>x==null?d:x;
+  const s=SORTS[state.sort], dir=state.dir;
+  const byName=(a,b)=>a.name.localeCompare(b.name,"es",{ignorePunctuation:true});
   return [...list].sort((a,b)=>{
-    if(k==="weight") return num(a.weight,9)-num(b.weight,9);
-    if(k==="time") return num(a.tmax||a.tmin,9999)-num(b.tmax||b.tmin,9999);
-    if(k==="year") return num(b.year,0)-num(a.year,0);
-    if(k==="rating") return num(b.rating,0)-num(a.rating,0);
-    return a.name.localeCompare(b.name,"es",{ignorePunctuation:true});
+    if(state.sort==="name") return dir*byName(a,b);
+    const x=s.v(a), y=s.v(b);
+    if(x==null||y==null) return (x==null)-(y==null) || byName(a,b);  // sin dato, siempre al final
+    return dir*(x-y) || byName(a,b);
   });
+}
+function mineHTML(g){
+  const m=mine(g.id); if(!m.p) return "";
+  return `<span class="mine" title="${m.r?`Lo he jugado · mi nota ${m.r} de 5`:"Lo he jugado"}">✓ Jugado${m.r?` · ${"★".repeat(m.r)}`:""}</span>`;
 }
 const short = n => n.replace(/^[^:]+:\s*/,"");
 
@@ -288,11 +328,19 @@ function render(){
   document.querySelectorAll("#playersGroup .chip").forEach(b=>b.setAttribute("aria-pressed",String(+b.dataset.n===state.players)));
   document.querySelectorAll("#timeGroup .chip").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.v===String(state.time))));
   document.querySelectorAll("#ageGroup .chip").forEach(b=>b.setAttribute("aria-pressed",String(+b.dataset.a===state.age)));
+  document.querySelectorAll("#mineGroup .chip").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.m===String(state.mine))));
+  document.querySelectorAll("#sortGroup .chip").forEach(b=>{
+    const k=b.dataset.k, s=SORTS[k], on=k===state.sort;
+    b.setAttribute("aria-pressed",String(on));
+    b.textContent = on ? `${s.l} ${state.dir===1?"↑":"↓"}` : s.l;
+    b.setAttribute("aria-label", on ? `Ordenado por ${s.l.toLowerCase()}, ${s.txt[state.dir===1?0:1]}. Pulsa para invertir` : `Ordenar por ${s.l.toLowerCase()}`);
+  });
   const ids=new Set(state.games.map(g=>g.id));
   const bases=state.games.filter(g=>!g.parent||!ids.has(g.parent));
   const exps={}; state.games.forEach(g=>{ if(g.parent&&ids.has(g.parent)) (exps[g.parent] ||= []).push(g); });
   const nExp=state.games.length-bases.length;
-  const list=sorted(bases.filter(g=>fitsPlayers(g)&&fitsTime(g)&&fitsAge(g)&&(fitsQuery(g)||(exps[g.id]||[]).some(fitsQuery))));
+  const list=sorted(bases.filter(g=>fitsPlayers(g)&&fitsTime(g)&&fitsAge(g)&&fitsMine(g)&&(fitsQuery(g)||(exps[g.id]||[]).some(fitsQuery))));
+  state.visible=list;
   const total=bases.length, expTxt=nExp?` + ${nExp} expansi${nExp===1?"ón":"ones"}`:"";
   $("count").textContent = list.length===total ? `${total} juegos${expTxt}` : `${list.length} de ${total} juegos`;
   $("grid").setAttribute("aria-busy","false");
@@ -318,6 +366,7 @@ function render(){
           :`<div>+ ${esc(short(x.name))}</div>`).join("")}</div>`:""}
         <div class="foot">
           ${g.bgg?`<a href="https://boardgamegeek.com/boardgame/${encodeURIComponent(g.bgg)}" target="_blank" rel="noopener">BGG${g.rating?` · ${g.rating.toFixed(1)}`:""} ↗</a>`:`<span class="hint">Sin ficha en BGG</span>`}
+          ${mineHTML(g)}
         </div>
       </div></article>`;
   }).join("");
@@ -326,8 +375,13 @@ function render(){
   else empty.hidden=true;
 }
 function clearFilters(){
-  Object.assign(state,{players:null,time:null,age:null,q:""}); $("q").value=""; render();
+  Object.assign(state,{players:null,time:null,age:null,mine:null,q:""}); $("q").value=""; render();
 }
+$("surprise").addEventListener("click",e=>{
+  const pool=state.visible.filter(g=>!mine(g.id).p), b=e.currentTarget;
+  if(pool.length) return openGame(pool[Math.floor(Math.random()*pool.length)].id);
+  b.textContent="Ya los has jugado todos"; setTimeout(()=>{ b.textContent="🎲 Sorpréndeme"; },2200);
+});
 $("emptyState").addEventListener("click",e=>{ if(e.target.closest("[data-clear]")) clearFilters(); });
 
 /* Ficha del juego */
@@ -345,6 +399,12 @@ function videosOf(g){
 }
 function thumbHTML(yt,t){
   return `<img src="https://i.ytimg.com/vi/${yt}/hqdefault.jpg" alt="" loading="lazy" decoding="async"><button class="play" type="button" aria-label="Reproducir: ${esc(t)}">▶</button>`;
+}
+function yoHTML(g){
+  const m=mine(g.id), stars=[1,2,3,4,5].map(i=>`<button type="button" data-r="${i}" class="${i<=(m.r||0)?"on":""}" aria-pressed="${m.r===i}" aria-label="Mi nota: ${i} de 5">★</button>`).join("");
+  return `<button class="played" type="button" aria-pressed="${!!m.p}">${m.p?"✓ Lo he jugado":"Marcar como jugado"}</button>
+    <span class="stars" role="group" aria-label="Mi valoración">${stars}</span>
+    <span class="hint">Se guarda en este dispositivo</span>`;
 }
 function fichaHTML(g){
   const vids=videosOf(g), ex=expsOf(g);
@@ -365,6 +425,7 @@ function fichaHTML(g){
         <div class="meta">${meta}${weightHTML(g.weight)}${nota}</div>
         ${g.best?`<span class="best">Mejor a ${g.best} jugadores</span>`:""}
         ${tags?`<div class="tags">${tags}</div>`:""}
+        <div class="yo" id="yo">${yoHTML(g)}</div>
       </div>
     </header>
     <section class="howto" aria-labelledby="howtoTitulo">
@@ -401,7 +462,7 @@ function openGame(id,push=true){
   const g=baseOf(g0), hash="#"+encodeURIComponent(g.id);
   if(push){ if(location.hash!==hash) history.pushState({ficha:g.id},"",hash); }
   else if(location.hash!==hash) history.replaceState(history.state,"",hash);
-  $("fichaBody").innerHTML=fichaHTML(g);
+  $("fichaBody").innerHTML=fichaHTML(g); ficha.dataset.id=g.id;
   const t=ficha.querySelector(".track"); if(t) t.addEventListener("scroll",updNav,{passive:true});
   document.title=`${g.name} · ${baseTitle}`;
   if(!ficha.open) ficha.showModal();
@@ -419,6 +480,11 @@ ficha.addEventListener("click",e=>{
   if(e.target===ficha) return closeFicha();  // clic en el fondo
   if(e.target.closest(".fclose")) return closeFicha();
   const p=e.target.closest(".play"); if(p) return play(p.closest(".vframe"));
+  const pl=e.target.closest(".played"), st=e.target.closest(".stars button");
+  if(pl||st){ const id=ficha.dataset.id;
+    if(pl) setPlayed(id,pl.getAttribute("aria-pressed")!=="true"); else setRating(id,+st.dataset.r);
+    const focus=pl?".played":`.stars button[data-r="${st.dataset.r}"]`;
+    $("yo").innerHTML=yoHTML(byId(id)); $("yo").querySelector(focus).focus(); render(); return; }
   const d=e.target.closest(".nav button");
   if(d){ const t=ficha.querySelector(".track"), v=t.querySelector(".vid");
     t.scrollBy({left:+d.dataset.dir*(v.offsetWidth+12)}); }
@@ -431,7 +497,6 @@ addEventListener("resize",updNav);
 $("grid").addEventListener("click",e=>{ const b=e.target.closest(".open"); if(b) openGame(b.dataset.id); });
 
 $("q").addEventListener("input",e=>{ state.q=e.target.value.trim(); render(); });
-$("sort").addEventListener("change",e=>{ state.sort=e.target.value; render(); });
 chips();
 $("grid").innerHTML='<div class="box sk" aria-hidden="true"><div class="cover"></div><div class="info"><i></i><i></i><i></i></div></div>'.repeat(8);
 fetch("games.json",{cache:"no-cache"})

@@ -114,6 +114,21 @@ ese enlace; quien lo pulse entra con la ficha ya abierta. La vista previa del en
 WhatsApp muestra el título general de la ludoteca, no el del juego (WhatsApp ignora el `#`).
 Las fichas de cuentos no llevan este botón.
 
+## Ordenar, "jugado" y valoraciones
+
+- **Ordenar**: botones Nombre, Dificultad, Duración, Año, Nota BGG y Mi nota. Pulsar otra
+  vez el que está activo invierte el orden (la flecha ↑/↓ lo indica). Los juegos sin ese
+  dato van siempre al final.
+- **Lo he jugado y Mi nota**: en la ficha, cada persona marca si ha jugado el juego y le
+  pone de 1 a 5 estrellas (valorar lo marca como jugado; pulsar la misma estrella la quita).
+  La tarjeta muestra «✓ Jugado · ★★★★».
+- **Yo**: filtro Todos / Jugados / Sin jugar.
+- **🎲 Sorpréndeme**: abre al azar un juego sin jugar que encaje con los filtros puestos.
+
+Las marcas se guardan **solo en el navegador de cada dispositivo** (`localStorage`, clave
+`ludoteca:mis-juegos`): no hay cuentas, no se sincronizan entre móvil y ordenador y se
+pierden si se borran los datos del sitio. Cuentos no tiene estas opciones.
+
 ## Diseño
 
 Estilo editorial cálido: fondo crema, títulos en Source Serif 4, texto en Inter y cifras en
