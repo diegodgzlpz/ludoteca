@@ -9,7 +9,7 @@ Sitio estático: `index.html` lee `games.json` y muestra las portadas de `portad
 index.html      La página (HTML, CSS y JS en un solo archivo, sin dependencias)
 games.json      La colección: la única fuente de datos
 portadas-juegos/ Una imagen por juego: <id>.jpg o <id>.png
-cuentos.html    La página de cuentos infantiles (misma estructura, color ciruela)
+cuentos.html    La página de cuentos infantiles (misma estructura, acento verde azulado)
 cuentos.json    La colección de cuentos
 portadas-cuentos/  Una imagen por cuento: <id>.jpg o <id>.png
 .nojekyll       Evita que GitHub Pages procese el sitio con Jekyll
@@ -95,7 +95,8 @@ Valídalo antes del push con `python -m json.tool games.json > /dev/null`.
 ## Ficha del juego
 
 Al pulsar cualquier parte de una tarjeta se abre su ficha: datos del juego, carrusel
-"Cómo jugar" con los vídeos, expansiones y enlaces a BoardGameGeek y a YouTube.
+"Cómo jugar" con los vídeos, expansiones, enlaces a BoardGameGeek y a YouTube y botón
+para compartir por WhatsApp.
 Se cierra con ✕, Esc, clic fuera o el botón "atrás".
 
 - Los vídeos se muestran como miniaturas (`i.ytimg.com`); el reproductor de
@@ -107,6 +108,18 @@ Se cierra con ✕, Esc, clic fuera o el botón "atrás".
 Cada ficha tiene su dirección: `https://<usuario>.github.io/ludoteca/#<id>`, por ejemplo
 `#catan`. Abrir esa dirección abre la ficha; el enlace de una expansión
 (`#catan-navegantes`) abre la ficha de su juego base.
+
+El botón **Compartir por WhatsApp** de la ficha abre WhatsApp con el nombre del juego y
+ese enlace; quien lo pulse entra con la ficha ya abierta. La vista previa del enlace en
+WhatsApp muestra el título general de la ludoteca, no el del juego (WhatsApp ignora el `#`).
+Las fichas de cuentos no llevan este botón.
+
+## Diseño
+
+Estilo editorial cálido: fondo crema, títulos en Source Serif 4, texto en Inter y cifras en
+JetBrains Mono (Google Fonts). Juegos usa acento coral con el panel de filtros oscuro; cuentos,
+acento verde azulado con el panel claro. Los colores están como variables al principio del
+`<style>` de cada página, con su versión para modo oscuro (se activa según el sistema).
 
 ## Cuentos
 
