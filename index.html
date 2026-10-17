@@ -181,11 +181,26 @@ body:has(.ficha[open]){overflow:hidden}
 .ficha a.wa{justify-self:start;display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 18px;border-radius:999px;background:#25d366;color:#0b141a;font-weight:600;transition:background-color .15s,transform .1s}
 .ficha a.wa:hover{background:#1ebe5a;text-decoration:none}
 .ficha a.wa:active{transform:scale(.97)}
+.pgn{font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nums;letter-spacing:.02em;color:var(--muted)}
+.pg{position:fixed;top:50%;z-index:3;width:48px;height:48px;margin-top:-24px;padding:0 0 3px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);box-shadow:var(--lift);font-size:28px;line-height:1;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background-color .15s,transform .1s}
+@media (hover:hover){.pg:hover{background:var(--sunk)}}
+.pg:active{transform:scale(.94)}
+.pg.prev{left:max(8px,calc(50% - 454px))}
+.pg.next{right:max(8px,calc(50% - 454px))}
+.ficha:not(.paged) .pg{display:none}
+.fbody.from-next{animation:fin-r .22s ease-out}
+.fbody.from-prev{animation:fin-l .22s ease-out}
+@keyframes fin-r{from{opacity:0;transform:translateX(28px)}}
+@keyframes fin-l{from{opacity:0;transform:translateX(-28px)}}
 @media (max-width:520px){
   .ficha{width:100vw;height:100dvh;max-height:100dvh;margin:0;border:0;border-radius:0}
   .fbody{padding:calc(16px + env(safe-area-inset-top)) calc(16px + env(safe-area-inset-right)) calc(20px + env(safe-area-inset-bottom)) calc(16px + env(safe-area-inset-left))}
   .fclose{top:calc(8px + env(safe-area-inset-top));right:calc(8px + env(safe-area-inset-right))}
   .fhead{grid-template-columns:96px minmax(0,1fr);gap:12px}
+  .ficha.paged .fbody{padding-bottom:calc(88px + env(safe-area-inset-bottom))}
+  .pg{top:auto;margin:0;bottom:calc(16px + env(safe-area-inset-bottom));width:52px;height:52px;background:color-mix(in srgb,var(--surface) 82%,transparent);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+  .pg.prev{left:calc(16px + env(safe-area-inset-left))}
+  .pg.next{right:calc(16px + env(safe-area-inset-right))}
   .track{grid-auto-columns:88%}
   .ficha .tags{display:flex}
 }
@@ -238,7 +253,7 @@ img{max-width:100%}
   <footer class="site-foot">Datos y portadas de <a href="https://boardgamegeek.com" target="_blank" rel="noopener">BoardGameGeek</a>.</footer>
 </div>
 
-<dialog id="ficha" class="ficha" aria-labelledby="fichaTitulo"><div class="fbody" id="fichaBody"></div></dialog>
+<dialog id="ficha" class="ficha" aria-labelledby="fichaTitulo"><div class="fbody" id="fichaBody"></div><button class="pg prev" type="button" data-step="-1" aria-label="Juego anterior">‹</button><button class="pg next" type="button" data-step="1" aria-label="Juego siguiente">›</button></dialog>
 
 <script>
 const state = { games: [], players: null, time: null, age: null, mine: null, q: "", sort: "name", dir: 1, visible: [] };
@@ -440,6 +455,7 @@ function fichaHTML(g){
     <header class="fhead">
       <div class="cover">${coverHTML(g)}</div>
       <div class="fhinfo">
+        <span class="pgn"></span>
         <h2 id="fichaTitulo">${esc(g.name)}</h2>
         <div class="meta">${meta}${weightHTML(g.weight)}${nota}</div>
         ${g.best?`<span class="best">Mejor a ${g.best} jugadores</span>`:""}
@@ -476,12 +492,12 @@ function play(f){
   stopVideos(f); f.classList.add("playing");
   f.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${f.dataset.yt}?autoplay=1&rel=0" title="${esc(f.dataset.t)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
 }
-function openGame(id,push=true){
+function openGame(id,push=true,step=0){
   const g0=byId(id); if(!g0) return false;
   const g=baseOf(g0), hash="#"+encodeURIComponent(g.id);
   if(push){ if(location.hash!==hash) history.pushState({ficha:g.id},"",hash); }
   else if(location.hash!==hash) history.replaceState(history.state,"",hash);
-  $("fichaBody").innerHTML=fichaHTML(g); ficha.dataset.id=g.id;
+  $("fichaBody").innerHTML=fichaHTML(g); ficha.dataset.id=g.id; pager(g.id,step);
   const t=ficha.querySelector(".track"); if(t) t.addEventListener("scroll",updNav,{passive:true});
   document.title=`${g.name} · ${baseTitle}`;
   if(!ficha.open) ficha.showModal();
@@ -498,6 +514,7 @@ ficha.addEventListener("close",()=>{
 ficha.addEventListener("click",e=>{
   if(e.target===ficha) return closeFicha();  // clic en el fondo
   if(e.target.closest(".fclose")) return closeFicha();
+  const pg=e.target.closest(".pg"); if(pg) return step(+pg.dataset.step);
   const p=e.target.closest(".play"); if(p) return play(p.closest(".vframe"));
   const pl=e.target.closest(".played"), st=e.target.closest(".stars button");
   if(pl||st){ const id=ficha.dataset.id;
@@ -513,6 +530,39 @@ addEventListener("popstate",()=>{
   if(!(id&&openGame(id,false))) closeFicha();
 });
 addEventListener("resize",updNav);
+/* Pasar de ficha: recorre la lista que se está viendo (filtros y orden); vuelve al principio */
+let navIds=[];
+function navFor(id){
+  const v=state.visible.map(x=>x.id);
+  if(v.includes(id)) return v;
+  return (ids=>state.games.filter(g=>!g.parent||!ids.has(g.parent)))(new Set(state.games.map(g=>g.id))).sort((a,b)=>a.name.localeCompare(b.name,"es")).map(x=>x.id);
+}
+function pager(id,step){
+  if(!step||!navIds.includes(id)) navIds=navFor(id);
+  const n=navIds.length, i=navIds.indexOf(id), name=k=>byId(navIds[(i+k+n)%n]).name;
+  ficha.classList.toggle("paged",n>1);
+  const c=ficha.querySelector(".pgn"); if(c){ c.hidden=n<2; c.textContent=`${i+1} / ${n}`; c.setAttribute("aria-label",`Juego ${i+1} de ${n}`); }
+  if(n>1){ ficha.querySelector(".pg.prev").setAttribute("aria-label",`Juego anterior: ${name(-1)}`);
+    ficha.querySelector(".pg.next").setAttribute("aria-label",`Juego siguiente: ${name(1)}`); }
+  const fb=$("fichaBody"); fb.classList.remove("from-next","from-prev");
+  if(step){ void fb.offsetWidth; fb.classList.add(step>0?"from-next":"from-prev"); }
+}
+function step(d){
+  const n=navIds.length; if(!ficha.open||n<2) return;
+  const i=navIds.indexOf(ficha.dataset.id);
+  openGame(navIds[(i+d+n)%n],false,d);
+}
+ficha.addEventListener("keydown",e=>{
+  if((e.key!=="ArrowLeft"&&e.key!=="ArrowRight")||e.altKey||e.ctrlKey||e.metaKey||e.shiftKey) return;
+  if(e.target.closest(".track,input,textarea,select")) return;
+  e.preventDefault(); step(e.key==="ArrowRight"?1:-1);
+});
+let touch=null;  // deslizar el dedo; sobre el carrusel de vídeos no cuenta, ni cerca del borde (gesto "atrás" del sistema)
+ficha.addEventListener("touchstart",e=>{ const t=e.touches[0];
+  touch=e.touches.length===1&&!e.target.closest(".track")&&t.clientX>24&&t.clientX<innerWidth-24?[t.clientX,t.clientY]:null; },{passive:true});
+ficha.addEventListener("touchend",e=>{ if(!touch) return;
+  const t=e.changedTouches[0], dx=t.clientX-touch[0], dy=t.clientY-touch[1]; touch=null;
+  if(Math.abs(dx)>60&&Math.abs(dx)>2*Math.abs(dy)) step(dx<0?1:-1); },{passive:true});
 $("grid").addEventListener("click",e=>{ const b=e.target.closest(".open"); if(b) openGame(b.dataset.id); });
 
 $("q").addEventListener("input",e=>{ state.q=e.target.value.trim(); render(); });

@@ -99,6 +99,11 @@ Al pulsar cualquier parte de una tarjeta se abre su ficha: datos del juego, carr
 para compartir por WhatsApp.
 Se cierra con ✕, Esc, clic fuera o el botón "atrás".
 
+- **Pasar de ficha** sin cerrarla: flechas ‹ › a los lados (en el móvil, abajo), teclas ← →
+  o deslizando el dedo. Recorre la lista que se está viendo, con sus filtros y su orden, y del
+  último vuelve al primero; el contador «12 / 48» indica la posición. Si la ficha se abrió
+  desde un enlace, recorre toda la colección por orden alfabético. Cuentos funciona igual.
+
 - Los vídeos se muestran como miniaturas (`i.ytimg.com`); el reproductor de
   `youtube-nocookie.com` solo se carga al pulsar play, y solo uno a la vez.
 - Un juego sin vídeos muestra un enlace a la búsqueda "<nombre> cómo se juega" en YouTube.
